@@ -914,6 +914,87 @@ Settings:
     Unlocking: Avamine…
   Search Settings: Otsingu seaded
   No Settings Found: Seadeid ei leitud
+  Glass Settings:
+    Translucency: Läbipaistvus
+    Description: Lisab juba kasutatava teema peale matt-klaasi viimistluse. Värvid tulevad endiselt teemast, nii et palett jääb efekti läbi äratuntavaks.
+    Enable Translucency: Luba läbipaistvus
+    Liquid Warning: Liquid Glass murrab tausta iga kaetava pinna jaoks loodud läätse kaudu. See on siinne kõige nõudlikum valik ja sobib kõige paremini väikese arvu pindadega.
+    System Backdrop Unavailable: Süsteemi joonistatud akna taust vajab Windows 11 või macOS-i. Allpool olevad rakendusesisesed efektid töötavad igal pool.
+    Reset: Lähtesta läbipaistvuse sätted
+    Texture:
+      Texture: Tekstuur
+      Blur: Matt klaas
+      Acrylic: Akrüül
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Pinnad
+      Window Chrome: Navigeerimine ja külgriba
+      Cards: Kaardid ja paneelid
+      Menus and Popups: Menüüd, dialoogid ja teated
+      Inputs: Tekstiväljad
+      Player Panels: Mängija külgpaneelid
+    Tint Mode:
+      Tint Mode: Toon
+      Follow Theme: Järgi teemat
+      Custom Color: Kohandatud värv
+    Border Tone:
+      Border Tone: Servade toon
+      Automatic: Automaatne
+      Light: Hele
+      Dark: Tume
+    Liquid Quality:
+      Liquid Quality: Läätse kvaliteet
+      Low: Madal
+      Medium: Keskmine
+      High: Kõrge
+    System Backdrop:
+      System Backdrop: Akna taust
+      None: Puudub
+      Automatic: Süsteemi vaikeväärtus
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akrüül
+    Groups:
+      opacity: Läbipaistmatus
+      backdrop: Taust
+      tint: Toon
+      texture: Teralisus
+      edge: Servad ja sügavus
+      liquid: Liquid Glass
+      system: Aken
+    Knobs:
+      Luminous Opacity: Helendav läbipaistmatus
+      Page Opacity: Lehe läbipaistmatus
+      Chrome Opacity: Navigeerimise läbipaistmatus
+      Card Opacity: Kaartide läbipaistmatus
+      Menu Opacity: Menüüde läbipaistmatus
+      Input Opacity: Tekstiväljade läbipaistmatus
+      Luminance: Heledus
+      Blur Radius: Hägustuse raadius
+      Saturation: Küllastus
+      Brightness: Heledus
+      Contrast: Kontrastsus
+      Tint Color: Tooni värv
+      Tint Strength: Tooni tugevus
+      Grain Opacity: Teralisuse läbipaistmatus
+      Grain Scale: Teralisuse suurus
+      Border Opacity: Servade läbipaistmatus
+      Border Width: Serva laius
+      Highlight Opacity: Valgusserva läbipaistmatus
+      Inner Shadow Opacity: Sisevarju läbipaistmatus
+      Shadow Strength: Langeva varju tugevus
+      Refraction Strength: Murdumise tugevus
+      Bezel Width: Faasi laius
+      Lens Radius: Läätse nurkade raadius
+      Chromatic Aberration: Kromaatiline aberratsioon
+      Lens Blur: Läätse hägustus
+      Specular Highlight: Peegelhelk
+      Maximum Lensed Surfaces: Läätsega pindade ülempiir
+      Transparent Window Background: Lase süsteemil akna taust joonistada
+      Respect Reduced Transparency: Järgi süsteemi vähendatud läbipaistvuse sätet
+      Fallback Opacity: Läbipaistmatus ilma tausta hägustuseta
 Tutorial:
   Skip: Jäta vahele
   Next: Edasi
@@ -1434,6 +1515,14 @@ Tooltips:
     Scroll Speed: Muudab hiireratta ja puuteplaadi kerimisliigutuste vahemaad.
     Use Fixed Tab Width: Annab horisontaalsel vaheleheribal igale vahelehele pealkirjast sõltumata sama laiuse.
     Use Grid Player Menu: Paigutab videopleieri seadete menüü ridade loendi asemel paanide ruudustikuna.
+  Glass Settings:
+    Enable Translucency: Laseb rakenduse pindadel näidata, mis on nende taga. Värvid tulevad endiselt aktiivsest teemast, nii et efekt asetub sinu paleti peale, mitte ei asenda seda.
+    Texture: Valib efekti iseloomu. Matt klaas on ühtlane hägustus, Akrüül lisab teralisust ja küllastust, Mica viib efekti lehele endale, nii et selle kohal olevad pinnad jäävad läbipaistmatuks, ja Liquid Glass murrab tausta läätse kaudu.
+    Tint Mode: Teemat järgides säilitab iga pind oma värvi. Kohandatud värv tõmbab kõik pinnad valitud värvi poole, nii saad kogu liidest läbiva ühtse rõhuvärvi.
+    Liquid Quality: Kui peenelt lääts luuakse. Kõrgem väärtus näib kaarjatel servadel ühtlasem ja maksab rohkem iga kord, kui pinna suurus muutub.
+    System Backdrop: Palub operatsioonisüsteemil akna tausta joonistada. Windowsis on see sama Mica või Akrüüli materjal, mida kasutavad teised rakendused, nii et seda süsteemiüleselt kohandavad tööriistad mõjutavad ka seda rakendust.
+    Transparent Window Background: Takistab rakendusel oma lehetausta joonistamast, nii et paistab see, mida süsteem akna taha joonistab. Kasulik ainult sisselülitatud akna taustaga.
+    Respect Reduced Transparency: Lülitab efekti automaatselt välja, kuni operatsioonisüsteemis on määratud vähendatud läbipaistvus.
 The playlist is at the beginning. Enable loop to continue playing: Esitusloend on alguses. Esitamise jätkamiseks luba kordus
 External link opening has been disabled in Settings → Privacy: Väliste linkide avamine on jaotises Seaded → Privaatsus keelatud
 KeyboardShortcutPrompt:

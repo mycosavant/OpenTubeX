@@ -916,6 +916,87 @@ Settings:
     Unlocking: Desblokeatzen…
   Search Settings: Bilaketa-ezarpenak
   No Settings Found: Ez da ezarpenik aurkitu
+  Glass Settings:
+    Translucency: Zeharrargitasuna
+    Description: Beira lausotuaren akabera gehitzen dio dagoeneko erabiltzen duzun gaiari. Koloreak gaitik datoz oraindik ere, beraz paleta ezagungarri geratzen da efektuaren azpian.
+    Enable Translucency: Gaitu zeharrargitasuna
+    Liquid Warning: Liquid Glass-ek estaltzen duen gainazal bakoitzarentzat sortutako lente baten bidez errefraktatzen du atzealdea. Hemengo aukerarik eskatzaileena da eta gainazal gutxirekin funtzionatzen du ondoen.
+    System Backdrop Unavailable: Sistemak marrazten duen leiho-atzealdeak Windows 11 edo macOS behar du. Beheko aplikazio barruko efektuek edonon funtzionatzen dute.
+    Reset: Berrezarri zeharrargitasunaren ezarpenak
+    Texture:
+      Texture: Ehundura
+      Blur: Beira lausotua
+      Acrylic: Akrilikoa
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Gainazalak
+      Window Chrome: Nabigazioa eta alboko barra
+      Cards: Txartelak eta panelak
+      Menus and Popups: Menuak, elkarrizketa-koadroak eta jakinarazpenak
+      Inputs: Testu-eremuak
+      Player Panels: Erreproduzigailuaren alboko panelak
+    Tint Mode:
+      Tint Mode: Tindua
+      Follow Theme: Jarraitu gaiari
+      Custom Color: Kolore pertsonalizatua
+    Border Tone:
+      Border Tone: Ertzen tonua
+      Automatic: Automatikoa
+      Light: Argia
+      Dark: Iluna
+    Liquid Quality:
+      Liquid Quality: Lentearen kalitatea
+      Low: Baxua
+      Medium: Ertaina
+      High: Altua
+    System Backdrop:
+      System Backdrop: Leihoaren atzealdea
+      None: Bat ere ez
+      Automatic: Sistemaren lehenetsia
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akrilikoa
+    Groups:
+      opacity: Opakutasuna
+      backdrop: Atzealdea
+      tint: Tindua
+      texture: Pikorra
+      edge: Ertzak eta sakonera
+      liquid: Liquid Glass
+      system: Leihoa
+    Knobs:
+      Luminous Opacity: Opakutasun distiratsua
+      Page Opacity: Orriaren opakutasuna
+      Chrome Opacity: Nabigazioaren opakutasuna
+      Card Opacity: Txartelen opakutasuna
+      Menu Opacity: Menuen opakutasuna
+      Input Opacity: Testu-eremuen opakutasuna
+      Luminance: Luminantzia
+      Blur Radius: Lausotze-erradioa
+      Saturation: Asetasuna
+      Brightness: Distira
+      Contrast: Kontrastea
+      Tint Color: Tinduaren kolorea
+      Tint Strength: Tinduaren indarra
+      Grain Opacity: Pikorraren opakutasuna
+      Grain Scale: Pikorraren eskala
+      Border Opacity: Ertzen opakutasuna
+      Border Width: Ertzen zabalera
+      Highlight Opacity: Argi-ertzaren opakutasuna
+      Inner Shadow Opacity: Barne-itzalaren opakutasuna
+      Shadow Strength: Kanpo-itzalaren indarra
+      Refraction Strength: Errefrakzioaren indarra
+      Bezel Width: Alakaren zabalera
+      Lens Radius: Lentearen izkinen erradioa
+      Chromatic Aberration: Aberrazio kromatikoa
+      Lens Blur: Lentearen lausotzea
+      Specular Highlight: Ispilu-distira
+      Maximum Lensed Surfaces: Lentedun gainazalen gehienezko kopurua
+      Transparent Window Background: Utzi sistemari leihoaren atzealdea marrazten
+      Respect Reduced Transparency: Errespetatu sistemaren gardentasuna murrizteko ezarpena
+      Fallback Opacity: Opakutasuna atzealdea lausotu gabe
 Tutorial:
   Skip: Saltatu
   Next: Hurrengoa
@@ -1445,6 +1526,14 @@ Tooltips:
     Scroll Speed: Saguaren gurpileko eta ukipen-paneleko keinuek zenbat korritzen duten aldatzen du.
     Use Fixed Tab Width: Fitxa horizontalen barrako fitxa guztiei zabalera bera ematen die, izenburuaren arabera tamainatu beharrean.
     Use Grid Player Menu: Erreproduzigailuaren ezarpen-menua lauzaz osatutako sareta batean antolatzen du, errenkada-zerrenda baten ordez.
+  Glass Settings:
+    Enable Translucency: Aplikazioaren gainazalen atzean dagoena erakusten uzten du. Koloreak gai aktibotik datoz oraindik ere, beraz efektua zure paletaren gainean geruzatzen da, hura ordezkatu beharrean.
+    Texture: Efektuaren izaera aukeratzen du. Beira lausotua lausotze uniformea da, Akrilikoak pikorra eta asetasuna gehitzen ditu, Mica-k efektua orriara berera eramaten du gaineko gainazalak opako geldi daitezen, eta Liquid Glass-ek lente baten bidez errefraktatzen du atzealdea.
+    Tint Mode: Gaiari jarraituz gero, gainazal bakoitzak bere kolorea gordetzen du. Kolore pertsonalizatuak gainazal guztiak aukeratutakorantz erakartzen ditu, eta horrela azentu bakarra igarotzen da interfaze osoan.
+    Liquid Quality: Zein fintasunez sortzen den lentea. Balio handiagoa leunagoa ikusten da ertz kurbatuetan eta garestiagoa da gainazal batek tamaina aldatzen duen bakoitzean.
+    System Backdrop: Sistema eragileari leihoaren atzealdea marrazteko eskatzen dio. Windows-en beste aplikazioek erabiltzen duten Mica edo Akriliko material bera da, beraz sistema osoan pertsonalizatzen duten tresnek aplikazio honi ere eragiten diote.
+    Transparent Window Background: Aplikazioak bere orri-atzealdea marraztea eragozten du, sistemak leihoaren atzean marrazten duena ikus dadin. Leihoaren atzealdea gaituta dagoenean bakarrik da baliagarria.
+    Respect Reduced Transparency: Efektua automatikoki desaktibatzen du sistema eragilean gardentasuna murrizteko ezarpena aktibo dagoen bitartean.
 The playlist is at the beginning. Enable loop to continue playing: Erreprodukzio-zerrenda hasieran dago. Gaitu begizta erreproduzitzen jarraitzeko
 External link opening has been disabled in Settings → Privacy: Kanpoko estekak irekitzea desgaitu da Ezarpenak → Pribatutasuna atalean
 KeyboardShortcutPrompt:

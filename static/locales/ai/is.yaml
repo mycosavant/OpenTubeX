@@ -931,6 +931,87 @@ Settings:
     Unlocking: Aflæsi…
   Search Settings: Leitarstillingar
   No Settings Found: Engar stillingar fundust
+  Glass Settings:
+    Translucency: Gegnsæi
+    Description: Bætir frostuðu gleryfirbragði ofan á þemað sem þú notar nú þegar. Litirnir koma áfram úr þemanu, svo litapallettan helst þekkjanleg í gegnum áhrifin.
+    Enable Translucency: Virkja gegnsæi
+    Liquid Warning: Liquid Glass brýtur bakgrunninn í gegnum myndaða linsu fyrir hvern flöt sem hún þekur. Þetta er kröfuharðasti valkosturinn hér og virkar best á fáum flötum.
+    System Backdrop Unavailable: Gluggabakgrunnur teiknaður af kerfinu krefst Windows 11 eða macOS. Áhrifin innan forritsins hér að neðan virka alls staðar.
+    Reset: Endurstilla gegnsæisstillingar
+    Texture:
+      Texture: Áferð
+      Blur: Frostað gler
+      Acrylic: Akrýl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Fletir
+      Window Chrome: Yfirlit og hliðarstika
+      Cards: Spjöld og svæði
+      Menus and Popups: Valmyndir, gluggar og tilkynningar
+      Inputs: Textareitir
+      Player Panels: Hliðarsvæði spilarans
+    Tint Mode:
+      Tint Mode: Litblær
+      Follow Theme: Fylgja þemanu
+      Custom Color: Sérsniðinn litur
+    Border Tone:
+      Border Tone: Blær kanta
+      Automatic: Sjálfvirkt
+      Light: Ljós
+      Dark: Dökk
+    Liquid Quality:
+      Liquid Quality: Gæði linsu
+      Low: Lág
+      Medium: Miðlungs
+      High: Há
+    System Backdrop:
+      System Backdrop: Gluggabakgrunnur
+      None: Enginn
+      Automatic: Sjálfgefið kerfisins
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akrýl
+    Groups:
+      opacity: Ógegnsæi
+      backdrop: Bakgrunnur
+      tint: Litblær
+      texture: Korn
+      edge: Kantar og dýpt
+      liquid: Liquid Glass
+      system: Gluggi
+    Knobs:
+      Luminous Opacity: Lýsandi ógegnsæi
+      Page Opacity: Ógegnsæi síðunnar
+      Chrome Opacity: Ógegnsæi yfirlits
+      Card Opacity: Ógegnsæi spjalda
+      Menu Opacity: Ógegnsæi valmynda
+      Input Opacity: Ógegnsæi textareita
+      Luminance: Ljómi
+      Blur Radius: Radíus móðunar
+      Saturation: Mettun
+      Brightness: Birtustig
+      Contrast: Birtuskil
+      Tint Color: Litur blæsins
+      Tint Strength: Styrkur blæsins
+      Grain Opacity: Ógegnsæi korns
+      Grain Scale: Kvarði korns
+      Border Opacity: Ógegnsæi kanta
+      Border Width: Breidd kanta
+      Highlight Opacity: Ógegnsæi ljósbrúnar
+      Inner Shadow Opacity: Ógegnsæi innri skugga
+      Shadow Strength: Styrkur varpaðs skugga
+      Refraction Strength: Styrkur ljósbrots
+      Bezel Width: Breidd fassins
+      Lens Radius: Hornradíus linsu
+      Chromatic Aberration: Litskekkja
+      Lens Blur: Móðun linsu
+      Specular Highlight: Spegilglampi
+      Maximum Lensed Surfaces: Hámarksfjöldi flata með linsu
+      Transparent Window Background: Láta kerfið teikna bakgrunn gluggans
+      Respect Reduced Transparency: Virða kerfisstillingu um minnkað gegnsæi
+      Fallback Opacity: Ógegnsæi án bakgrunnsmóðunar
 Tutorial:
   Skip: Sleppa
   Next: Næsta
@@ -1461,6 +1542,14 @@ Tooltips:
     Scroll Speed: Breytir hversu langt er skrunað með músarhjóli og snertifleti.
     Use Fixed Tab Width: Gefur öllum flipum á láréttu flipastikunni sömu breidd í stað þess að laga breidd þeirra að titlinum.
     Use Grid Player Menu: Raðar stillingavalmynd myndbandsspilarans í reitanet í stað raðalista.
+  Glass Settings:
+    Enable Translucency: Lætur fleti forritsins sýna það sem er á bak við þá. Litirnir koma áfram úr virka þemanu, svo áhrifin leggjast ofan á litapallettuna þína í stað þess að skipta henni út.
+    Texture: Velur eðli áhrifanna. Frostað gler er jöfn móðun, Akrýl bætir við korni og mettun, Mica færir áhrifin á síðuna sjálfa svo fletirnir fyrir ofan haldast ógegnsæir, og Liquid Glass brýtur bakgrunninn í gegnum linsu.
+    Tint Mode: Þegar fylgt er þemanu heldur hver flötur sínum eigin lit. Sérsniðinn litur dregur alla fleti að þeim lit sem þú velur, sem gefur einn áherslulit í gegnum allt viðmótið.
+    Liquid Quality: Hversu fínlega linsan er mynduð. Hærra gildi lítur sléttar út á bogadregnum köntum og kostar meira í hvert sinn sem flötur breytir um stærð.
+    System Backdrop: Biður stýrikerfið að teikna bakgrunn gluggans. Í Windows er þetta sama Mica- eða Akrýlefnið og önnur forrit nota, svo verkfæri sem sérsníða það fyrir allt kerfið hafa líka áhrif á þetta forrit.
+    Transparent Window Background: Kemur í veg fyrir að forritið teikni sinn eigin síðubakgrunn, svo það sem kerfið teiknar á bak við gluggann sjáist. Aðeins gagnlegt með virkan gluggabakgrunn.
+    Respect Reduced Transparency: Slekkur sjálfkrafa á áhrifunum meðan stýrikerfið er stillt á minnkað gegnsæi.
 The playlist is at the beginning. Enable loop to continue playing: Þú ert við upphaf spilunarlistans. Kveiktu á endurtekningu til að halda spilun áfram
 External link opening has been disabled in Settings → Privacy: Slökkt hefur verið á opnun ytri tengla undir Stillingar → Persónuvernd
 KeyboardShortcutPrompt:

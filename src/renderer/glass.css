@@ -1,0 +1,136 @@
+/*
+  Translucency layer.
+
+  Nothing here carries a colour. The renderer derives every surface colour from
+  whatever the active theme already resolved and writes it back onto the same
+  custom property the theme used, so a card painted with `--card-bg-color` turns
+  to glass without the card knowing anything about it. That is what keeps a
+  palette recognisable through the effect instead of replacing it.
+
+  What is left for CSS is the part a colour cannot express: the backdrop filter,
+  the grain, and the lit rim that gives a pane its thickness.
+*/
+
+/*
+  Components that already opt into the custom theme system's blur tokens pick
+  the effect up through them. These are declared once and inherited rather than
+  matched per element: a rule keyed on `*` has to be tested against every
+  element in the document on each style recalculation, including while the
+  effect is switched off, which is a cost the whole app would pay for a feature
+  most of it does not use.
+
+  Inheriting means every element resolves the body's value, so a surface that
+  Liquid Glass has given its own filter cannot be served this way. Those
+  surfaces are enumerated below and given `backdrop-filter` directly, which
+  resolves against the element's own `--glass-backdrop-filter`.
+*/
+.glassEnabled {
+  --card-bg-blur: var(--glass-backdrop-filter);
+  --secondary-card-bg-blur: var(--glass-backdrop-filter);
+  --search-bar-blur: var(--glass-backdrop-filter);
+  --settings-search-bar-blur: var(--glass-backdrop-filter);
+  --primary-input-blur: var(--glass-backdrop-filter);
+
+  /*
+    A glass pane needs three edges to read as one: a ring that describes its
+    outline, a lit top edge, and a shadow along the bottom inside face.
+    Composed as insets on the element's own box-shadow so no pseudo-element is
+    required and nothing about the component's layout changes.
+  */
+  --glass-edge:
+    inset 0 0 0 var(--glass-border-width) var(--glass-border-color),
+    inset 0 var(--glass-border-width) 0 calc(var(--glass-border-width) * -0.5) var(--glass-highlight-color),
+    inset 0 calc(var(--glass-border-width) * -2) 14px calc(var(--glass-border-width) * -1) var(--glass-inner-shadow-color);
+}
+
+/* The window chrome: navigation, sidebar and tab strip. */
+.glassEnabled[data-glass-chrome] :is(.topNav, .sideNav, .tabBar) {
+  backdrop-filter: var(--glass-backdrop-filter);
+  box-shadow: var(--glass-edge), var(--glass-shadow);
+}
+
+/*
+  The top bar shares the card colour by default, so it needs a token of its own
+  before the chrome and card tiers can be given different opacities.
+*/
+.glassEnabled[data-glass-chrome] .topNav {
+  background-color: var(--top-nav-bg-color);
+}
+
+/* Cards and settings panels. */
+.glassEnabled[data-glass-cards] :is(.ft-card, .sectionBody) {
+  backdrop-filter: var(--glass-backdrop-filter);
+  box-shadow: var(--glass-edge), var(--glass-shadow);
+}
+
+/* Text fields, which carry the effect but none of the depth around it. */
+.glassEnabled[data-glass-inputs] .ft-input-component {
+  backdrop-filter: var(--glass-backdrop-filter);
+}
+
+/* Popovers: prompts, dropdown menus and toasts. */
+.glassEnabled[data-glass-menus] :is(.promptCard, .iconDropdown, [data-sonner-toast]) {
+  backdrop-filter: var(--glass-backdrop-filter);
+  box-shadow: var(--glass-edge), var(--glass-shadow);
+}
+
+/*
+  The player's fullscreen side panels already float over the video, so they take
+  the tint and the rim but keep their own blur: the video behind them is moving,
+  and stacking a second backdrop filter over it is the most expensive thing the
+  effect could do.
+*/
+.glassEnabled[data-glass-player] :is(
+  .fullscreenSponsorBlockOverlay,
+  .fullscreenLiveChatOverlay,
+  .fullscreenCommentsOverlay,
+  .fullscreenPlaylistOverlay
+) {
+  box-shadow: var(--glass-edge), var(--glass-shadow);
+}
+
+/*
+  Grain. Acrylic and Mica both read as flat plastic without it. The turbulence
+  sits around mid-grey, which is the neutral point of the `overlay` blend, so it
+  roughens the surface without shifting its colour, and the opacity is baked
+  into the image itself.
+*/
+.glassEnabled:not([data-glass-texture='blur'], [data-glass-texture='liquid']) :is(.ft-card, .sectionBody, .topNav, .sideNav, .tabBar, .promptCard, .iconDropdown) {
+  background-image: var(--glass-noise-image);
+  background-size: var(--glass-noise-size) var(--glass-noise-size);
+  background-blend-mode: overlay;
+}
+
+/*
+  Liquid Glass leans on a bright specular rim rather than grain: the refraction
+  is what carries the surface, and the highlight is what makes it look wet.
+*/
+.glassEnabled[data-glass-texture='liquid'] {
+  --glass-edge:
+    inset 0 0 0 var(--glass-border-width) var(--glass-border-color),
+    inset 0 calc(var(--glass-border-width) * 1.5) 1px calc(var(--glass-border-width) * -0.5) var(--glass-highlight-color),
+    inset 0 calc(var(--glass-border-width) * -3) 18px calc(var(--glass-border-width) * -2) var(--glass-inner-shadow-color),
+    inset 0 0 24px calc(var(--glass-border-width) * -1) var(--glass-highlight-color);
+}
+
+/*
+  Hands the window background over to the system compositor. With this on, the
+  page paints nothing of its own, so whatever the desktop draws behind the
+  window - Windows' Mica or Acrylic backdrop, or a third-party DWM effect - is
+  what shows through. Without a system backdrop actually enabled it would leave
+  the window looking like a hole, which is why it is a separate switch.
+*/
+.glassEnabled[data-glass-transparent-window] {
+  background-color: transparent;
+}
+
+/*
+  A blurred surface that also animates its own geometry forces the backdrop to
+  be re-sampled every frame. Keeping the transitions to colour costs nothing
+  visually and takes the effect off the compositor's critical path.
+*/
+@media (prefers-reduced-motion: reduce) {
+  .glassEnabled :is(.topNav, .sideNav, .tabBar, .ft-card, .sectionBody) {
+    transition-property: background-color, color;
+  }
+}

@@ -1231,6 +1231,87 @@ Settings:
     Set Password To Prevent Access: Nastavite geslo, da preprečite dostop do nastavitev
     Set Password: Nastavi geslo
     Remove Password: Odstrani geslo
+  Glass Settings:
+    Translucency: Prosojnost
+    Description: Doda videz brušenega stekla čez temo, ki jo že uporabljate. Barve še vedno prihajajo iz teme, zato paleta skozi učinek ostane prepoznavna.
+    Enable Translucency: Omogoči prosojnost
+    Liquid Warning: Liquid Glass lomi ozadje skozi ustvarjeno lečo za vsako površino, ki jo prekriva. To je tukaj najzahtevnejša možnost in najbolje deluje pri majhnem številu površin.
+    System Backdrop Unavailable: Ozadje okna, ki ga izriše sistem, zahteva Windows 11 ali macOS. Učinki znotraj aplikacije spodaj delujejo povsod.
+    Reset: Ponastavi nastavitve prosojnosti
+    Texture:
+      Texture: Tekstura
+      Blur: Brušeno steklo
+      Acrylic: Akril
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Površine
+      Window Chrome: Krmarjenje in stranska vrstica
+      Cards: Kartice in plošče
+      Menus and Popups: Meniji, pogovorna okna in obvestila
+      Inputs: Besedilna polja
+      Player Panels: Stranske plošče predvajalnika
+    Tint Mode:
+      Tint Mode: Odtenek
+      Follow Theme: Sledi temi
+      Custom Color: Barva po meri
+    Border Tone:
+      Border Tone: Ton robov
+      Automatic: Samodejno
+      Light: Svetlo
+      Dark: Temno
+    Liquid Quality:
+      Liquid Quality: Kakovost leče
+      Low: Nizka
+      Medium: Srednja
+      High: Visoka
+    System Backdrop:
+      System Backdrop: Ozadje okna
+      None: Brez
+      Automatic: Privzeto sistemsko
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akril
+    Groups:
+      opacity: Prekrivnost
+      backdrop: Ozadje
+      tint: Odtenek
+      texture: Zrnatost
+      edge: Robovi in globina
+      liquid: Liquid Glass
+      system: Okno
+    Knobs:
+      Luminous Opacity: Svetleča prekrivnost
+      Page Opacity: Prekrivnost strani
+      Chrome Opacity: Prekrivnost krmarjenja
+      Card Opacity: Prekrivnost kartic
+      Menu Opacity: Prekrivnost menijev
+      Input Opacity: Prekrivnost besedilnih polj
+      Luminance: Svetlost površine
+      Blur Radius: Polmer zabrisanosti
+      Saturation: Nasičenost
+      Brightness: Svetlost
+      Contrast: Kontrast
+      Tint Color: Barva odtenka
+      Tint Strength: Moč odtenka
+      Grain Opacity: Prekrivnost zrnatosti
+      Grain Scale: Merilo zrnatosti
+      Border Opacity: Prekrivnost robov
+      Border Width: Debelina robov
+      Highlight Opacity: Prekrivnost svetlega roba
+      Inner Shadow Opacity: Prekrivnost notranje sence
+      Shadow Strength: Moč vržene sence
+      Refraction Strength: Moč loma svetlobe
+      Bezel Width: Širina posnetja
+      Lens Radius: Polmer vogalov leče
+      Chromatic Aberration: Kromatična aberacija
+      Lens Blur: Zabrisanost leče
+      Specular Highlight: Zrcalni odsev
+      Maximum Lensed Surfaces: Največje število površin z lečo
+      Transparent Window Background: Naj ozadje okna izriše sistem
+      Respect Reduced Transparency: Upoštevaj sistemsko nastavitev zmanjšane prosojnosti
+      Fallback Opacity: Prekrivnost brez zabrisanega ozadja
 Tutorial:
   Skip: Preskoči
   Next: Naprej
@@ -1934,6 +2015,14 @@ Tooltips:
   SponsorBlock Settings:
     UseDeArrowTitles: Naslove videoposnetkov zamenja z naslovi, ki so jih uporabniki poslali v DeArrow.
     UseDeArrowThumbnails: Sličice videoposnetkov zamenja s sličicami iz DeArrow.
+  Glass Settings:
+    Enable Translucency: Omogoči, da površine aplikacije pokažejo, kaj je za njimi. Barve še vedno prihajajo iz dejavne teme, zato se učinek nalaga na vašo paleto, namesto da bi jo zamenjal.
+    Texture: Določi značaj učinka. Brušeno steklo je enakomerna zabrisanost, Akril doda zrnatost in nasičenost, Mica prestavi učinek na samo stran, tako da površine nad njo ostanejo neprosojne, Liquid Glass pa lomi ozadje skozi lečo.
+    Tint Mode: Pri sledenju temi vsaka površina obdrži svojo barvo. Barva po meri povleče vse površine proti izbrani, tako dobite en sam poudarek skozi celoten vmesnik.
+    Liquid Quality: Kako natančno se ustvari leča. Višja vrednost je bolj gladka na zaobljenih robovih in stane več ob vsaki spremembi velikosti površine.
+    System Backdrop: Prosi operacijski sistem, naj izriše ozadje okna. V sistemu Windows gre za isti material Mica ali Akril, ki ga uporabljajo druge aplikacije, zato orodja, ki ga prilagajajo za ves sistem, vplivajo tudi na to aplikacijo.
+    Transparent Window Background: Prepreči, da bi aplikacija izrisala svoje ozadje strani, tako da se vidi, kar sistem riše za oknom. Uporabno le z omogočenim ozadjem okna.
+    Respect Reduced Transparency: Samodejno izklopi učinek, dokler je v operacijskem sistemu nastavljeno zmanjšanje prosojnosti.
 Unknown YouTube url type, cannot be opened in app: Tega URL-ja za YouTube ni mogoče odpreti v aplikaciji, ker njegova vrsta ni znana
 Autoplay Interruption Timer: Samodejno predvajanje je bilo preklicano zaradi {autoplayInterruptionIntervalHours} ur nedejavnosti
 Default Invidious instance has been set to {instance}: Privzeti primerek Invidious je nastavljen na {instance}

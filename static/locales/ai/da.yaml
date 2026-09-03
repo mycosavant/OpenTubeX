@@ -960,6 +960,87 @@ Settings:
     Unlocking: Låser op…
   Search Settings: Søgeindstillinger
   No Settings Found: Ingen indstillinger fundet
+  Glass Settings:
+    Translucency: Gennemsigtighed
+    Description: Lægger en matteret glasoverflade over det tema, du allerede bruger. Farverne kommer stadig fra temaet, så paletten forbliver genkendelig gennem effekten.
+    Enable Translucency: Aktivér gennemsigtighed
+    Liquid Warning: Liquid Glass bryder baggrunden gennem en genereret linse for hver overflade, den dækker. Det er den mest krævende mulighed her og fungerer bedst på et lille antal overflader.
+    System Backdrop Unavailable: En vinduesbaggrund tegnet af systemet kræver Windows 11 eller macOS. Effekterne i appen nedenfor fungerer overalt.
+    Reset: Nulstil indstillingerne for gennemsigtighed
+    Texture:
+      Texture: Tekstur
+      Blur: Matteret glas
+      Acrylic: Akryl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Overflader
+      Window Chrome: Navigation og sidepanel
+      Cards: Kort og paneler
+      Menus and Popups: Menuer, dialoger og notifikationer
+      Inputs: Tekstfelter
+      Player Panels: Afspillerens sidepaneler
+    Tint Mode:
+      Tint Mode: Farvetone
+      Follow Theme: Følg temaet
+      Custom Color: Brugerdefineret farve
+    Border Tone:
+      Border Tone: Kanttone
+      Automatic: Automatisk
+      Light: Lys
+      Dark: Mørk
+    Liquid Quality:
+      Liquid Quality: Linsekvalitet
+      Low: Lav
+      Medium: Mellem
+      High: Høj
+    System Backdrop:
+      System Backdrop: Vinduesbaggrund
+      None: Ingen
+      Automatic: Systemstandard
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akryl
+    Groups:
+      opacity: Uigennemsigtighed
+      backdrop: Baggrund
+      tint: Farvetone
+      texture: Kornethed
+      edge: Kanter og dybde
+      liquid: Liquid Glass
+      system: Vindue
+    Knobs:
+      Luminous Opacity: Lysende uigennemsigtighed
+      Page Opacity: Sidens uigennemsigtighed
+      Chrome Opacity: Navigationens uigennemsigtighed
+      Card Opacity: Kortenes uigennemsigtighed
+      Menu Opacity: Menuernes uigennemsigtighed
+      Input Opacity: Tekstfelternes uigennemsigtighed
+      Luminance: Luminans
+      Blur Radius: Sløringsradius
+      Saturation: Mætning
+      Brightness: Lysstyrke
+      Contrast: Kontrast
+      Tint Color: Farvetonens farve
+      Tint Strength: Farvetonens styrke
+      Grain Opacity: Kornethedens uigennemsigtighed
+      Grain Scale: Kornethedens skala
+      Border Opacity: Kanternes uigennemsigtighed
+      Border Width: Kantbredde
+      Highlight Opacity: Højlysets uigennemsigtighed
+      Inner Shadow Opacity: Den indre skygges uigennemsigtighed
+      Shadow Strength: Slagskyggens styrke
+      Refraction Strength: Lysbrydningens styrke
+      Bezel Width: Faskantens bredde
+      Lens Radius: Linsens hjørneradius
+      Chromatic Aberration: Kromatisk aberration
+      Lens Blur: Linsesløring
+      Specular Highlight: Spejlglans
+      Maximum Lensed Surfaces: Største antal overflader med linse
+      Transparent Window Background: Lad systemet tegne vinduets baggrund
+      Respect Reduced Transparency: Respektér systemets indstilling for reduceret gennemsigtighed
+      Fallback Opacity: Uigennemsigtighed uden baggrundssløring
 Tutorial:
   Skip: Spring over
   Next: Næste
@@ -1496,6 +1577,14 @@ Tooltips:
     Scroll Speed: Ændrer, hvor langt musehjulets og pegefeltets hjulbevægelser ruller.
     Use Fixed Tab Width: Giver alle faner i den vandrette fanelinje samme bredde i stedet for at tilpasse dem efter titlen.
     Use Grid Player Menu: Arrangerer videoafspillerens indstillingsmenu som et gitter af felter i stedet for en liste med rækker.
+  Glass Settings:
+    Enable Translucency: Lader appens overflader vise, hvad der er bag dem. Farverne kommer stadig fra det aktive tema, så effekten lægger sig oven på din palet i stedet for at erstatte den.
+    Texture: Vælger effektens karakter. Matteret glas er en jævn sløring, Akryl tilføjer kornethed og mætning, Mica flytter effekten til selve siden, så overfladerne ovenover forbliver dækkende, og Liquid Glass bryder baggrunden gennem en linse.
+    Tint Mode: Når effekten følger temaet, beholder hver overflade sin egen farve. En brugerdefineret farve trækker alle overflader mod den, du vælger, hvilket giver én accent gennem hele brugerfladen.
+    Liquid Quality: Hvor fint linsen genereres. Højere ser jævnere ud langs buede kanter og koster mere, hver gang en overflade skifter størrelse.
+    System Backdrop: Beder operativsystemet om at tegne vinduets baggrund. I Windows er det samme Mica- eller Akrylmateriale, som andre apps bruger, så værktøjer, der tilpasser det på tværs af systemet, påvirker også denne app.
+    Transparent Window Background: Forhindrer appen i at tegne sin egen sidebaggrund, så det, systemet tegner bag vinduet, bliver synligt. Kun nyttigt med en vinduesbaggrund slået til.
+    Respect Reduced Transparency: Slår automatisk effekten fra, så længe operativsystemet er indstillet til reduceret gennemsigtighed.
 The playlist is at the beginning. Enable loop to continue playing: Playlistens begyndelse er nået. Slå gentagelse til for at fortsætte afspilningen
 External link opening has been disabled in Settings → Privacy: Åbning af eksterne links er slået fra under Indstillinger → Privatliv
 Screenshot Clipboard Success: Skærmbilledet er gemt i udklipsholderen

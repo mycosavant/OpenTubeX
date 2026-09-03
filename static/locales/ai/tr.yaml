@@ -914,6 +914,87 @@ Settings:
     Unlocking: Kilit açılıyor…
   Search Settings: Arama ayarları
   No Settings Found: Ayar bulunamadı
+  Glass Settings:
+    Translucency: Yarı saydamlık
+    Description: Zaten kullandığınız temanın üzerine buzlu cam görünümü ekler. Renkler yine temadan gelir, bu yüzden palet efektin içinden de tanınabilir kalır.
+    Enable Translucency: Yarı saydamlığı etkinleştir
+    Liquid Warning: Liquid Glass, kapladığı her yüzey için üretilen bir mercekten geçirerek arka planı kırar. Buradaki en zorlayıcı seçenektir ve az sayıda yüzeyde en iyi sonucu verir.
+    System Backdrop Unavailable: Sistemin çizdiği pencere arka planı için Windows 11 veya macOS gerekir. Aşağıdaki uygulama içi efektler her yerde çalışır.
+    Reset: Yarı saydamlık ayarlarını sıfırla
+    Texture:
+      Texture: Doku
+      Blur: Buzlu cam
+      Acrylic: Akrilik
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Yüzeyler
+      Window Chrome: Gezinti ve kenar çubuğu
+      Cards: Kartlar ve paneller
+      Menus and Popups: Menüler, iletişim kutuları ve bildirimler
+      Inputs: Metin alanları
+      Player Panels: Oynatıcının yan panelleri
+    Tint Mode:
+      Tint Mode: Renk tonu
+      Follow Theme: Temayı izle
+      Custom Color: Özel renk
+    Border Tone:
+      Border Tone: Kenar tonu
+      Automatic: Otomatik
+      Light: Açık
+      Dark: Koyu
+    Liquid Quality:
+      Liquid Quality: Mercek kalitesi
+      Low: Düşük
+      Medium: Orta
+      High: Yüksek
+    System Backdrop:
+      System Backdrop: Pencere arka planı
+      None: Yok
+      Automatic: Sistem varsayılanı
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akrilik
+    Groups:
+      opacity: Matlık
+      backdrop: Arka plan
+      tint: Renk tonu
+      texture: Tanecik
+      edge: Kenarlar ve derinlik
+      liquid: Liquid Glass
+      system: Pencere
+    Knobs:
+      Luminous Opacity: Işıltılı matlık
+      Page Opacity: Sayfa matlığı
+      Chrome Opacity: Gezinti matlığı
+      Card Opacity: Kart matlığı
+      Menu Opacity: Menü matlığı
+      Input Opacity: Metin alanı matlığı
+      Luminance: Parlaklık düzeyi
+      Blur Radius: Bulanıklık yarıçapı
+      Saturation: Doygunluk
+      Brightness: Parlaklık
+      Contrast: Karşıtlık
+      Tint Color: Renk tonunun rengi
+      Tint Strength: Renk tonu gücü
+      Grain Opacity: Tanecik matlığı
+      Grain Scale: Tanecik ölçeği
+      Border Opacity: Kenar matlığı
+      Border Width: Kenar kalınlığı
+      Highlight Opacity: Işık kenarı matlığı
+      Inner Shadow Opacity: İç gölge matlığı
+      Shadow Strength: Dış gölge gücü
+      Refraction Strength: Kırılma gücü
+      Bezel Width: Pah genişliği
+      Lens Radius: Mercek köşe yarıçapı
+      Chromatic Aberration: Renk sapması
+      Lens Blur: Mercek bulanıklığı
+      Specular Highlight: Aynasal parlama
+      Maximum Lensed Surfaces: En fazla mercekli yüzey sayısı
+      Transparent Window Background: Pencere arka planını sistem çizsin
+      Respect Reduced Transparency: Sistemin saydamlığı azaltma ayarına uy
+      Fallback Opacity: Arka plan bulanıklığı olmadan matlık
 Tutorial:
   Skip: Atla
   Next: İleri
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: Fare tekerleği ve dokunmatik yüzey kaydırma hareketlerinin ne kadar uzağa kaydıracağını değiştirir.
     Use Fixed Tab Width: Yatay sekme çubuğundaki her sekmeye başlığına göre boyut vermek yerine aynı genişliği verir.
     Use Grid Player Menu: Video oynatıcısının ayarlar menüsünü satır listesi yerine döşeme ızgarası olarak düzenler.
+  Glass Settings:
+    Enable Translucency: Uygulamanın yüzeylerinin arkasındakini göstermesini sağlar. Renkler yine etkin temadan gelir, bu nedenle efekt paletinizin yerini almak yerine üzerine katmanlanır.
+    Texture: Efektin karakterini seçer. Buzlu cam düz ve eşit bir bulanıklıktır, Akrilik tanecik ve doygunluk katar, Mica efekti sayfanın kendisine taşıyarak üstündeki yüzeylerin mat kalmasını sağlar, Liquid Glass ise arka planı bir mercekten kırar.
+    Tint Mode: Temayı izlerken her yüzey kendi rengini korur. Özel bir renk tüm yüzeyleri seçtiğiniz renge doğru çeker; arayüzün tamamında tek bir vurgu böyle elde edilir.
+    Liquid Quality: Merceğin ne kadar ince üretileceği. Yüksek değer kavisli kenarlarda daha yumuşak görünür ve bir yüzey her boyut değiştirdiğinde daha pahalıya mal olur.
+    System Backdrop: İşletim sisteminden pencerenin arka planını çizmesini ister. Windows'ta bu, diğer uygulamaların kullandığı Mica veya Akrilik malzemenin aynısıdır; bu yüzden onu sistem genelinde özelleştiren araçlar bu uygulamayı da etkiler.
+    Transparent Window Background: Uygulamanın kendi sayfa arka planını çizmesini engeller, böylece sistemin pencerenin arkasına çizdiği görünür. Yalnızca pencere arka planı etkinken işe yarar.
+    Respect Reduced Transparency: İşletim sisteminde saydamlığı azaltma ayarı açıkken efekti otomatik olarak kapatır.
 The playlist is at the beginning. Enable loop to continue playing: Oynatma listesinin başındasınız. Oynatmaya devam etmek için döngüyü etkinleştirin
 External link opening has been disabled in Settings → Privacy: Harici bağlantıları açma, Ayarlar → Gizlilik bölümünde devre dışı bırakıldı
 KeyboardShortcutPrompt:

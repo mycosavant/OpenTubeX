@@ -914,6 +914,87 @@ Settings:
     Unlocking: "O tibrennañ…"
   Search Settings: "Klask en arventennoù"
   No Settings Found: "N'eus bet kavet arventenn ebet"
+  Glass Settings:
+    Translucency: Boullder
+    Description: Ouzhpennañ a ra un dresadur gwer skornet war ar gwiskadur a implijez dija. Ar livioù a zeu atav eus ar gwiskadur, setu ma chom al livaoueg anavezus dre an efed.
+    Enable Translucency: Gweredekaat ar boullder
+    Liquid Warning: Liquid Glass a dorr al liv-drekleur dre ul lentilh krouet evit pep gorre a c'holo. Se eo an dibab pounneraet-muiañ amañ hag ez a gwelloc'h gant un niver bihan a c'horreoù.
+    System Backdrop Unavailable: Un drekleur prenestr treset gant ar reizhiad a c'houlenn Windows 11 pe macOS. An efedoù en arload dindan a labour e pep lec'h.
+    Reset: Adderaouekaat arventennoù ar boullder
+    Texture:
+      Texture: Gwiadezh
+      Blur: Gwer skornet
+      Acrylic: Akrilek
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Gorreoù
+      Window Chrome: Merdeiñ ha barrenn gostez
+      Cards: Kartennoù ha panelloù
+      Menus and Popups: Lañserioù, kendivizoù ha kemennoù
+      Inputs: Maeziennoù testenn
+      Player Panels: Panelloù kostez al lenner
+    Tint Mode:
+      Tint Mode: Livadur
+      Follow Theme: Heuliañ ar gwiskadur
+      Custom Color: Liv personelaet
+    Border Tone:
+      Border Tone: Ton ar riblennoù
+      Automatic: Emgefreek
+      Light: Sklaer
+      Dark: Teñval
+    Liquid Quality:
+      Liquid Quality: Perzhded al lentilh
+      Low: Izel
+      Medium: Etre
+      High: Uhel
+    System Backdrop:
+      System Backdrop: Drekleur ar prenestr
+      None: Hini ebet
+      Automatic: Dre ziouer ar reizhiad
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akrilek
+    Groups:
+      opacity: Divoullder
+      backdrop: Drekleur
+      tint: Livadur
+      texture: Grenennerezh
+      edge: Riblennoù ha donder
+      liquid: Liquid Glass
+      system: Prenestr
+    Knobs:
+      Luminous Opacity: Divoullder skedus
+      Page Opacity: Divoullder ar bajenn
+      Chrome Opacity: Divoullder ar merdeiñ
+      Card Opacity: Divoullder ar c'hartennoù
+      Menu Opacity: Divoullder al lañserioù
+      Input Opacity: Divoullder ar maeziennoù testenn
+      Luminance: Sklêrijenn
+      Blur Radius: Skin ar ruzverkañ
+      Saturation: Peurvac'hañ
+      Brightness: Sklaerder
+      Contrast: Dargemm
+      Tint Color: Liv al livadur
+      Tint Strength: Nerzh al livadur
+      Grain Opacity: Divoullder ar grenennerezh
+      Grain Scale: Skeul ar grenennerezh
+      Border Opacity: Divoullder ar riblennoù
+      Border Width: Ledander ar riblennoù
+      Highlight Opacity: Divoullder ar sked
+      Inner Shadow Opacity: Divoullder an disheol diabarzh
+      Shadow Strength: Nerzh an disheol taolet
+      Refraction Strength: Nerzh an torridigezh
+      Bezel Width: Ledander ar bevel
+      Lens Radius: Skin kornioù al lentilh
+      Chromatic Aberration: Kammadur livel
+      Lens Blur: Ruzverkañ al lentilh
+      Specular Highlight: Sked melezour
+      Maximum Lensed Surfaces: Niver brasañ a c'horreoù gant lentilh
+      Transparent Window Background: Lezel ar reizhiad da dresañ drekleur ar prenestr
+      Respect Reduced Transparency: Doujañ da arventenn boullder bihanaet ar reizhiad
+      Fallback Opacity: Divoullder hep ruzverkañ an drekleur
 Tutorial:
   Skip: "Lammat"
   Next: "War-lerc'h"
@@ -1441,6 +1522,14 @@ Tooltips:
     Scroll Speed: "Kemmañ ar pellder dibunañ gant rod al logodenn ha jestroù rod ar c'horreenn-stok."
     Use Fixed Tab Width: "Reiñ ar memes ledander da bep ivinell er varrenn ivinelloù a-blaen e-lec'h azasaat anezho diouzh o zitl."
     Use Grid Player Menu: "Aozadur lañser arventennoù al lenner video evel ur gael karrelloù e-lec'h ur roll linennoù."
+  Glass Settings:
+    Enable Translucency: Lezel a ra gorreoù an arload da ziskouez ar pezh a zo a-drek. Al livioù a zeu atav eus ar gwiskadur oberiant, setu ma vez lakaet an efed war da livaoueg e-lec'h he erlec'hiañ.
+    Texture: Dibab a ra neuz an efed. Ur ruzverkañ unvan eo ar gwer skornet, an akrilek a ouzhpenn grenennerezh ha peurvac'hañ, Mica a gas an efed war ar bajenn hec'h-unan evit ma chomo ar gorreoù a-us divoull, ha Liquid Glass a dorr an drekleur dre ul lentilh.
+    Tint Mode: O heuliañ ar gwiskadur e vir pep gorre e liv dezhañ. Ul liv personelaet a sach an holl c'horreoù etrezek an hini a zibabez, ha se a ro ur pouezadur nemetañ dre ar c'hetal a-bezh.
+    Liquid Quality: Peseurt munuted a vez krouet al lentilh. Uheloc'h a seblant kuñvoc'h war ar riblennoù krommet hag a goust muioc'h bep tro ma cheñch ur gorre e vent.
+    System Backdrop: Goulenn a ra digant ar reizhiad-korvoiñ tresañ drekleur ar prenestr. War Windows eo an hevelep danvez Mica pe akrilek a implij an arloadoù all, setu ma tizh an ostilhoù a bersonela anezhañ er reizhiad a-bezh an arload-mañ ivez.
+    Transparent Window Background: Miret a ra ouzh an arload da dresañ e zrekleur pajenn dezhañ, evit ma vo gwelet ar pezh a dres ar reizhiad a-drek ar prenestr. Talvoudus hepken gant un drekleur prenestr gweredekaet.
+    Respect Reduced Transparency: Lazhañ a ra an efed ent emgefreek keit ma vez arventennet ar reizhiad-korvoiñ da vihanaat ar boullder.
 The playlist is at the beginning. Enable loop to continue playing: "Ar roll-videoioù zo en e zerou. Gweredekait al lenn en ur voul evit kenderc'hel da lenn"
 External link opening has been disabled in Settings → Privacy: "Diweredekaet eo bet digeriñ al liammoù diavaez en Arventennoù → Prevezded"
 KeyboardShortcutPrompt:

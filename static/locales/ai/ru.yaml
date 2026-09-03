@@ -910,6 +910,87 @@ Settings:
     Unlocking: Разблокировка…
   Search Settings: Поиск настроек
   No Settings Found: Настройки не найдены
+  Glass Settings:
+    Translucency: Прозрачность
+    Description: Накладывает эффект матового стекла поверх уже выбранной темы. Цвета по-прежнему берутся из темы, поэтому палитра остаётся узнаваемой сквозь эффект.
+    Enable Translucency: Включить прозрачность
+    Liquid Warning: Liquid Glass преломляет фон через сгенерированную линзу для каждой покрываемой поверхности. Это самый требовательный вариант здесь, и он лучше всего работает на небольшом числе поверхностей.
+    System Backdrop Unavailable: Фон окна, отрисованный системой, требует Windows 11 или macOS. Внутренние эффекты приложения ниже работают везде.
+    Reset: Сбросить настройки прозрачности
+    Texture:
+      Texture: Текстура
+      Blur: Матовое стекло
+      Acrylic: Акрил
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Поверхности
+      Window Chrome: Навигация и боковая панель
+      Cards: Карточки и панели
+      Menus and Popups: Меню, диалоги и уведомления
+      Inputs: Текстовые поля
+      Player Panels: Боковые панели плеера
+    Tint Mode:
+      Tint Mode: Оттенок
+      Follow Theme: Следовать теме
+      Custom Color: Свой цвет
+    Border Tone:
+      Border Tone: Тон краёв
+      Automatic: Автоматически
+      Light: Светлый
+      Dark: Тёмный
+    Liquid Quality:
+      Liquid Quality: Качество линзы
+      Low: Низкое
+      Medium: Среднее
+      High: Высокое
+    System Backdrop:
+      System Backdrop: Фон окна
+      None: Нет
+      Automatic: По умолчанию системы
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Акрил
+    Groups:
+      opacity: Непрозрачность
+      backdrop: Фон
+      tint: Оттенок
+      texture: Зернистость
+      edge: Края и глубина
+      liquid: Liquid Glass
+      system: Окно
+    Knobs:
+      Luminous Opacity: Светящаяся непрозрачность
+      Page Opacity: Непрозрачность страницы
+      Chrome Opacity: Непрозрачность навигации
+      Card Opacity: Непрозрачность карточек
+      Menu Opacity: Непрозрачность меню
+      Input Opacity: Непрозрачность текстовых полей
+      Luminance: Яркость поверхности
+      Blur Radius: Радиус размытия
+      Saturation: Насыщенность
+      Brightness: Яркость
+      Contrast: Контрастность
+      Tint Color: Цвет оттенка
+      Tint Strength: Сила оттенка
+      Grain Opacity: Непрозрачность зернистости
+      Grain Scale: Масштаб зернистости
+      Border Opacity: Непрозрачность краёв
+      Border Width: Толщина краёв
+      Highlight Opacity: Непрозрачность блика
+      Inner Shadow Opacity: Непрозрачность внутренней тени
+      Shadow Strength: Сила падающей тени
+      Refraction Strength: Сила преломления
+      Bezel Width: Ширина фаски
+      Lens Radius: Радиус углов линзы
+      Chromatic Aberration: Хроматическая аберрация
+      Lens Blur: Размытие линзы
+      Specular Highlight: Зеркальный блик
+      Maximum Lensed Surfaces: Максимум поверхностей с линзой
+      Transparent Window Background: Позволить системе отрисовывать фон окна
+      Respect Reduced Transparency: Учитывать системную настройку уменьшенной прозрачности
+      Fallback Opacity: Непрозрачность без размытия фона
 Tutorial:
   Skip: Пропустить
   Next: Далее
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: Изменяет расстояние прокрутки жестами колеса мыши и сенсорной панели.
     Use Fixed Tab Width: Устанавливает одинаковую ширину всех вкладок на горизонтальной панели вместо подгонки под заголовок.
     Use Grid Player Menu: Располагает меню настроек проигрывателя видео в виде сетки плиток вместо списка строк.
+  Glass Settings:
+    Enable Translucency: Позволяет видеть сквозь поверхности приложения то, что находится за ними. Цвета по-прежнему берутся из активной темы, поэтому эффект накладывается на палитру, а не заменяет её.
+    Texture: Задаёт характер эффекта. Матовое стекло — это равномерное размытие, Акрил добавляет зерно и насыщенность, Mica переносит эффект на саму страницу, чтобы поверхности над ней оставались непрозрачными, а Liquid Glass преломляет фон через линзу.
+    Tint Mode: При следовании теме каждая поверхность сохраняет собственный цвет. Свой цвет притягивает все поверхности к выбранному, благодаря чему через весь интерфейс проходит один акцент.
+    Liquid Quality: Насколько детально строится линза. Более высокое значение выглядит ровнее на скруглённых краях и обходится дороже при каждом изменении размера поверхности.
+    System Backdrop: Просит операционную систему отрисовать фон окна. В Windows это тот же материал Mica или Акрил, который используют другие приложения, поэтому средства его общесистемной настройки влияют и на это приложение.
+    Transparent Window Background: Не даёт приложению рисовать собственный фон страницы, поэтому видно то, что система рисует за окном. Полезно только при включённом фоне окна.
+    Respect Reduced Transparency: Автоматически отключает эффект, пока в операционной системе включено уменьшение прозрачности.
 The playlist is at the beginning. Enable loop to continue playing: Достигнуто начало плейлиста. Включите повтор, чтобы продолжить воспроизведение
 External link opening has been disabled in Settings → Privacy: Открытие внешних ссылок отключено в разделе «Настройки» → «Конфиденциальность»
 Screenshot Clipboard Success: Снимок экрана сохранён в буфер обмена

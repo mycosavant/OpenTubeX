@@ -933,6 +933,87 @@ Settings:
     Unlocking: فتح…
   Search Settings: إعدادات البحث
   No Settings Found: لم يتم العثور على إعدادات
+  Glass Settings:
+    Translucency: الشفافية الجزئية
+    Description: يضيف لمسة زجاج مصنفر فوق السمة التي تستخدمها بالفعل. الألوان ما زالت تأتي من السمة، لذا تبقى لوحة الألوان مميّزة عبر التأثير.
+    Enable Translucency: تفعيل الشفافية الجزئية
+    Liquid Warning: يعمل Liquid Glass على كسر الخلفية عبر عدسة تُولَّد لكل سطح يغطيه. وهو أكثر الخيارات هنا استهلاكًا للموارد ويعطي أفضل نتيجة مع عدد قليل من الأسطح.
+    System Backdrop Unavailable: تتطلب خلفية النافذة التي يرسمها النظام نظام Windows 11 أو macOS. أما تأثيرات التطبيق أدناه فتعمل في كل مكان.
+    Reset: إعادة تعيين إعدادات الشفافية الجزئية
+    Texture:
+      Texture: النسيج
+      Blur: زجاج مصنفر
+      Acrylic: أكريليك
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: الأسطح
+      Window Chrome: التنقل والشريط الجانبي
+      Cards: البطاقات واللوحات
+      Menus and Popups: القوائم والحوارات والإشعارات
+      Inputs: حقول النص
+      Player Panels: اللوحات الجانبية للمشغّل
+    Tint Mode:
+      Tint Mode: درجة اللون
+      Follow Theme: اتباع السمة
+      Custom Color: لون مخصص
+    Border Tone:
+      Border Tone: درجة الحواف
+      Automatic: تلقائي
+      Light: فاتح
+      Dark: داكن
+    Liquid Quality:
+      Liquid Quality: جودة العدسة
+      Low: منخفضة
+      Medium: متوسطة
+      High: عالية
+    System Backdrop:
+      System Backdrop: خلفية النافذة
+      None: بلا
+      Automatic: الافتراضي للنظام
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: أكريليك
+    Groups:
+      opacity: العتامة
+      backdrop: الخلفية
+      tint: درجة اللون
+      texture: الحُبيبات
+      edge: الحواف والعمق
+      liquid: Liquid Glass
+      system: النافذة
+    Knobs:
+      Luminous Opacity: العتامة المضيئة
+      Page Opacity: عتامة الصفحة
+      Chrome Opacity: عتامة التنقل
+      Card Opacity: عتامة البطاقات
+      Menu Opacity: عتامة القوائم
+      Input Opacity: عتامة حقول النص
+      Luminance: الإضاءة
+      Blur Radius: نصف قطر التمويه
+      Saturation: التشبّع
+      Brightness: السطوع
+      Contrast: التباين
+      Tint Color: لون درجة اللون
+      Tint Strength: قوة درجة اللون
+      Grain Opacity: عتامة الحُبيبات
+      Grain Scale: حجم الحُبيبات
+      Border Opacity: عتامة الحواف
+      Border Width: سُمك الحواف
+      Highlight Opacity: عتامة الإبراز
+      Inner Shadow Opacity: عتامة الظل الداخلي
+      Shadow Strength: قوة الظل الخارجي
+      Refraction Strength: قوة الانكسار
+      Bezel Width: عرض الحافة المشطوفة
+      Lens Radius: نصف قطر زوايا العدسة
+      Chromatic Aberration: الزيغ اللوني
+      Lens Blur: تمويه العدسة
+      Specular Highlight: الإبراز المرآوي
+      Maximum Lensed Surfaces: الحد الأقصى للأسطح ذات العدسة
+      Transparent Window Background: دع النظام يرسم خلفية النافذة
+      Respect Reduced Transparency: احترام إعداد تقليل الشفافية في النظام
+      Fallback Opacity: العتامة بدون تمويه الخلفية
 Tutorial:
   Skip: تخطي
   Next: التالي
@@ -1440,6 +1521,14 @@ Tooltips:
     Scroll Speed: يغيّر مسافة التمرير بإيماءات عجلة الفأرة ولوحة اللمس.
     Use Fixed Tab Width: يمنح كل علامة تبويب في شريط علامات التبويب الأفقي نفس العرض بدلاً من تغيير حجمها حسب عنوانها.
     Use Grid Player Menu: يقوم بترتيب قائمة إعدادات مشغل الفيديو كشبكة من المربعات بدلاً من قائمة الصفوف.
+  Glass Settings:
+    Enable Translucency: يجعل أسطح التطبيق تُظهر ما خلفها. الألوان ما زالت تأتي من السمة النشطة، فيُضاف التأثير فوق لوحة ألوانك بدلًا من أن يحل محلها.
+    Texture: يحدد طابع التأثير. الزجاج المصنفر تمويه متجانس، والأكريليك يضيف حُبيبات وتشبّعًا، وMica ينقل التأثير إلى الصفحة نفسها لتبقى الأسطح فوقها معتمة، أما Liquid Glass فيكسر الخلفية عبر عدسة.
+    Tint Mode: عند اتباع السمة يحتفظ كل سطح بلونه الخاص. أما اللون المخصص فيجذب كل الأسطح نحو اللون الذي تختاره، وبذلك تحصل على لمسة لون واحدة في الواجهة كلها.
+    Liquid Quality: مدى دقة توليد العدسة. القيمة الأعلى تبدو أنعم على الحواف المنحنية وتكلّف أكثر كلما تغيّر حجم أحد الأسطح.
+    System Backdrop: يطلب من نظام التشغيل رسم خلفية النافذة. في Windows هذه هي مادة Mica أو الأكريليك نفسها التي تستخدمها التطبيقات الأخرى، لذا فإن الأدوات التي تخصّصها على مستوى النظام تؤثر في هذا التطبيق أيضًا.
+    Transparent Window Background: يمنع التطبيق من رسم خلفية صفحته الخاصة، فيظهر ما يرسمه النظام خلف النافذة. مفيد فقط مع تفعيل خلفية النافذة.
+    Respect Reduced Transparency: يوقف التأثير تلقائيًا طالما كان نظام التشغيل مضبوطًا على تقليل الشفافية.
 The playlist is at the beginning. Enable loop to continue playing: قائمة التشغيل في البداية. تمكين الحلقة لمواصلة اللعب
 External link opening has been disabled in Settings → Privacy: تم تعطيل فتح الرابط الخارجي في الإعدادات → الخصوصية
 KeyboardShortcutPrompt:

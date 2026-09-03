@@ -964,6 +964,87 @@ Settings:
     Unlocking: Разблакіраванне…
   Search Settings: Налады пошуку
   No Settings Found: Налады не знойдзены
+  Glass Settings:
+    Translucency: Празрыстасць
+    Description: Накладвае эфект матавага шкла на ўжо выбраную тэму. Колеры па-ранейшаму бяруцца з тэмы, таму палітра застаецца пазнавальнай праз эфект.
+    Enable Translucency: Уключыць празрыстасць
+    Liquid Warning: Liquid Glass праламляе фон праз згенераваную лінзу для кожнай пакрытай паверхні. Гэта самы патрабавальны варыянт тут, і ён найлепш працуе на невялікай колькасці паверхняў.
+    System Backdrop Unavailable: Фон акна, намаляваны сістэмай, патрабуе Windows 11 або macOS. Унутраныя эфекты праграмы ніжэй працуюць усюды.
+    Reset: Скінуць налады празрыстасці
+    Texture:
+      Texture: Тэкстура
+      Blur: Матавае шкло
+      Acrylic: Акрыл
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Паверхні
+      Window Chrome: Навігацыя і бакавая панэль
+      Cards: Карткі і панэлі
+      Menus and Popups: Меню, дыялогі і апавяшчэнні
+      Inputs: Тэкставыя палі
+      Player Panels: Бакавыя панэлі прайгравальніка
+    Tint Mode:
+      Tint Mode: Адценне
+      Follow Theme: Сачыць за тэмай
+      Custom Color: Уласны колер
+    Border Tone:
+      Border Tone: Тон краёў
+      Automatic: Аўтаматычна
+      Light: Светлы
+      Dark: Цёмны
+    Liquid Quality:
+      Liquid Quality: Якасць лінзы
+      Low: Нізкая
+      Medium: Сярэдняя
+      High: Высокая
+    System Backdrop:
+      System Backdrop: Фон акна
+      None: Няма
+      Automatic: Прадвызначана сістэмай
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Акрыл
+    Groups:
+      opacity: Непразрыстасць
+      backdrop: Фон
+      tint: Адценне
+      texture: Зярністасць
+      edge: Краі і глыбіня
+      liquid: Liquid Glass
+      system: Акно
+    Knobs:
+      Luminous Opacity: Свяцівая непразрыстасць
+      Page Opacity: Непразрыстасць старонкі
+      Chrome Opacity: Непразрыстасць навігацыі
+      Card Opacity: Непразрыстасць картак
+      Menu Opacity: Непразрыстасць меню
+      Input Opacity: Непразрыстасць тэкставых палёў
+      Luminance: Яркасць паверхні
+      Blur Radius: Радыус размыцця
+      Saturation: Насычанасць
+      Brightness: Яркасць
+      Contrast: Кантраснасць
+      Tint Color: Колер адцення
+      Tint Strength: Сіла адцення
+      Grain Opacity: Непразрыстасць зярністасці
+      Grain Scale: Маштаб зярністасці
+      Border Opacity: Непразрыстасць краёў
+      Border Width: Таўшчыня краёў
+      Highlight Opacity: Непразрыстасць блікаў
+      Inner Shadow Opacity: Непразрыстасць унутранага ценю
+      Shadow Strength: Сіла падаючага ценю
+      Refraction Strength: Сіла праламлення
+      Bezel Width: Шырыня фаскі
+      Lens Radius: Радыус вуглоў лінзы
+      Chromatic Aberration: Храматычная аберацыя
+      Lens Blur: Размыццё лінзы
+      Specular Highlight: Люстраны блік
+      Maximum Lensed Surfaces: Максімум паверхняў з лінзай
+      Transparent Window Background: Дазволіць сістэме маляваць фон акна
+      Respect Reduced Transparency: Улічваць сістэмную наладу зменшанай празрыстасці
+      Fallback Opacity: Непразрыстасць без размыцця фону
 Tutorial:
   Skip: Прапусціць
   Next: Далей
@@ -1507,6 +1588,14 @@ Tooltips:
     Scroll Speed: Змяняе адлегласць пракруткі колам мышы і жэстамі кола сэнсарнай панэлі.
     Use Fixed Tab Width: Задае ўсім укладкам на гарызантальнай панэлі аднолькавую шырыню замест падбору шырыні паводле назвы.
     Use Grid Player Menu: Размяшчае меню налад відэапрайгравальніка ў выглядзе сеткі плітак замест спіса радкоў.
+  Glass Settings:
+    Enable Translucency: Дазваляе бачыць скрозь паверхні праграмы тое, што за імі. Колеры па-ранейшаму бяруцца з актыўнай тэмы, таму эфект накладваецца на палітру, а не замяняе яе.
+    Texture: Задае характар эфекту. Матавае шкло — гэта раўнамернае размыццё, Акрыл дадае зерне і насычанасць, Mica пераносіць эфект на саму старонку, каб паверхні над ёй заставаліся непразрыстымі, а Liquid Glass праламляе фон праз лінзу.
+    Tint Mode: Пры сачэнні за тэмай кожная паверхня захоўвае ўласны колер. Уласны колер прыцягвае ўсе паверхні да выбранага, дзякуючы чаму праз увесь інтэрфейс праходзіць адзін акцэнт.
+    Liquid Quality: Наколькі дэталёва будуецца лінза. Больш высокае значэнне выглядае раўней на закругленых краях і каштуе даражэй пры кожнай змене памеру паверхні.
+    System Backdrop: Просіць аперацыйную сістэму намаляваць фон акна. У Windows гэта той самы матэрыял Mica або Акрыл, які выкарыстоўваюць іншыя праграмы, таму сродкі яго агульнасістэмнай наладкі ўплываюць і на гэтую праграму.
+    Transparent Window Background: Не дае праграме маляваць уласны фон старонкі, таму відаць тое, што сістэма малюе за акном. Карысна толькі з уключаным фонам акна.
+    Respect Reduced Transparency: Аўтаматычна выключае эфект, пакуль у аперацыйнай сістэме ўключана памяншэнне празрыстасці.
 The playlist is at the beginning. Enable loop to continue playing: Гэта пачатак спіса прайгравання. Уключыце паўтор, каб працягнуць прайграванне
 External link opening has been disabled in Settings → Privacy: Адкрыццё вонкавых спасылак адключана ў раздзеле «Налады» → «Прыватнасць»
 Screenshot Clipboard Success: Здымак экрана захаваны ў буферы абмену

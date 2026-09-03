@@ -1179,6 +1179,87 @@ Settings:
     Set Password To Prevent Access: Nustatykite slaptažodį, kad apribotumėte prieigą prie nustatymų
     Set Password: Nustatyti slaptažodį
     Remove Password: Pašalinti slaptažodį
+  Glass Settings:
+    Translucency: Peršviečiamumas
+    Description: Ant jau naudojamos temos uždeda matinio stiklo apdailą. Spalvos vis dar imamos iš temos, todėl paletė per efektą lieka atpažįstama.
+    Enable Translucency: Įjungti peršviečiamumą
+    Liquid Warning: „Liquid Glass“ laužia foną per kiekvienam dengiamam paviršiui sukurtą lęšį. Tai reikliausias variantas čia ir geriausiai tinka nedideliam paviršių skaičiui.
+    System Backdrop Unavailable: Sistemos piešiamas lango fonas reikalauja Windows 11 arba macOS. Toliau esantys programos viduje veikiantys efektai veikia visur.
+    Reset: Atkurti peršviečiamumo nuostatas
+    Texture:
+      Texture: Tekstūra
+      Blur: Matinis stiklas
+      Acrylic: Akrilas
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Paviršiai
+      Window Chrome: Naršymas ir šoninė juosta
+      Cards: Kortelės ir skydeliai
+      Menus and Popups: Meniu, dialogai ir pranešimai
+      Inputs: Teksto laukai
+      Player Panels: Grotuvo šoniniai skydeliai
+    Tint Mode:
+      Tint Mode: Atspalvis
+      Follow Theme: Sekti temą
+      Custom Color: Pasirinktinė spalva
+    Border Tone:
+      Border Tone: Kraštų tonas
+      Automatic: Automatinis
+      Light: Šviesus
+      Dark: Tamsus
+    Liquid Quality:
+      Liquid Quality: Lęšio kokybė
+      Low: Žema
+      Medium: Vidutinė
+      High: Aukšta
+    System Backdrop:
+      System Backdrop: Lango fonas
+      None: Nėra
+      Automatic: Sistemos numatytasis
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akrilas
+    Groups:
+      opacity: Nepermatomumas
+      backdrop: Fonas
+      tint: Atspalvis
+      texture: Grūdėtumas
+      edge: Kraštai ir gylis
+      liquid: Liquid Glass
+      system: Langas
+    Knobs:
+      Luminous Opacity: Švytintis nepermatomumas
+      Page Opacity: Puslapio nepermatomumas
+      Chrome Opacity: Naršymo nepermatomumas
+      Card Opacity: Kortelių nepermatomumas
+      Menu Opacity: Meniu nepermatomumas
+      Input Opacity: Teksto laukų nepermatomumas
+      Luminance: Skaistis
+      Blur Radius: Suliejimo spindulys
+      Saturation: Sodrumas
+      Brightness: Šviesumas
+      Contrast: Kontrastas
+      Tint Color: Atspalvio spalva
+      Tint Strength: Atspalvio stiprumas
+      Grain Opacity: Grūdėtumo nepermatomumas
+      Grain Scale: Grūdėtumo mastelis
+      Border Opacity: Kraštų nepermatomumas
+      Border Width: Kraštų storis
+      Highlight Opacity: Šviesaus krašto nepermatomumas
+      Inner Shadow Opacity: Vidinio šešėlio nepermatomumas
+      Shadow Strength: Metamo šešėlio stiprumas
+      Refraction Strength: Šviesos lūžio stiprumas
+      Bezel Width: Nuožulos plotis
+      Lens Radius: Lęšio kampų spindulys
+      Chromatic Aberration: Chromatinė aberacija
+      Lens Blur: Lęšio suliejimas
+      Specular Highlight: Veidrodinis blizgesys
+      Maximum Lensed Surfaces: Didžiausias paviršių su lęšiu skaičius
+      Transparent Window Background: Leisti sistemai piešti lango foną
+      Respect Reduced Transparency: Paisyti sistemos sumažinto skaidrumo nuostatos
+      Fallback Opacity: Nepermatomumas be fono suliejimo
 Tutorial:
   Skip: Praleisti
   Next: Toliau
@@ -1840,6 +1921,14 @@ Tooltips:
   SponsorBlock Settings:
     UseDeArrowTitles: Vaizdo įrašų pavadinimus pakeisti naudotojų pateiktais DeArrow pavadinimais.
     UseDeArrowThumbnails: Vaizdo įrašų miniatiūras pakeisti DeArrow miniatiūromis.
+  Glass Settings:
+    Enable Translucency: Leidžia pro programos paviršius matyti, kas yra už jų. Spalvos vis dar imamos iš aktyvios temos, todėl efektas klojasi ant jūsų paletės, o ne ją pakeičia.
+    Texture: Parenka efekto pobūdį. Matinis stiklas – tolygus suliejimas, Akrilas prideda grūdėtumo ir sodrumo, „Mica“ perkelia efektą į patį puslapį, kad virš jo esantys paviršiai liktų nepermatomi, o „Liquid Glass“ laužia foną per lęšį.
+    Tint Mode: Sekant temą kiekvienas paviršius išlaiko savo spalvą. Pasirinktinė spalva traukia visus paviršius link pasirinktosios, todėl per visą sąsają eina vienas akcentas.
+    Liquid Quality: Kaip smulkiai kuriamas lęšis. Didesnė reikšmė atrodo tolygiau ties užapvalintais kraštais ir kainuoja daugiau kaskart, kai paviršius keičia dydį.
+    System Backdrop: Paprašo operacinės sistemos nupiešti lango foną. Windows sistemoje tai ta pati „Mica“ arba Akrilo medžiaga, kurią naudoja kitos programos, todėl įrankiai, ją keičiantys visoje sistemoje, veikia ir šią programą.
+    Transparent Window Background: Neleidžia programai piešti savo puslapio fono, kad matytųsi tai, ką sistema piešia už lango. Naudinga tik įjungus lango foną.
+    Respect Reduced Transparency: Automatiškai išjungia efektą, kol operacinėje sistemoje nustatytas sumažintas skaidrumas.
 Autoplay Interruption Timer: Automatinis atkūrimas atšauktas dėl {autoplayInterruptionIntervalHours} val. neveiklumo
 The playlist is at the beginning. Enable loop to continue playing: Pasiekta grojaraščio pradžia. Įjunkite kartojimą, kad atkūrimas būtų tęsiamas
 Age Restricted:

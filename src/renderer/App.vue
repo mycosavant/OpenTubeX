@@ -407,6 +407,10 @@ import {
   handleCustomThemeUpdated,
   loadCustomThemes,
 } from './helpers/customTheme'
+import {
+  applyGlassThemeToDocument,
+  handleReducedTransparencyChange,
+} from './helpers/glassTheme'
 
 import packageDetails from '../../package.json'
 import { MULTIPLE_TABS_CONFIRM_THRESHOLD, KeyboardShortcuts } from '../constants'
@@ -1200,6 +1204,7 @@ onMounted(async () => {
     store.commit('setCustomThemes', themes)
     updateTheme()
   })
+  removeReducedTransparencyListener = handleReducedTransparencyChange(updateGlassTheme)
   updateTheme()
 
   if (defaultInvidiousInstance.value === '') {
@@ -1346,6 +1351,7 @@ onBeforeUnmount(() => {
   document.documentElement.classList.remove('hideOutlines')
   removeGamepadNavigation()
   removeCustomThemeListener()
+  removeReducedTransparencyListener()
   cancelUtilityRoutePreload()
   systemColorScheme.removeEventListener('change', handleSystemColorSchemeChange)
   if (isElectron) {
@@ -2394,6 +2400,7 @@ function clearSubscriptionTabAutoRefreshTimer(tab) {
 const baseTheme = computed(() => store.getters.getBaseTheme)
 const appFont = computed(() => store.getters.getAppFont)
 let removeCustomThemeListener = () => {}
+let removeReducedTransparencyListener = () => {}
 const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)')
 const systemUsesDarkTheme = ref(systemColorScheme.matches)
 systemColorScheme.addEventListener('change', handleSystemColorSchemeChange)
@@ -2412,6 +2419,11 @@ watch(mainColor, updateTheme)
 const secColor = computed(() => store.getters.getSecColor)
 
 watch(secColor, updateTheme)
+
+/** @type {import('vue').ComputedRef<object>} */
+const glassTheme = computed(() => store.getters.getGlassTheme)
+
+watch(glassTheme, updateGlassTheme, { deep: true })
 
 /** @type {import('vue').ComputedRef<number>} */
 const uiRoundness = computed(() => store.getters.getUiRoundness)
@@ -2436,7 +2448,14 @@ function updateTheme() {
   const customTheme = customThemes.find(theme => `custom:${theme.id}` === effectiveTheme) ??
     (effectiveTheme === 'custom' ? customThemes[0] : null) ?? null
   applyThemeToDocument(effectiveTheme, mainColor.value, secColor.value, customTheme)
+  // Must come after the base theme: the glass colours are derived from the
+  // colours that theme just resolved, so it has to have been applied first.
+  updateGlassTheme()
   updateSystemBarsStyle()
+}
+
+function updateGlassTheme() {
+  applyGlassThemeToDocument(glassTheme.value)
 }
 
 function updateSystemBarsStyle() {
@@ -4191,4 +4210,5 @@ function handleDragStart(event) {
 </script>
 
 <style src="./themes.css" />
+<style src="./glass.css" />
 <style scoped src="./App.css" />

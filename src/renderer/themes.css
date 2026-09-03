@@ -12,6 +12,11 @@ body {
   --border-color: var(--tertiary-text-color);
   --divider-color: color-mix(in srgb, var(--border-color) 45%, transparent);
   --subtle-surface-color: var(--tertiary-text-color);
+
+  /* The top bar matches cards by default, but needs its own token so the
+     translucency layer can give the window chrome and cards different
+     opacities without one dragging the other along. */
+  --top-nav-bg-color: var(--card-bg-color);
   --dropdown-item-hover-color: var(--scrollbar-color-hover);
   --dropdown-item-hover-text-color: var(--scrollbar-text-color-hover);
   --selection-background-color: var(--primary-color);

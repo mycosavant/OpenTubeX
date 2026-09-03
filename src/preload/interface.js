@@ -76,6 +76,24 @@ export default {
   },
 
   /**
+   * Asks the system compositor to draw the window's background. Windows draws
+   * Mica and Acrylic itself and macOS draws vibrancy; elsewhere, and on Windows
+   * 10, there is nothing to ask for and this resolves to `false`.
+   * @param {string} backdrop one of the names in GLASS_SYSTEM_BACKDROPS
+   * @returns {Promise<boolean>} whether the material was applied
+   */
+  setWindowBackgroundMaterial: (backdrop) => {
+    return ipcRenderer.invoke(IpcChannels.SET_WINDOW_BACKGROUND_MATERIAL, backdrop)
+  },
+
+  /**
+   * @returns {Promise<{ platform: string, supported: boolean } | null>}
+   */
+  getWindowBackdropSupport: () => {
+    return ipcRenderer.invoke(IpcChannels.GET_WINDOW_BACKDROP_SUPPORT)
+  },
+
+  /**
    * @returns {Promise<string>}
    */
   getSystemLocale: () => {

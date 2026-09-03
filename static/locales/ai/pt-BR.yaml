@@ -914,6 +914,87 @@ Settings:
     Unlocking: A desbloquear…
   Search Settings: Procurar nas configurações
   No Settings Found: Nenhuma configuração encontrada
+  Glass Settings:
+    Translucency: Translucidez
+    Description: Aplica um acabamento de vidro fosco sobre o tema que você já usa. As cores continuam vindo do tema, então a paleta permanece reconhecível através do efeito.
+    Enable Translucency: Ativar translucidez
+    Liquid Warning: O Liquid Glass refrata o fundo através de uma lente gerada para cada superfície que cobre. É a opção mais exigente daqui e funciona melhor com poucas superfícies.
+    System Backdrop Unavailable: Um fundo de janela desenhado pelo sistema exige Windows 11 ou macOS. Os efeitos internos abaixo funcionam em qualquer lugar.
+    Reset: Redefinir as configurações de translucidez
+    Texture:
+      Texture: Textura
+      Blur: Vidro fosco
+      Acrylic: Acrílico
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Superfícies
+      Window Chrome: Navegação e barra lateral
+      Cards: Cartões e painéis
+      Menus and Popups: Menus, diálogos e avisos
+      Inputs: Campos de texto
+      Player Panels: Painéis laterais do reprodutor
+    Tint Mode:
+      Tint Mode: Tonalidade
+      Follow Theme: Seguir o tema
+      Custom Color: Cor personalizada
+    Border Tone:
+      Border Tone: Tom das bordas
+      Automatic: Automático
+      Light: Claro
+      Dark: Escuro
+    Liquid Quality:
+      Liquid Quality: Qualidade da lente
+      Low: Baixa
+      Medium: Média
+      High: Alta
+    System Backdrop:
+      System Backdrop: Fundo da janela
+      None: Nenhum
+      Automatic: Padrão do sistema
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrílico
+    Groups:
+      opacity: Opacidade
+      backdrop: Fundo
+      tint: Tonalidade
+      texture: Granulação
+      edge: Bordas e profundidade
+      liquid: Liquid Glass
+      system: Janela
+    Knobs:
+      Luminous Opacity: Opacidade luminosa
+      Page Opacity: Opacidade da página
+      Chrome Opacity: Opacidade da navegação
+      Card Opacity: Opacidade dos cartões
+      Menu Opacity: Opacidade dos menus
+      Input Opacity: Opacidade dos campos de texto
+      Luminance: Luminância
+      Blur Radius: Raio do desfoque
+      Saturation: Saturação
+      Brightness: Brilho
+      Contrast: Contraste
+      Tint Color: Cor da tonalidade
+      Tint Strength: Intensidade da tonalidade
+      Grain Opacity: Opacidade da granulação
+      Grain Scale: Escala da granulação
+      Border Opacity: Opacidade das bordas
+      Border Width: Espessura das bordas
+      Highlight Opacity: Opacidade do realce
+      Inner Shadow Opacity: Opacidade da sombra interna
+      Shadow Strength: Intensidade da sombra projetada
+      Refraction Strength: Intensidade da refração
+      Bezel Width: Largura do chanfro
+      Lens Radius: Raio dos cantos da lente
+      Chromatic Aberration: Aberração cromática
+      Lens Blur: Desfoque da lente
+      Specular Highlight: Realce especular
+      Maximum Lensed Surfaces: Máximo de superfícies com lente
+      Transparent Window Background: Deixar o sistema desenhar o fundo da janela
+      Respect Reduced Transparency: Respeitar a configuração de transparência reduzida do sistema
+      Fallback Opacity: Opacidade sem desfoque de fundo
 Tutorial:
   Skip: Ignorar
   Next: Seguinte
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: Altera a distância de rolagem dos gestos da roda do mouse e do touchpad.
     Use Fixed Tab Width: Atribui a mesma largura a todas as guias na barra horizontal, em vez de ajustar a largura ao respectivo título.
     Use Grid Player Menu: Organiza o menu de configurações do reprodutor de vídeo numa grelha de mosaicos em vez de uma lista de linhas.
+  Glass Settings:
+    Enable Translucency: Faz com que as superfícies do aplicativo mostrem o que está atrás delas. As cores continuam vindo do tema ativo, então o efeito se sobrepõe à sua paleta em vez de substituí-la.
+    Texture: Escolhe o caráter do efeito. Vidro fosco é um desfoque uniforme, Acrílico acrescenta granulação e saturação, Mica move o efeito para a própria página para que as superfícies acima fiquem opacas, e Liquid Glass refrata o fundo através de uma lente.
+    Tint Mode: Ao seguir o tema, cada superfície mantém a própria cor. Uma cor personalizada puxa todas as superfícies para a cor escolhida, que é como se obtém um único acento em toda a interface.
+    Liquid Quality: O quão detalhadamente a lente é gerada. Um valor alto fica mais suave em bordas curvas e custa mais a cada mudança de tamanho de uma superfície.
+    System Backdrop: Pede ao sistema operacional que desenhe o fundo da janela. No Windows é o mesmo material Mica ou Acrílico que outros aplicativos usam, então ferramentas que o personalizam em todo o sistema afetam este aplicativo também.
+    Transparent Window Background: Impede que o aplicativo desenhe o próprio fundo de página, para que apareça o que o sistema desenha atrás da janela. Só é útil com um fundo de janela ativado.
+    Respect Reduced Transparency: Desativa o efeito automaticamente enquanto o sistema operacional estiver configurado para reduzir a transparência.
 The playlist is at the beginning. Enable loop to continue playing: A lista de reprodução está no início. Ative a repetição para continuar reproduzindo
 External link opening has been disabled in Settings → Privacy: A abertura de links externas foi desativada em Configurações → Privacidade
 KeyboardShortcutPrompt:

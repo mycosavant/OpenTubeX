@@ -1262,6 +1262,87 @@ Settings:
     Set Password To Prevent Access: Definiu una contrasenya per impedir l'accés a la configuració
     Set Password: Defineix la contrasenya
     Remove Password: Suprimeix la contrasenya
+  Glass Settings:
+    Translucency: Translucidesa
+    Description: Afegeix un acabat de vidre esmerilat sobre el tema que ja utilitzes. Els colors continuen provenint del tema, de manera que la paleta continua sent reconeixible a través de l'efecte.
+    Enable Translucency: Activa la translucidesa
+    Liquid Warning: Liquid Glass refracta el fons a través d'una lent generada per a cada superfície que cobreix. És l'opció més exigent d'aquí i funciona millor amb poques superfícies.
+    System Backdrop Unavailable: Un fons de finestra dibuixat pel sistema requereix Windows 11 o macOS. Els efectes interns de sota funcionen a tot arreu.
+    Reset: Restableix la configuració de translucidesa
+    Texture:
+      Texture: Textura
+      Blur: Vidre esmerilat
+      Acrylic: Acrílic
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Superfícies
+      Window Chrome: Navegació i barra lateral
+      Cards: Targetes i panells
+      Menus and Popups: Menús, diàlegs i avisos
+      Inputs: Camps de text
+      Player Panels: Panells laterals del reproductor
+    Tint Mode:
+      Tint Mode: Tint
+      Follow Theme: Segueix el tema
+      Custom Color: Color personalitzat
+    Border Tone:
+      Border Tone: To de les vores
+      Automatic: Automàtic
+      Light: Clar
+      Dark: Fosc
+    Liquid Quality:
+      Liquid Quality: Qualitat de la lent
+      Low: Baixa
+      Medium: Mitjana
+      High: Alta
+    System Backdrop:
+      System Backdrop: Fons de la finestra
+      None: Cap
+      Automatic: Predeterminat del sistema
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrílic
+    Groups:
+      opacity: Opacitat
+      backdrop: Fons
+      tint: Tint
+      texture: Gra
+      edge: Vores i profunditat
+      liquid: Liquid Glass
+      system: Finestra
+    Knobs:
+      Luminous Opacity: Opacitat lluminosa
+      Page Opacity: Opacitat de la pàgina
+      Chrome Opacity: Opacitat de la navegació
+      Card Opacity: Opacitat de les targetes
+      Menu Opacity: Opacitat dels menús
+      Input Opacity: Opacitat dels camps de text
+      Luminance: Luminància
+      Blur Radius: Radi del difuminat
+      Saturation: Saturació
+      Brightness: Lluminositat
+      Contrast: Contrast
+      Tint Color: Color del tint
+      Tint Strength: Intensitat del tint
+      Grain Opacity: Opacitat del gra
+      Grain Scale: Escala del gra
+      Border Opacity: Opacitat de les vores
+      Border Width: Gruix de les vores
+      Highlight Opacity: Opacitat del reflex
+      Inner Shadow Opacity: Opacitat de l'ombra interior
+      Shadow Strength: Intensitat de l'ombra projectada
+      Refraction Strength: Intensitat de la refracció
+      Bezel Width: Amplada del bisell
+      Lens Radius: Radi de les cantonades de la lent
+      Chromatic Aberration: Aberració cromàtica
+      Lens Blur: Difuminat de la lent
+      Specular Highlight: Reflex especular
+      Maximum Lensed Surfaces: Màxim de superfícies amb lent
+      Transparent Window Background: Deixa que el sistema dibuixi el fons de la finestra
+      Respect Reduced Transparency: Respecta la configuració de transparència reduïda del sistema
+      Fallback Opacity: Opacitat sense difuminat de fons
 Tutorial:
   Skip: Omet
   Next: Següent
@@ -1974,6 +2055,14 @@ Tooltips:
   SponsorBlock Settings:
     UseDeArrowTitles: Substitueix els títols dels vídeos pels títols enviats pels usuaris de DeArrow.
     UseDeArrowThumbnails: Substitueix les miniatures dels vídeos per miniatures de DeArrow.
+  Glass Settings:
+    Enable Translucency: Deixa que les superfícies de l'aplicació mostrin el que hi ha al darrere. Els colors continuen provenint del tema actiu, de manera que l'efecte se superposa a la teva paleta en comptes de substituir-la.
+    Texture: Tria el caràcter de l'efecte. Vidre esmerilat és un difuminat uniforme, Acrílic hi afegeix gra i saturació, Mica trasllada l'efecte a la pàgina mateixa perquè les superfícies de sobre quedin opaques, i Liquid Glass refracta el fons a través d'una lent.
+    Tint Mode: En seguir el tema, cada superfície conserva el seu propi color. Un color personalitzat atrau totes les superfícies cap al que triïs, que és com s'aconsegueix un únic accent a tota la interfície.
+    Liquid Quality: Amb quin detall es genera la lent. Un valor alt es veu més suau a les vores corbes i costa més cada vegada que una superfície canvia de mida.
+    System Backdrop: Demana al sistema operatiu que dibuixi el fons de la finestra. Al Windows és el mateix material Mica o Acrílic que fan servir altres aplicacions, de manera que les eines que el personalitzen a tot el sistema també afecten aquesta aplicació.
+    Transparent Window Background: Impedeix que l'aplicació dibuixi el seu propi fons de pàgina, perquè es vegi el que el sistema dibuixa darrere de la finestra. Només és útil amb un fons de finestra activat.
+    Respect Reduced Transparency: Desactiva l'efecte automàticament mentre el sistema operatiu estigui configurat per reduir la transparència.
 Local API Error (Click to copy): Error de l'API local (feu clic per copiar-lo)
 Falling back to Local API: S'està utilitzant l'API local com a alternativa
 This video is unavailable because of missing formats. This can happen due to country unavailability.: Aquest vídeo no està disponible perquè falten formats. Pot ser que no estigui disponible al país.

@@ -938,6 +938,87 @@ Settings:
     Unlocking: Ontgrendelen…
   Search Settings: Instellingen zoeken
   No Settings Found: Geen instellingen gevonden
+  Glass Settings:
+    Translucency: Doorschijnendheid
+    Description: Legt een matglazen afwerking over het thema dat je al gebruikt. De kleuren komen nog steeds uit het thema, dus het palet blijft herkenbaar door het effect heen.
+    Enable Translucency: Doorschijnendheid inschakelen
+    Liquid Warning: Liquid Glass breekt de achtergrond via een gegenereerde lens voor elk oppervlak dat het bedekt. Het is de zwaarste optie hier en werkt het best bij een klein aantal oppervlakken.
+    System Backdrop Unavailable: Een door het systeem getekende vensterachtergrond vereist Windows 11 of macOS. De app-effecten hieronder werken overal.
+    Reset: Doorschijnendheidsinstellingen herstellen
+    Texture:
+      Texture: Textuur
+      Blur: Matglas
+      Acrylic: Acryl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Oppervlakken
+      Window Chrome: Navigatie en zijbalk
+      Cards: Kaarten en panelen
+      Menus and Popups: Menu's, dialoogvensters en meldingen
+      Inputs: Tekstvelden
+      Player Panels: Zijpanelen van de speler
+    Tint Mode:
+      Tint Mode: Tint
+      Follow Theme: Het thema volgen
+      Custom Color: Aangepaste kleur
+    Border Tone:
+      Border Tone: Randtoon
+      Automatic: Automatisch
+      Light: Licht
+      Dark: Donker
+    Liquid Quality:
+      Liquid Quality: Lenskwaliteit
+      Low: Laag
+      Medium: Gemiddeld
+      High: Hoog
+    System Backdrop:
+      System Backdrop: Vensterachtergrond
+      None: Geen
+      Automatic: Systeemstandaard
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acryl
+    Groups:
+      opacity: Dekking
+      backdrop: Achtergrond
+      tint: Tint
+      texture: Korrel
+      edge: Randen en diepte
+      liquid: Liquid Glass
+      system: Venster
+    Knobs:
+      Luminous Opacity: Lichtgevende dekking
+      Page Opacity: Dekking van de pagina
+      Chrome Opacity: Dekking van de navigatie
+      Card Opacity: Dekking van kaarten
+      Menu Opacity: Dekking van menu's
+      Input Opacity: Dekking van tekstvelden
+      Luminance: Luminantie
+      Blur Radius: Vervagingsstraal
+      Saturation: Verzadiging
+      Brightness: Helderheid
+      Contrast: Contrast
+      Tint Color: Tintkleur
+      Tint Strength: Tintsterkte
+      Grain Opacity: Korreldekking
+      Grain Scale: Korrelschaal
+      Border Opacity: Randdekking
+      Border Width: Randbreedte
+      Highlight Opacity: Dekking van de lichtrand
+      Inner Shadow Opacity: Dekking van de binnenschaduw
+      Shadow Strength: Sterkte van de slagschaduw
+      Refraction Strength: Sterkte van de breking
+      Bezel Width: Breedte van de afschuining
+      Lens Radius: Hoekradius van de lens
+      Chromatic Aberration: Chromatische aberratie
+      Lens Blur: Lensvervaging
+      Specular Highlight: Spiegelende lichtvlek
+      Maximum Lensed Surfaces: Maximumaantal gebroken oppervlakken
+      Transparent Window Background: Het systeem de vensterachtergrond laten tekenen
+      Respect Reduced Transparency: De systeeminstelling voor verminderde transparantie respecteren
+      Fallback Opacity: Dekking zonder achtergrondvervaging
 Tutorial:
   Skip: Overslaan
   Next: Volgende
@@ -1471,6 +1552,14 @@ Tooltips:
     Scroll Speed: Wijzigt hoe ver muiswiel- en touchpadbewegingen scrollen.
     Use Fixed Tab Width: Geeft elk tabblad in de horizontale tabbladbalk dezelfde breedte in plaats van de breedte aan de titel aan te passen.
     Use Grid Player Menu: Rangschikt het instellingenmenu van de videospeler als een raster met tegels in plaats van een lijst met rijen.
+  Glass Settings:
+    Enable Translucency: Laat de oppervlakken van de app tonen wat erachter zit. De kleuren komen nog steeds uit het actieve thema, dus het effect ligt over je palet heen in plaats van het te vervangen.
+    Texture: Bepaalt het karakter van het effect. Matglas is een gelijkmatige vervaging, Acryl voegt korrel en verzadiging toe, Mica verplaatst het effect naar de pagina zelf zodat de oppervlakken erboven dekkend blijven, en Liquid Glass breekt de achtergrond via een lens.
+    Tint Mode: Bij het volgen van het thema houdt elk oppervlak zijn eigen kleur. Een aangepaste kleur trekt alle oppervlakken naar de kleur die je kiest, en zo krijg je één accent door de hele interface.
+    Liquid Quality: Hoe fijn de lens wordt gegenereerd. Hoger oogt vloeiender langs gebogen randen en kost meer bij elke formaatwijziging van een oppervlak.
+    System Backdrop: Vraagt het besturingssysteem om de achtergrond van het venster te tekenen. Op Windows is dit hetzelfde Mica- of Acrylmateriaal dat andere apps gebruiken, dus hulpprogramma's die het systeembreed aanpassen beïnvloeden deze app ook.
+    Transparent Window Background: Zorgt dat de app geen eigen paginaachtergrond tekent, zodat zichtbaar wordt wat het systeem achter het venster tekent. Alleen zinvol met een ingeschakelde vensterachtergrond.
+    Respect Reduced Transparency: Schakelt het effect automatisch uit zolang het besturingssysteem op verminderde transparantie staat.
 The playlist is at the beginning. Enable loop to continue playing: De afspeellijst staat aan het begin. Schakel herhalen in om door te gaan met afspelen
 External link opening has been disabled in Settings → Privacy: Het openen van externe links is uitgeschakeld via Instellingen → Privacy
 Screenshot Clipboard Success: Schermafbeelding op klembord opgeslagen

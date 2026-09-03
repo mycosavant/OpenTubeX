@@ -7,6 +7,7 @@ import {
 import './applicationDataBootstrap'
 import { isPortableBuild } from './applicationDataPaths'
 import path from 'path'
+import os from 'os'
 import cp from 'child_process'
 import { randomUUID } from 'crypto'
 import { load as loadYaml } from 'js-yaml'
@@ -33,6 +34,11 @@ import {
   normalizeCustomTheme,
   normalizeCustomThemes,
 } from '../customTheme'
+import {
+  normalizeGlassTheme,
+  resolveSystemBackdrop,
+  supportsSystemBackdrop,
+} from '../glassTheme'
 import { applySyncServerUserAgent } from '../syncServerUserAgent'
 import * as baseHandlers from '../datastores/handlers/base'
 import { liveReminders } from '../datastores'
@@ -2589,17 +2595,64 @@ function runApp() {
 
   const htmlFullscreenWindowIds = new Set()
 
-  async function createWindow(
-    {
-      replaceMainWindow = true,
-      windowStartupUrl = null,
-      searchQueryText = null,
-      sessionData = null,
-      loadInactiveTabsOnRestore = false,
-      restoreTabLoadStateOnRestore = false
-    } = { }) {
-    // Syncing new window background to theme choice.
-    const windowBackground = await baseHandlers.settings._findOne('baseTheme').then(async (setting) => {
+  /**
+   * Windows and macOS draw their own window backdrops, and only do so where the
+   * app leaves its own background transparent. Electron's own background colour
+   * is painted before anything else, so it has to be cleared at construction
+   * time or the material is covered before the page ever loads.
+   *
+   * @returns {Promise<{ kind: string, value: string } | null>} the backdrop the
+   *   stored settings ask for, or `null` when there is nothing to apply
+   */
+  async function resolveWindowBackdrop() {
+    if (!supportsSystemBackdrop(process.platform, os.release())) return null
+
+    try {
+      const setting = await baseHandlers.settings._findOne('glassTheme')
+      if (!setting) return null
+      const glassTheme = normalizeGlassTheme(setting.value)
+      if (!glassTheme.enabled) return null
+      return resolveSystemBackdrop(glassTheme.systemBackdrop, process.platform)
+    } catch (error) {
+      console.error('Failed to read the window backdrop setting:', error)
+      return null
+    }
+  }
+
+  /**
+   * @param {import('electron').BrowserWindow} window
+   * @param {{ kind: string, value: string } | null} backdrop
+   * @param {string} opaqueBackground the colour to restore when there is no backdrop
+   */
+  function applyWindowBackdrop(window, backdrop, opaqueBackground) {
+    if (window.isDestroyed()) return
+
+    if (backdrop === null) {
+      if (process.platform === 'win32' && typeof window.setBackgroundMaterial === 'function') {
+        window.setBackgroundMaterial('none')
+      } else if (process.platform === 'darwin') {
+        window.setVibrancy(null)
+      }
+      window.setBackgroundColor(opaqueBackground)
+      return
+    }
+
+    // Transparent first: the material is composited behind the window, so a
+    // painted background colour would sit on top of it.
+    window.setBackgroundColor('#00000000')
+    if (backdrop.kind === 'backgroundMaterial') window.setBackgroundMaterial(backdrop.value)
+    else window.setVibrancy(backdrop.value)
+  }
+
+  /**
+   * The opaque colour the window falls back to: the active theme's own page
+   * background, so the frame that is painted before the renderer has drawn
+   * anything already matches the theme. Also what the window is restored to
+   * when a system backdrop is switched back off.
+   * @returns {Promise<string>}
+   */
+  async function currentWindowBackground() {
+    return baseHandlers.settings._findOne('baseTheme').then(async (setting) => {
       if (!setting) {
         return nativeTheme.shouldUseDarkColors ? '#0f0f0f' : '#f1f1f1'
       }
@@ -2660,6 +2713,21 @@ function runApp() {
       // Default to nativeTheme settings if nothing is found.
       return nativeTheme.shouldUseDarkColors ? '#0f0f0f' : '#f1f1f1'
     })
+  }
+
+  async function createWindow(
+    {
+      replaceMainWindow = true,
+      windowStartupUrl = null,
+      searchQueryText = null,
+      sessionData = null,
+      loadInactiveTabsOnRestore = false,
+      restoreTabLoadStateOnRestore = false
+    } = { }) {
+    // Syncing new window background to theme choice.
+    const windowBackground = await currentWindowBackground()
+
+    const windowBackdrop = await resolveWindowBackdrop()
 
     let savedBounds, savedMaximized
 
@@ -2702,7 +2770,15 @@ function runApp() {
       // explicitly requested windows otherwise expose a blank shell while the
       // initial container is mounting.
       show: false,
-      backgroundColor: windowBackground,
+      // A system backdrop is composited behind the window, so Electron must not
+      // paint anything of its own over it.
+      backgroundColor: windowBackdrop === null ? windowBackground : '#00000000',
+      ...windowBackdrop?.kind === 'backgroundMaterial'
+        ? { backgroundMaterial: windowBackdrop.value }
+        : {},
+      ...windowBackdrop?.kind === 'vibrancy'
+        ? { vibrancy: windowBackdrop.value, visualEffectState: 'active' }
+        : {},
       icon: process.env.NODE_ENV === 'development'
         ? path.join(__dirname, '../../_icons/iconColor.png')
         : path.join(__dirname, '../_icons/iconColor.png'),
@@ -3704,6 +3780,35 @@ function runApp() {
       }
     }
   }
+
+  ipcMain.handle(IpcChannels.GET_WINDOW_BACKDROP_SUPPORT, (event) => {
+    if (!isOpenTubeXUrl(event.senderFrame.url)) return null
+
+    return {
+      platform: process.platform,
+      supported: supportsSystemBackdrop(process.platform, os.release())
+    }
+  })
+
+  ipcMain.handle(IpcChannels.SET_WINDOW_BACKGROUND_MATERIAL, async (event, backdropName) => {
+    if (!isOpenTubeXUrl(event.senderFrame.url)) return false
+
+    const window = BrowserWindow.fromWebContents(event.sender)
+    if (!window || window.isDestroyed()) return false
+    if (!supportsSystemBackdrop(process.platform, os.release())) return false
+
+    const backdrop = typeof backdropName === 'string' && backdropName !== 'none'
+      ? resolveSystemBackdrop(backdropName, process.platform)
+      : null
+
+    try {
+      applyWindowBackdrop(window, backdrop, await currentWindowBackground())
+      return true
+    } catch (error) {
+      console.error('Failed to set the window background material:', error)
+      return false
+    }
+  })
 
   ipcMain.on(IpcChannels.SET_WINDOW_TITLE, (event, payload) => {
     if (!isOpenTubeXUrl(event.senderFrame.url)) {

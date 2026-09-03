@@ -938,6 +938,87 @@ Settings:
     Unlocking: Avataan lukitusta…
   Search Settings: Hae asetuksista
   No Settings Found: Asetuksia ei löytynyt
+  Glass Settings:
+    Translucency: Läpikuultavuus
+    Description: Lisää huurrelasipinnan jo käytössä olevan teeman päälle. Värit tulevat edelleen teemasta, joten paletti pysyy tunnistettavana tehosteen läpi.
+    Enable Translucency: Ota läpikuultavuus käyttöön
+    Liquid Warning: Liquid Glass taittaa taustan luodun linssin läpi jokaisella peittämällään pinnalla. Se on tämän osion vaativin vaihtoehto ja toimii parhaiten pienellä määrällä pintoja.
+    System Backdrop Unavailable: Järjestelmän piirtämä ikkunan tausta vaatii Windows 11:n tai macOS:n. Alla olevat sovelluksen sisäiset tehosteet toimivat kaikkialla.
+    Reset: Palauta läpikuultavuusasetukset
+    Texture:
+      Texture: Tekstuuri
+      Blur: Huurrelasi
+      Acrylic: Akryyli
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Pinnat
+      Window Chrome: Navigointi ja sivupalkki
+      Cards: Kortit ja paneelit
+      Menus and Popups: Valikot, valintaikkunat ja ilmoitukset
+      Inputs: Tekstikentät
+      Player Panels: Soittimen sivupaneelit
+    Tint Mode:
+      Tint Mode: Sävy
+      Follow Theme: Seuraa teemaa
+      Custom Color: Oma väri
+    Border Tone:
+      Border Tone: Reunojen sävy
+      Automatic: Automaattinen
+      Light: Vaalea
+      Dark: Tumma
+    Liquid Quality:
+      Liquid Quality: Linssin laatu
+      Low: Matala
+      Medium: Keskitaso
+      High: Korkea
+    System Backdrop:
+      System Backdrop: Ikkunan tausta
+      None: Ei mitään
+      Automatic: Järjestelmän oletus
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akryyli
+    Groups:
+      opacity: Peittävyys
+      backdrop: Tausta
+      tint: Sävy
+      texture: Rakeisuus
+      edge: Reunat ja syvyys
+      liquid: Liquid Glass
+      system: Ikkuna
+    Knobs:
+      Luminous Opacity: Hohtava peittävyys
+      Page Opacity: Sivun peittävyys
+      Chrome Opacity: Navigoinnin peittävyys
+      Card Opacity: Korttien peittävyys
+      Menu Opacity: Valikoiden peittävyys
+      Input Opacity: Tekstikenttien peittävyys
+      Luminance: Luminanssi
+      Blur Radius: Sumennuksen säde
+      Saturation: Kylläisyys
+      Brightness: Kirkkaus
+      Contrast: Kontrasti
+      Tint Color: Sävyn väri
+      Tint Strength: Sävyn voimakkuus
+      Grain Opacity: Rakeisuuden peittävyys
+      Grain Scale: Rakeisuuden koko
+      Border Opacity: Reunojen peittävyys
+      Border Width: Reunan leveys
+      Highlight Opacity: Korostuksen peittävyys
+      Inner Shadow Opacity: Sisävarjon peittävyys
+      Shadow Strength: Heittovarjon voimakkuus
+      Refraction Strength: Taittumisen voimakkuus
+      Bezel Width: Viisteen leveys
+      Lens Radius: Linssin kulmien pyöristys
+      Chromatic Aberration: Kromaattinen aberraatio
+      Lens Blur: Linssin sumennus
+      Specular Highlight: Peiliheijastus
+      Maximum Lensed Surfaces: Linssipintojen enimmäismäärä
+      Transparent Window Background: Anna järjestelmän piirtää ikkunan tausta
+      Respect Reduced Transparency: Noudata järjestelmän vähennetyn läpinäkyvyyden asetusta
+      Fallback Opacity: Peittävyys ilman taustan sumennusta
 Tutorial:
   Skip: Ohita
   Next: Seuraava
@@ -1460,6 +1541,14 @@ Tooltips:
     Scroll Speed: Muuttaa hiiren rullan ja kosketuslevyn vierityseleiden vieritysmatkaa.
     Use Fixed Tab Width: Tekee vaakasuuntaisen välilehtipalkin kaikista välilehdistä yhtä leveitä sen sijaan, että leveys määräytyisi nimen mukaan.
     Use Grid Player Menu: Järjestää videosoittimen asetusvalikon ruudukoksi riviluettelon sijaan.
+  Glass Settings:
+    Enable Translucency: Antaa sovelluksen pintojen näyttää, mitä niiden takana on. Värit tulevat edelleen aktiivisesta teemasta, joten tehoste kerrostuu palettisi päälle sen sijaan, että korvaisi sen.
+    Texture: Valitsee tehosteen luonteen. Huurrelasi on tasainen sumennus, Akryyli lisää rakeisuutta ja kylläisyyttä, Mica siirtää tehosteen itse sivulle niin että sen yläpuoliset pinnat pysyvät peittävinä, ja Liquid Glass taittaa taustan linssin läpi.
+    Tint Mode: Teemaa seuratessa jokainen pinta säilyttää oman värinsä. Oma väri vetää kaikki pinnat valitsemaasi väriin, jolloin koko käyttöliittymän läpi kulkee yksi korostus.
+    Liquid Quality: Kuinka tarkasti linssi luodaan. Korkeampi näyttää tasaisemmalta kaarevilla reunoilla ja maksaa enemmän aina, kun pinnan koko muuttuu.
+    System Backdrop: Pyytää käyttöjärjestelmää piirtämään ikkunan taustan. Windowsissa tämä on sama Mica- tai Akryylimateriaali, jota muut sovellukset käyttävät, joten sitä järjestelmänlaajuisesti mukauttavat työkalut vaikuttavat myös tähän sovellukseen.
+    Transparent Window Background: Estää sovellusta piirtämästä omaa sivun taustaansa, jolloin näkyy se, mitä järjestelmä piirtää ikkunan taakse. Hyödyllinen vain ikkunan taustan ollessa käytössä.
+    Respect Reduced Transparency: Poistaa tehosteen käytöstä automaattisesti niin kauan kuin käyttöjärjestelmässä on valittu vähennetty läpinäkyvyys.
 The playlist is at the beginning. Enable loop to continue playing: Soittolista on alussa. Jatka toistoa ottamalla jatkuva toisto käyttöön
 External link opening has been disabled in Settings → Privacy: Ulkoisten linkkien avaaminen on poistettu käytöstä kohdassa Asetukset → Tietosuoja
 Screenshot Clipboard Success: Kuvakaappaus tallennettiin leikepöydälle

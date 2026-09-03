@@ -16,6 +16,9 @@
 const SETTING_PERFORMANCE_IMPACTS = new Map([
   // draws and blurs the video's own frames behind the player, every frame
   ['ambientMode', { level: 'high', resources: ['GPU', 'CPU'] }],
+  // every translucent surface makes the compositor re-sample what is behind it,
+  // and Liquid Glass adds three displacement passes on top of that
+  ['glassTheme', { level: 'high', resources: ['GPU'] }],
   // every thumbnail is fetched from the DeArrow generator instead of coming with the video's metadata
   ['useDeArrowThumbnails', { level: 'high', resources: ['Network'] }],
 

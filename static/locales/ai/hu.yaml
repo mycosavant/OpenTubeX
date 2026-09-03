@@ -914,6 +914,87 @@ Settings:
     Unlocking: Feloldás…
   Search Settings: Keresési beállítások
   No Settings Found: Nem találhatók beállítások
+  Glass Settings:
+    Translucency: Áttetszőség
+    Description: Homályosüveg-hatást tesz a már használt téma fölé. A színek továbbra is a témából jönnek, így a paletta a hatáson keresztül is felismerhető marad.
+    Enable Translucency: Áttetszőség bekapcsolása
+    Liquid Warning: A Liquid Glass minden lefedett felülethez egy generált lencsén keresztül töri meg a hátteret. Ez itt a legigényesebb beállítás, és kevés felületen működik a legjobban.
+    System Backdrop Unavailable: A rendszer által rajzolt ablakháttérhez Windows 11 vagy macOS szükséges. Az alábbi alkalmazáson belüli hatások mindenhol működnek.
+    Reset: Áttetszőségi beállítások visszaállítása
+    Texture:
+      Texture: Textúra
+      Blur: Homályos üveg
+      Acrylic: Akril
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Felületek
+      Window Chrome: Navigáció és oldalsáv
+      Cards: Kártyák és panelek
+      Menus and Popups: Menük, párbeszédablakok és értesítések
+      Inputs: Szövegmezők
+      Player Panels: A lejátszó oldalsó paneljei
+    Tint Mode:
+      Tint Mode: Árnyalat
+      Follow Theme: Kövesse a témát
+      Custom Color: Egyéni szín
+    Border Tone:
+      Border Tone: Élek tónusa
+      Automatic: Automatikus
+      Light: Világos
+      Dark: Sötét
+    Liquid Quality:
+      Liquid Quality: Lencse minősége
+      Low: Alacsony
+      Medium: Közepes
+      High: Magas
+    System Backdrop:
+      System Backdrop: Ablakháttér
+      None: Nincs
+      Automatic: Rendszer alapértelmezése
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akril
+    Groups:
+      opacity: Átlátszatlanság
+      backdrop: Háttér
+      tint: Árnyalat
+      texture: Szemcsézettség
+      edge: Élek és mélység
+      liquid: Liquid Glass
+      system: Ablak
+    Knobs:
+      Luminous Opacity: Világító átlátszatlanság
+      Page Opacity: Oldal átlátszatlansága
+      Chrome Opacity: Navigáció átlátszatlansága
+      Card Opacity: Kártyák átlátszatlansága
+      Menu Opacity: Menük átlátszatlansága
+      Input Opacity: Szövegmezők átlátszatlansága
+      Luminance: Fénysűrűség
+      Blur Radius: Elmosás sugara
+      Saturation: Telítettség
+      Brightness: Fényerő
+      Contrast: Kontraszt
+      Tint Color: Árnyalat színe
+      Tint Strength: Árnyalat erőssége
+      Grain Opacity: Szemcsézettség átlátszatlansága
+      Grain Scale: Szemcsézettség léptéke
+      Border Opacity: Élek átlátszatlansága
+      Border Width: Élek vastagsága
+      Highlight Opacity: Csillanás átlátszatlansága
+      Inner Shadow Opacity: Belső árnyék átlátszatlansága
+      Shadow Strength: Vetett árnyék erőssége
+      Refraction Strength: Fénytörés erőssége
+      Bezel Width: Rézsű szélessége
+      Lens Radius: Lencse sarkainak lekerekítése
+      Chromatic Aberration: Színi eltérés
+      Lens Blur: Lencse elmosása
+      Specular Highlight: Tükröződő csillanás
+      Maximum Lensed Surfaces: Lencsézett felületek legnagyobb száma
+      Transparent Window Background: A rendszer rajzolja az ablak hátterét
+      Respect Reduced Transparency: A rendszer csökkentett átlátszóság beállításának tiszteletben tartása
+      Fallback Opacity: Átlátszatlanság háttérelmosás nélkül
 Tutorial:
   Skip: Kihagyás
   Next: Tovább
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: Megváltoztatja, hogy az egérgörgő és az érintőpad kézmozdulatai milyen messzire görgessenek.
     Use Fixed Tab Width: Minden lap azonos szélességű lesz a vízszintes lapsávon, a címükhöz igazodó méretezés helyett.
     Use Grid Player Menu: A videólejátszó beállítási menüjének elrendezése csempékből álló rácsként, sorok listája helyett.
+  Glass Settings:
+    Enable Translucency: Az alkalmazás felületein átlátszik, ami mögöttük van. A színek továbbra is az aktív témából jönnek, így a hatás a palettádra rétegződik, nem pedig lecseréli azt.
+    Texture: Meghatározza a hatás jellegét. A homályos üveg egyenletes elmosás, az Akril szemcsét és telítettséget ad hozzá, a Mica magára az oldalra helyezi a hatást, hogy a fölötte lévő felületek átlátszatlanok maradjanak, a Liquid Glass pedig lencsén keresztül töri meg a hátteret.
+    Tint Mode: A témát követve minden felület megtartja a saját színét. Az egyéni szín minden felületet a választott szín felé húz, így egyetlen kiemelő szín fut végig a teljes felületen.
+    Liquid Quality: Milyen finoman készül a lencse. A magasabb érték simábbnak látszik az ívelt éleken, és minden méretváltozásnál többe kerül.
+    System Backdrop: Megkéri az operációs rendszert, hogy rajzolja meg az ablak hátterét. Windowson ez ugyanaz a Mica vagy Akril anyag, amelyet a többi alkalmazás is használ, így a rendszerszinten testreszabó eszközök erre az alkalmazásra is hatnak.
+    Transparent Window Background: Megakadályozza, hogy az alkalmazás saját oldalhátteret rajzoljon, így az látszik, amit a rendszer az ablak mögé rajzol. Csak bekapcsolt ablakháttérrel hasznos.
+    Respect Reduced Transparency: Automatikusan kikapcsolja a hatást, amíg az operációs rendszerben a csökkentett átlátszóság be van állítva.
 The playlist is at the beginning. Enable loop to continue playing: A lejátszási lista elején jár. Kapcsolja be az ismétlést a lejátszás folytatásához
 External link opening has been disabled in Settings → Privacy: A külső hivatkozások megnyitása ki van kapcsolva a Beállítások → Adatvédelem menüben
 KeyboardShortcutPrompt:

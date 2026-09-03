@@ -914,6 +914,87 @@ Settings:
     Unlocking: Déverrouillage…
   Search Settings: Rechercher dans les paramètres
   No Settings Found: Aucun paramètre trouvé
+  Glass Settings:
+    Translucency: Transparence
+    Description: Applique un fini de verre dépoli au thème déjà utilisé. Les couleurs proviennent toujours du thème, la palette reste donc reconnaissable à travers l'effet.
+    Enable Translucency: Activer la transparence
+    Liquid Warning: Liquid Glass réfracte l'arrière-plan à travers une lentille générée pour chaque surface concernée. C'est l'option la plus exigeante ici et elle fonctionne mieux sur un petit nombre de surfaces.
+    System Backdrop Unavailable: Un arrière-plan de fenêtre dessiné par le système nécessite Windows 11 ou macOS. Les effets internes ci-dessous fonctionnent partout.
+    Reset: Réinitialiser les réglages de transparence
+    Texture:
+      Texture: Texture
+      Blur: Verre dépoli
+      Acrylic: Acrylique
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Surfaces
+      Window Chrome: Navigation et barre latérale
+      Cards: Cartes et panneaux
+      Menus and Popups: Menus, dialogues et notifications
+      Inputs: Champs de texte
+      Player Panels: Panneaux latéraux du lecteur
+    Tint Mode:
+      Tint Mode: Teinte
+      Follow Theme: Suivre le thème
+      Custom Color: Couleur personnalisée
+    Border Tone:
+      Border Tone: Ton des bords
+      Automatic: Automatique
+      Light: Clair
+      Dark: Sombre
+    Liquid Quality:
+      Liquid Quality: Qualité de la lentille
+      Low: Faible
+      Medium: Moyenne
+      High: Élevée
+    System Backdrop:
+      System Backdrop: Arrière-plan de la fenêtre
+      None: Aucun
+      Automatic: Par défaut du système
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrylique
+    Groups:
+      opacity: Opacité
+      backdrop: Arrière-plan
+      tint: Teinte
+      texture: Grain
+      edge: Bords et profondeur
+      liquid: Liquid Glass
+      system: Fenêtre
+    Knobs:
+      Luminous Opacity: Opacité lumineuse
+      Page Opacity: Opacité de la page
+      Chrome Opacity: Opacité de la navigation
+      Card Opacity: Opacité des cartes
+      Menu Opacity: Opacité des menus
+      Input Opacity: Opacité des champs de texte
+      Luminance: Luminance
+      Blur Radius: Rayon du flou
+      Saturation: Saturation
+      Brightness: Luminosité
+      Contrast: Contraste
+      Tint Color: Couleur de la teinte
+      Tint Strength: Intensité de la teinte
+      Grain Opacity: Opacité du grain
+      Grain Scale: Échelle du grain
+      Border Opacity: Opacité des bords
+      Border Width: Épaisseur des bords
+      Highlight Opacity: Opacité du reflet
+      Inner Shadow Opacity: Opacité de l'ombre interne
+      Shadow Strength: Intensité de l'ombre portée
+      Refraction Strength: Intensité de la réfraction
+      Bezel Width: Largeur du biseau
+      Lens Radius: Rayon des coins de la lentille
+      Chromatic Aberration: Aberration chromatique
+      Lens Blur: Flou de la lentille
+      Specular Highlight: Reflet spéculaire
+      Maximum Lensed Surfaces: Nombre maximal de surfaces réfractées
+      Transparent Window Background: Laisser le système dessiner l'arrière-plan de la fenêtre
+      Respect Reduced Transparency: Respecter le réglage système de transparence réduite
+      Fallback Opacity: Opacité sans flou d'arrière-plan
 Tutorial:
   Skip: Ignorer
   Next: Suivant
@@ -1430,6 +1511,14 @@ Tooltips:
     Scroll Speed: Modifie la distance de défilement des gestes de la molette de la souris et du pavé tactile.
     Use Fixed Tab Width: Attribue la même largeur à tous les onglets de la barre horizontale au lieu d’adapter leur taille à leur titre.
     Use Grid Player Menu: Organise le menu des paramètres du lecteur vidéo sous forme de grille de vignettes au lieu d’une liste de lignes.
+  Glass Settings:
+    Enable Translucency: 'Laisse apparaître ce qui se trouve derrière les surfaces de l''application. Les couleurs proviennent toujours du thème actif : l''effet se superpose à votre palette au lieu de la remplacer.'
+    Texture: Détermine le caractère de l'effet. Verre dépoli applique un flou uniforme, Acrylique ajoute du grain et de la saturation, Mica déplace l'effet sur la page elle-même pour que les surfaces au-dessus restent opaques, et Liquid Glass réfracte l'arrière-plan à travers une lentille.
+    Tint Mode: En suivant le thème, chaque surface conserve sa propre couleur. Une couleur personnalisée attire toutes les surfaces vers celle que vous choisissez, ce qui donne un accent unique dans toute l'interface.
+    Liquid Quality: Finesse de génération de la lentille. Une valeur élevée paraît plus lisse sur les bords arrondis et coûte plus cher à chaque changement de taille d'une surface.
+    System Backdrop: Demande au système d'exploitation de dessiner l'arrière-plan de la fenêtre. Sous Windows, il s'agit du même matériau Mica ou Acrylique que les autres applications, donc les outils qui le personnalisent à l'échelle du système affectent aussi cette application.
+    Transparent Window Background: Empêche l'application de dessiner son propre fond de page, afin que ce que le système dessine derrière la fenêtre apparaisse. Utile uniquement avec un arrière-plan de fenêtre activé.
+    Respect Reduced Transparency: Désactive automatiquement l'effet tant que le système d'exploitation est réglé sur transparence réduite.
 The playlist is at the beginning. Enable loop to continue playing: La playlist est au début. Activez la lecture en boucle pour continuer
 External link opening has been disabled in Settings → Privacy: L’ouverture des liens externes a été désactivée dans Paramètres → Confidentialité
 KeyboardShortcutPrompt:

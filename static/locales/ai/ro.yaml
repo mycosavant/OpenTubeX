@@ -929,6 +929,87 @@ Settings:
     Unlocking: Se deblochează…
   Search Settings: Caută în setări
   No Settings Found: Nu s-au găsit setări
+  Glass Settings:
+    Translucency: Transluciditate
+    Description: Adaugă un finisaj de sticlă mată peste tema pe care o folosești deja. Culorile provin în continuare din temă, așa că paleta rămâne recognoscibilă prin efect.
+    Enable Translucency: Activează transluciditatea
+    Liquid Warning: Liquid Glass refractă fundalul printr-o lentilă generată pentru fiecare suprafață acoperită. Este cea mai solicitantă opțiune de aici și funcționează cel mai bine pe un număr mic de suprafețe.
+    System Backdrop Unavailable: Un fundal de fereastră desenat de sistem necesită Windows 11 sau macOS. Efectele din aplicație de mai jos funcționează oriunde.
+    Reset: Resetează setările de transluciditate
+    Texture:
+      Texture: Textură
+      Blur: Sticlă mată
+      Acrylic: Acrilic
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Suprafețe
+      Window Chrome: Navigare și bară laterală
+      Cards: Carduri și panouri
+      Menus and Popups: Meniuri, dialoguri și notificări
+      Inputs: Câmpuri de text
+      Player Panels: Panouri laterale ale playerului
+    Tint Mode:
+      Tint Mode: Nuanță
+      Follow Theme: Urmează tema
+      Custom Color: Culoare personalizată
+    Border Tone:
+      Border Tone: Tonul marginilor
+      Automatic: Automat
+      Light: Deschis
+      Dark: Închis
+    Liquid Quality:
+      Liquid Quality: Calitatea lentilei
+      Low: Scăzută
+      Medium: Medie
+      High: Ridicată
+    System Backdrop:
+      System Backdrop: Fundalul ferestrei
+      None: Niciunul
+      Automatic: Implicit de sistem
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrilic
+    Groups:
+      opacity: Opacitate
+      backdrop: Fundal
+      tint: Nuanță
+      texture: Granulație
+      edge: Margini și adâncime
+      liquid: Liquid Glass
+      system: Fereastră
+    Knobs:
+      Luminous Opacity: Opacitate luminoasă
+      Page Opacity: Opacitatea paginii
+      Chrome Opacity: Opacitatea navigării
+      Card Opacity: Opacitatea cardurilor
+      Menu Opacity: Opacitatea meniurilor
+      Input Opacity: Opacitatea câmpurilor de text
+      Luminance: Luminanță
+      Blur Radius: Raza estompării
+      Saturation: Saturație
+      Brightness: Luminozitate
+      Contrast: Contrast
+      Tint Color: Culoarea nuanței
+      Tint Strength: Intensitatea nuanței
+      Grain Opacity: Opacitatea granulației
+      Grain Scale: Scara granulației
+      Border Opacity: Opacitatea marginilor
+      Border Width: Grosimea marginilor
+      Highlight Opacity: Opacitatea reflexiei
+      Inner Shadow Opacity: Opacitatea umbrei interioare
+      Shadow Strength: Intensitatea umbrei proiectate
+      Refraction Strength: Intensitatea refracției
+      Bezel Width: Lățimea teșiturii
+      Lens Radius: Raza colțurilor lentilei
+      Chromatic Aberration: Aberație cromatică
+      Lens Blur: Estomparea lentilei
+      Specular Highlight: Reflexie speculară
+      Maximum Lensed Surfaces: Număr maxim de suprafețe cu lentilă
+      Transparent Window Background: Lasă sistemul să deseneze fundalul ferestrei
+      Respect Reduced Transparency: Respectă setarea de transparență redusă a sistemului
+      Fallback Opacity: Opacitate fără estomparea fundalului
 Tutorial:
   Skip: Omite
   Next: Înainte
@@ -1462,6 +1543,14 @@ Tooltips:
     Scroll Speed: Modifică distanța de derulare a gesturilor rotiței mouse-ului și ale touchpadului.
     Use Fixed Tab Width: Atribuie aceeași lățime fiecărei file din bara de file orizontală, în loc să o dimensioneze după titlu.
     Use Grid Player Menu: Aranjează meniul de setări al playerului video ca o grilă de dale, în locul unei liste de rânduri.
+  Glass Settings:
+    Enable Translucency: Lasă suprafețele aplicației să arate ce se află în spatele lor. Culorile provin în continuare din tema activă, așa că efectul se suprapune peste paleta ta în loc să o înlocuiască.
+    Texture: Alege caracterul efectului. Sticla mată este o estompare uniformă, Acrilicul adaugă granulație și saturație, Mica mută efectul pe pagina însăși, astfel încât suprafețele de deasupra rămân opace, iar Liquid Glass refractă fundalul printr-o lentilă.
+    Tint Mode: Urmând tema, fiecare suprafață își păstrează propria culoare. O culoare personalizată atrage toate suprafețele către cea aleasă, astfel obții un singur accent în toată interfața.
+    Liquid Quality: Cât de fin este generată lentila. O valoare mai mare arată mai neted pe marginile curbate și costă mai mult la fiecare schimbare de dimensiune a unei suprafețe.
+    System Backdrop: Cere sistemului de operare să deseneze fundalul ferestrei. Pe Windows este același material Mica sau Acrilic pe care îl folosesc alte aplicații, așa că instrumentele care îl personalizează la nivel de sistem afectează și această aplicație.
+    Transparent Window Background: Împiedică aplicația să deseneze propriul fundal de pagină, ca să se vadă ce desenează sistemul în spatele ferestrei. Util doar cu un fundal de fereastră activat.
+    Respect Reduced Transparency: Dezactivează automat efectul cât timp sistemul de operare este setat să reducă transparența.
 The playlist is at the beginning. Enable loop to continue playing: Playlistul este la început. Activați redarea în buclă pentru a continua
 External link opening has been disabled in Settings → Privacy: Deschiderea linkurilor externe a fost dezactivată în Setări → Confidențialitate
 Screenshot Clipboard Success: Captura de ecran a fost salvată în clipboard
