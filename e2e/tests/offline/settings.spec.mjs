@@ -678,6 +678,7 @@ test.describe('settings', () => {
       'Theme',
       'Layout',
       'Navigation / Quick settings',
+      'Translucency',
       'Video lists and thumbnails',
     ])
     const theme = appearance.locator('.settingsSection').filter({
