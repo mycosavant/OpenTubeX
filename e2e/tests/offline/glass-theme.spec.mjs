@@ -130,7 +130,7 @@ test.describe('translucency', () => {
     await setGlassTheme(page, {
       enabled: true,
       texture: 'liquid',
-      surfaces: ['chrome'],
+      surfaces: ['chrome', 'cards'],
       liquidBezel: 12,
       liquidScale: 9,
       liquidChromatic: 3
@@ -175,6 +175,14 @@ test.describe('translucency', () => {
     })
     expect(tabBarDisplacements[0]).toBeLessThan(9)
     expect(tabBarDisplacements[0]).toBeGreaterThan(0)
+
+    // Cards are reached by an enumerated rule rather than by the inherited
+    // blur token, which is what lets each one resolve its own lens.
+    await expect.poll(async () => (
+      await page.locator('.sectionBody').first().evaluate(
+        element => getComputedStyle(element).backdropFilter
+      )
+    )).toMatch(/^url\("?#otxLiquidGlass/)
 
     // Switching the texture away has to take the whole engine with it, not
     // just stop adding to it.

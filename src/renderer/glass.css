@@ -12,30 +12,31 @@
 */
 
 /*
-  The blur is declared per element rather than once on the body because Liquid
-  Glass overrides `--glass-backdrop-filter` on individual elements, and a custom
-  property is substituted where it is declared: had these been declared on the
-  body, every element would have inherited the body's already-resolved value and
-  the per-element refraction filter would never be reached.
+  Components that already opt into the custom theme system's blur tokens pick
+  the effect up through them. These are declared once and inherited rather than
+  matched per element: a rule keyed on `*` has to be tested against every
+  element in the document on each style recalculation, including while the
+  effect is switched off, which is a cost the whole app would pay for a feature
+  most of it does not use.
 
-  The theme system uses the same universal-selector shape for its accent colour
-  overrides, and both are only paid for while the feature is on.
+  Inheriting means every element resolves the body's value, so a surface that
+  Liquid Glass has given its own filter cannot be served this way. Those
+  surfaces are enumerated below and given `backdrop-filter` directly, which
+  resolves against the element's own `--glass-backdrop-filter`.
 */
-.glassEnabled * {
+.glassEnabled {
   --card-bg-blur: var(--glass-backdrop-filter);
   --secondary-card-bg-blur: var(--glass-backdrop-filter);
   --search-bar-blur: var(--glass-backdrop-filter);
   --settings-search-bar-blur: var(--glass-backdrop-filter);
   --primary-input-blur: var(--glass-backdrop-filter);
-}
 
-/*
-  A glass pane needs three edges to read as one: a ring that describes its
-  outline, a lit top edge, and a shadow along the bottom inside face. Composed
-  as insets on the element's own box-shadow so no pseudo-element is required and
-  nothing about the component's layout changes.
-*/
-.glassEnabled {
+  /*
+    A glass pane needs three edges to read as one: a ring that describes its
+    outline, a lit top edge, and a shadow along the bottom inside face.
+    Composed as insets on the element's own box-shadow so no pseudo-element is
+    required and nothing about the component's layout changes.
+  */
   --glass-edge:
     inset 0 0 0 var(--glass-border-width) var(--glass-border-color),
     inset 0 var(--glass-border-width) 0 calc(var(--glass-border-width) * -0.5) var(--glass-highlight-color),
@@ -58,7 +59,13 @@
 
 /* Cards and settings panels. */
 .glassEnabled[data-glass-cards] :is(.ft-card, .sectionBody) {
+  backdrop-filter: var(--glass-backdrop-filter);
   box-shadow: var(--glass-edge), var(--glass-shadow);
+}
+
+/* Text fields, which carry the effect but none of the depth around it. */
+.glassEnabled[data-glass-inputs] .ft-input-component {
+  backdrop-filter: var(--glass-backdrop-filter);
 }
 
 /* Popovers: prompts, dropdown menus and toasts. */

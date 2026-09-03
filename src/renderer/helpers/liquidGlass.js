@@ -52,7 +52,9 @@ const LIQUID_GLASS_SELECTORS = Object.freeze({
   cards: '.ft-card, .sectionBody',
   menus: '.promptCard, .iconDropdown, [data-sonner-toast]',
   inputs: '.ft-input-component',
-  player: '.fullscreenSponsorBlockOverlay, .fullscreenLiveChatOverlay, .fullscreenCommentsOverlay, .fullscreenPlaylistOverlay',
+  // The player's own panels are deliberately left to their existing blur: the
+  // video behind them is moving, so a lens over it would be re-rendered every
+  // frame. Building filters for them would cost the maps and buy nothing.
 })
 
 /**
