@@ -15,6 +15,8 @@ const IpcChannels = {
   APP_READY: 'app-ready',
   RELAUNCH_REQUEST: 'relaunch-request',
   SET_WINDOW_TITLE: 'set-window-title',
+  SET_WINDOW_BACKGROUND_MATERIAL: 'set-window-background-material',
+  GET_WINDOW_BACKDROP_SUPPORT: 'get-window-backdrop-support',
   CUSTOM_THEME_LOAD: 'custom-theme-load',
   CUSTOM_THEME_SAVE: 'custom-theme-save',
   CUSTOM_THEME_DELETE: 'custom-theme-delete',

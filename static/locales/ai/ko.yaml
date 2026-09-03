@@ -1157,6 +1157,87 @@ Settings:
     Unlocking: 잠금 해제 중…
   Search Settings: 설정 검색
   No Settings Found: 설정을 찾을 수 없습니다
+  Glass Settings:
+    Translucency: 반투명
+    Description: 이미 사용 중인 테마 위에 서리 유리 질감을 덧입힙니다. 색은 여전히 테마에서 가져오므로 효과를 통해서도 팔레트를 알아볼 수 있습니다.
+    Enable Translucency: 반투명 사용
+    Liquid Warning: Liquid Glass는 덮는 표면마다 생성된 렌즈를 통해 배경을 굴절시킵니다. 여기에서 가장 부담이 큰 선택지이며 표면 수가 적을 때 가장 잘 어울립니다.
+    System Backdrop Unavailable: 시스템이 그리는 창 배경에는 Windows 11 또는 macOS가 필요합니다. 아래의 앱 내부 효과는 어디에서나 동작합니다.
+    Reset: 반투명 설정 초기화
+    Texture:
+      Texture: 질감
+      Blur: 서리 유리
+      Acrylic: 아크릴
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: 표면
+      Window Chrome: 탐색과 사이드바
+      Cards: 카드와 패널
+      Menus and Popups: 메뉴, 대화 상자, 알림
+      Inputs: 텍스트 입력란
+      Player Panels: 재생기 측면 패널
+    Tint Mode:
+      Tint Mode: 색조
+      Follow Theme: 테마 따르기
+      Custom Color: 사용자 지정 색
+    Border Tone:
+      Border Tone: 가장자리 톤
+      Automatic: 자동
+      Light: 밝게
+      Dark: 어둡게
+    Liquid Quality:
+      Liquid Quality: 렌즈 품질
+      Low: 낮음
+      Medium: 보통
+      High: 높음
+    System Backdrop:
+      System Backdrop: 창 배경
+      None: 없음
+      Automatic: 시스템 기본값
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: 아크릴
+    Groups:
+      opacity: 불투명도
+      backdrop: 배경
+      tint: 색조
+      texture: 입자감
+      edge: 가장자리와 깊이
+      liquid: Liquid Glass
+      system: 창
+    Knobs:
+      Luminous Opacity: 빛나는 불투명도
+      Page Opacity: 페이지 불투명도
+      Chrome Opacity: 탐색 불투명도
+      Card Opacity: 카드 불투명도
+      Menu Opacity: 메뉴 불투명도
+      Input Opacity: 텍스트 입력란 불투명도
+      Luminance: 휘도
+      Blur Radius: 흐림 반경
+      Saturation: 채도
+      Brightness: 밝기
+      Contrast: 대비
+      Tint Color: 색조 색상
+      Tint Strength: 색조 강도
+      Grain Opacity: 입자감 불투명도
+      Grain Scale: 입자감 크기
+      Border Opacity: 가장자리 불투명도
+      Border Width: 가장자리 두께
+      Highlight Opacity: 하이라이트 불투명도
+      Inner Shadow Opacity: 안쪽 그림자 불투명도
+      Shadow Strength: 그림자 강도
+      Refraction Strength: 굴절 강도
+      Bezel Width: 베젤 너비
+      Lens Radius: 렌즈 모서리 반경
+      Chromatic Aberration: 색수차
+      Lens Blur: 렌즈 흐림
+      Specular Highlight: 반사 하이라이트
+      Maximum Lensed Surfaces: 렌즈를 적용할 최대 표면 수
+      Transparent Window Background: 창 배경을 시스템이 그리도록 하기
+      Respect Reduced Transparency: 시스템의 투명도 줄이기 설정 따르기
+      Fallback Opacity: 배경 흐림 없이 적용할 불투명도
 Tutorial:
   Skip: 건너뛰기
   Next: 다음
@@ -1803,6 +1884,14 @@ Tooltips:
   SponsorBlock Settings:
     UseDeArrowTitles: 동영상 제목을 DeArrow에서 사용자가 제출한 제목으로 바꿉니다.
     UseDeArrowThumbnails: 동영상 썸네일을 DeArrow의 썸네일로 바꿉니다.
+  Glass Settings:
+    Enable Translucency: 앱의 표면 뒤에 있는 것이 비쳐 보이게 합니다. 색은 여전히 활성 테마에서 가져오므로 효과는 팔레트를 대체하지 않고 그 위에 겹쳐집니다.
+    Texture: 효과의 성격을 고릅니다. 서리 유리는 균일한 흐림, 아크릴은 입자감과 채도를 더하고, Mica는 효과를 페이지 자체로 옮겨 그 위의 표면을 불투명하게 유지하며, Liquid Glass는 렌즈를 통해 배경을 굴절시킵니다.
+    Tint Mode: 테마를 따르면 각 표면이 자신의 색을 유지합니다. 사용자 지정 색은 모든 표면을 선택한 색 쪽으로 끌어당겨 인터페이스 전체에 하나의 강조색이 흐르게 합니다.
+    Liquid Quality: 렌즈를 얼마나 정밀하게 생성할지 정합니다. 값이 높을수록 곡선 가장자리가 매끄럽게 보이지만 표면 크기가 바뀔 때마다 비용이 커집니다.
+    System Backdrop: 운영 체제에 창 배경을 그려 달라고 요청합니다. Windows에서는 다른 앱이 쓰는 것과 같은 Mica 또는 아크릴 재질이므로, 이를 시스템 전체에서 바꾸는 도구는 이 앱에도 영향을 줍니다.
+    Transparent Window Background: 앱이 자체 페이지 배경을 그리지 않게 하여 시스템이 창 뒤에 그리는 것이 보이도록 합니다. 창 배경을 켠 경우에만 쓸모가 있습니다.
+    Respect Reduced Transparency: 운영 체제에서 투명도 줄이기가 설정되어 있는 동안 효과를 자동으로 끕니다.
 Autoplay Interruption Timer: '{autoplayInterruptionIntervalHours}시간 동안 활동이 없어 자동 재생을 취소했습니다'
 The playlist is at the beginning. Enable loop to continue playing: 재생목록의 시작입니다. 계속 재생하려면 반복을 활성화하세요
 Age Restricted:

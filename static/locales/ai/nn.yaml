@@ -1194,6 +1194,87 @@ Settings:
     Unlocking: Låser opp …
   Search Settings: Innstillingar for søk
   No Settings Found: Fann ingen innstillingar
+  Glass Settings:
+    Translucency: Gjennomskinlegheit
+    Description: Legg ei frosta glasflate over temaet du alt brukar. Fargane kjem framleis frå temaet, så paletten held seg attkjenneleg gjennom effekten.
+    Enable Translucency: Slå på gjennomskinlegheit
+    Liquid Warning: Liquid Glass bryt bakgrunnen gjennom ei generert linse for kvar flate han dekkjer. Det er det mest krevjande valet her og verkar best på eit lite tal flater.
+    System Backdrop Unavailable: Ein vindaugsbakgrunn teikna av systemet krev Windows 11 eller macOS. Effektane i appen nedanfor verkar overalt.
+    Reset: Tilbakestill innstillingane for gjennomskinlegheit
+    Texture:
+      Texture: Tekstur
+      Blur: Frosta glas
+      Acrylic: Akryl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Flater
+      Window Chrome: Navigasjon og sidepanel
+      Cards: Kort og panel
+      Menus and Popups: Menyar, dialogar og varsel
+      Inputs: Tekstfelt
+      Player Panels: Sidepanela i spelaren
+    Tint Mode:
+      Tint Mode: Fargetone
+      Follow Theme: Følg temaet
+      Custom Color: Eigendefinert farge
+    Border Tone:
+      Border Tone: Kanttone
+      Automatic: Automatisk
+      Light: Lys
+      Dark: Mørk
+    Liquid Quality:
+      Liquid Quality: Linsekvalitet
+      Low: Låg
+      Medium: Middels
+      High: Høg
+    System Backdrop:
+      System Backdrop: Vindaugsbakgrunn
+      None: Ingen
+      Automatic: Systemstandard
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akryl
+    Groups:
+      opacity: Dekkevne
+      backdrop: Bakgrunn
+      tint: Fargetone
+      texture: Korn
+      edge: Kantar og djupne
+      liquid: Liquid Glass
+      system: Vindauge
+    Knobs:
+      Luminous Opacity: Lysande dekkevne
+      Page Opacity: Dekkevna til sida
+      Chrome Opacity: Dekkevna til navigasjonen
+      Card Opacity: Dekkevna til korta
+      Menu Opacity: Dekkevna til menyane
+      Input Opacity: Dekkevna til tekstfelta
+      Luminance: Luminans
+      Blur Radius: Uskarpleiksradius
+      Saturation: Metting
+      Brightness: Lysstyrke
+      Contrast: Kontrast
+      Tint Color: Fargen til fargetonen
+      Tint Strength: Styrken til fargetonen
+      Grain Opacity: Dekkevna til kornet
+      Grain Scale: Skalaen til kornet
+      Border Opacity: Dekkevna til kantane
+      Border Width: Kantbreidd
+      Highlight Opacity: Dekkevna til høglyset
+      Inner Shadow Opacity: Dekkevna til den indre skuggen
+      Shadow Strength: Styrken til slagskuggen
+      Refraction Strength: Styrken til lysbrytinga
+      Bezel Width: Breidda på fasekanten
+      Lens Radius: Hjørneradius for linsa
+      Chromatic Aberration: Kromatisk aberrasjon
+      Lens Blur: Uskarpleik i linsa
+      Specular Highlight: Spegelglans
+      Maximum Lensed Surfaces: Største tal flater med linse
+      Transparent Window Background: Lat systemet teikne bakgrunnen til vindauget
+      Respect Reduced Transparency: Følg systeminnstillinga for redusert gjennomsikt
+      Fallback Opacity: Dekkevne utan uskarp bakgrunn
 Tutorial:
   Skip: Hopp over
   Next: Neste
@@ -1843,6 +1924,14 @@ Tooltips:
   SponsorBlock Settings:
     UseDeArrowTitles: Byt ut videotitlar med titlar som brukarar har sendt inn til DeArrow.
     UseDeArrowThumbnails: Byt ut videominiatyrar med miniatyrar frå DeArrow.
+  Glass Settings:
+    Enable Translucency: Let flatene i appen vise kva som er bak dei. Fargane kjem framleis frå det aktive temaet, så effekten legg seg oppå paletten din i staden for å erstatte han.
+    Texture: Vel karakteren til effekten. Frosta glas er ei jamn uskarpleik, Akryl legg til korn og metting, Mica flyttar effekten til sjølve sida slik at flatene over held seg dekkjande, og Liquid Glass bryt bakgrunnen gjennom ei linse.
+    Tint Mode: Når effekten følgjer temaet, held kvar flate på sin eigen farge. Ein eigendefinert farge dreg alle flater mot den du vel, noko som gjev éin aksent gjennom heile grensesnittet.
+    Liquid Quality: Kor fint linsa vert generert. Høgare ser jamnare ut langs bøygde kantar og kostar meir kvar gong ei flate endrar storleik.
+    System Backdrop: Bed operativsystemet om å teikne bakgrunnen til vindauget. I Windows er det same Mica- eller Akrylmaterialet som andre appar brukar, så verktøy som tilpassar det for heile systemet, påverkar òg denne appen.
+    Transparent Window Background: Hindrar appen i å teikne sin eigen sidebakgrunn, slik at det systemet teiknar bak vindauget vert synleg. Berre nyttig med ein vindaugsbakgrunn slått på.
+    Respect Reduced Transparency: Slår av effekten automatisk så lenge operativsystemet er sett til redusert gjennomsikt.
 Autoplay Interruption Timer: Automatisk avspeling vart avbroten etter {autoplayInterruptionIntervalHours} timar utan aktivitet
 The playlist is at the beginning. Enable loop to continue playing: Spelelista er på byrjinga. Slå på gjentaking for å spele vidare
 Age Restricted:

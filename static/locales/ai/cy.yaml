@@ -916,6 +916,87 @@ Settings:
     Unlocking: Wrthi'n datgloi…
   Search Settings: Gosodiadau chwilio
   No Settings Found: Ni chanfuwyd unrhyw osodiadau
+  Glass Settings:
+    Translucency: Tryleuedd
+    Description: Yn ychwanegu gorffeniad gwydr barugog dros y thema rydych chi eisoes yn ei defnyddio. Mae'r lliwiau'n dal i ddod o'r thema, felly mae'r palet yn aros yn adnabyddadwy drwy'r effaith.
+    Enable Translucency: Galluogi tryleuedd
+    Liquid Warning: Mae Liquid Glass yn plygu'r cefndir drwy lens a gynhyrchir ar gyfer pob arwyneb y mae'n ei orchuddio. Dyma'r dewis mwyaf trwm yma ac mae'n gweithio orau ar nifer fach o arwynebau.
+    System Backdrop Unavailable: Mae angen Windows 11 neu macOS ar gyfer cefndir ffenestr a luniadir gan y system. Mae'r effeithiau o fewn yr ap isod yn gweithio ym mhobman.
+    Reset: Ailosod gosodiadau tryleuedd
+    Texture:
+      Texture: Gwead
+      Blur: Gwydr barugog
+      Acrylic: Acrylig
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Arwynebau
+      Window Chrome: Llywio a'r bar ochr
+      Cards: Cardiau a phaneli
+      Menus and Popups: Dewislenni, deialogau a hysbysiadau
+      Inputs: Meysydd testun
+      Player Panels: Paneli ochr y chwaraewr
+    Tint Mode:
+      Tint Mode: Arlliw
+      Follow Theme: Dilyn y thema
+      Custom Color: Lliw personol
+    Border Tone:
+      Border Tone: Tôn yr ymylon
+      Automatic: Awtomatig
+      Light: Golau
+      Dark: Tywyll
+    Liquid Quality:
+      Liquid Quality: Ansawdd y lens
+      Low: Isel
+      Medium: Canolig
+      High: Uchel
+    System Backdrop:
+      System Backdrop: Cefndir y ffenestr
+      None: Dim
+      Automatic: Rhagosodiad y system
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrylig
+    Groups:
+      opacity: Didreiddedd
+      backdrop: Cefndir
+      tint: Arlliw
+      texture: Graenusrwydd
+      edge: Ymylon a dyfnder
+      liquid: Liquid Glass
+      system: Ffenestr
+    Knobs:
+      Luminous Opacity: Didreiddedd disglair
+      Page Opacity: Didreiddedd y dudalen
+      Chrome Opacity: Didreiddedd y llywio
+      Card Opacity: Didreiddedd y cardiau
+      Menu Opacity: Didreiddedd y dewislenni
+      Input Opacity: Didreiddedd y meysydd testun
+      Luminance: Goleuedd
+      Blur Radius: Radiws y pylu
+      Saturation: Dirlawnder
+      Brightness: Disgleirdeb
+      Contrast: Cyferbyniad
+      Tint Color: Lliw'r arlliw
+      Tint Strength: Cryfder yr arlliw
+      Grain Opacity: Didreiddedd y graen
+      Grain Scale: Graddfa'r graen
+      Border Opacity: Didreiddedd yr ymylon
+      Border Width: Lled yr ymylon
+      Highlight Opacity: Didreiddedd yr amlygiad
+      Inner Shadow Opacity: Didreiddedd y cysgod mewnol
+      Shadow Strength: Cryfder y cysgod bwrw
+      Refraction Strength: Cryfder y plygiant
+      Bezel Width: Lled y befel
+      Lens Radius: Radiws corneli'r lens
+      Chromatic Aberration: Gwyriad cromatig
+      Lens Blur: Pylu'r lens
+      Specular Highlight: Adlewyrchiad sgleiniog
+      Maximum Lensed Surfaces: Uchafswm arwynebau â lens
+      Transparent Window Background: Gadael i'r system luniadu cefndir y ffenestr
+      Respect Reduced Transparency: Parchu gosodiad tryloywder llai y system
+      Fallback Opacity: Didreiddedd heb bylu'r cefndir
 Tutorial:
   Skip: Hepgor
   Next: Nesaf
@@ -1445,6 +1526,14 @@ Tooltips:
     Scroll Speed: Newid pa mor bell mae ystumiau olwyn llygoden ac olwyn pad cyffwrdd yn sgrolio.
     Use Fixed Tab Width: Mae'n rhoi'r un lled i bob tab yn y bar tabiau llorweddol yn lle eu meintio yn ôl eu teitl.
     Use Grid Player Menu: Mae'n trefnu dewislen gosodiadau'r chwaraewr fideo fel grid o deils yn lle rhestr o resi.
+  Glass Settings:
+    Enable Translucency: Yn gadael i arwynebau'r ap ddangos beth sydd y tu ôl iddynt. Mae'r lliwiau'n dal i ddod o'r thema weithredol, felly mae'r effaith yn haenu ar ben eich palet yn hytrach na'i disodli.
+    Texture: Yn dewis cymeriad yr effaith. Pylu gwastad yw gwydr barugog, mae Acrylig yn ychwanegu graen a dirlawnder, mae Mica yn symud yr effaith i'r dudalen ei hun fel bod yr arwynebau uwchben yn aros yn solet, ac mae Liquid Glass yn plygu'r cefndir drwy lens.
+    Tint Mode: Wrth ddilyn y thema mae pob arwyneb yn cadw ei liw ei hun. Mae lliw personol yn tynnu pob arwyneb tuag at yr un a ddewiswch, a dyna sut y cewch un acen drwy'r rhyngwyneb cyfan.
+    Liquid Quality: Pa mor fanwl y cynhyrchir y lens. Mae uwch yn edrych yn llyfnach ar hyd ymylon crwm ac yn costio mwy bob tro y mae arwyneb yn newid maint.
+    System Backdrop: Yn gofyn i'r system weithredu luniadu cefndir y ffenestr. Ar Windows dyma'r un deunydd Mica neu Acrylig y mae apiau eraill yn ei ddefnyddio, felly mae offer sy'n ei addasu ar draws y system yn effeithio ar yr ap hwn hefyd.
+    Transparent Window Background: Yn atal yr ap rhag lluniadu ei gefndir tudalen ei hun, fel bod yr hyn y mae'r system yn ei luniadu y tu ôl i'r ffenestr yn dangos drwodd. Dim ond yn ddefnyddiol gyda chefndir ffenestr wedi'i alluogi.
+    Respect Reduced Transparency: Yn diffodd yr effaith yn awtomatig tra bo'r system weithredu wedi'i gosod i leihau tryloywder.
 The playlist is at the beginning. Enable loop to continue playing: Mae'r rhestr chwarae ar y dechrau. Galluogwch ailadrodd i barhau i chwarae
 External link opening has been disabled in Settings → Privacy: Mae agor dolenni allanol wedi'i analluogi yn Gosodiadau → Preifatrwydd
 KeyboardShortcutPrompt:

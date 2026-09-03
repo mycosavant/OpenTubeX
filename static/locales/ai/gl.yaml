@@ -933,6 +933,87 @@ Settings:
     Unlocking: Desbloqueando…
   Search Settings: Buscar na configuración
   No Settings Found: Non se atopou ningún axuste
+  Glass Settings:
+    Translucency: Translucidez
+    Description: Engade un acabado de vidro esmerilado sobre o tema que xa usas. As cores seguen vindo do tema, así que a paleta mantense recoñecible a través do efecto.
+    Enable Translucency: Activar a translucidez
+    Liquid Warning: Liquid Glass refracta o fondo a través dunha lente xerada para cada superficie que cobre. É a opción máis esixente de aquí e funciona mellor con poucas superficies.
+    System Backdrop Unavailable: Un fondo de xanela debuxado polo sistema require Windows 11 ou macOS. Os efectos internos de abaixo funcionan en calquera sistema.
+    Reset: Restablecer os axustes de translucidez
+    Texture:
+      Texture: Textura
+      Blur: Vidro esmerilado
+      Acrylic: Acrílico
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Superficies
+      Window Chrome: Navegación e barra lateral
+      Cards: Tarxetas e paneis
+      Menus and Popups: Menús, diálogos e avisos
+      Inputs: Campos de texto
+      Player Panels: Paneis laterais do reprodutor
+    Tint Mode:
+      Tint Mode: Matiz
+      Follow Theme: Seguir o tema
+      Custom Color: Cor personalizada
+    Border Tone:
+      Border Tone: Ton dos bordos
+      Automatic: Automático
+      Light: Claro
+      Dark: Escuro
+    Liquid Quality:
+      Liquid Quality: Calidade da lente
+      Low: Baixa
+      Medium: Media
+      High: Alta
+    System Backdrop:
+      System Backdrop: Fondo da xanela
+      None: Ningún
+      Automatic: Predeterminado do sistema
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrílico
+    Groups:
+      opacity: Opacidade
+      backdrop: Fondo
+      tint: Matiz
+      texture: Gran
+      edge: Bordos e profundidade
+      liquid: Liquid Glass
+      system: Xanela
+    Knobs:
+      Luminous Opacity: Opacidade luminosa
+      Page Opacity: Opacidade da páxina
+      Chrome Opacity: Opacidade da navegación
+      Card Opacity: Opacidade das tarxetas
+      Menu Opacity: Opacidade dos menús
+      Input Opacity: Opacidade dos campos de texto
+      Luminance: Luminancia
+      Blur Radius: Raio do desenfoque
+      Saturation: Saturación
+      Brightness: Brillo
+      Contrast: Contraste
+      Tint Color: Cor do matiz
+      Tint Strength: Intensidade do matiz
+      Grain Opacity: Opacidade do gran
+      Grain Scale: Escala do gran
+      Border Opacity: Opacidade dos bordos
+      Border Width: Grosor dos bordos
+      Highlight Opacity: Opacidade do reflexo
+      Inner Shadow Opacity: Opacidade da sombra interior
+      Shadow Strength: Intensidade da sombra proxectada
+      Refraction Strength: Intensidade da refracción
+      Bezel Width: Largura do bisel
+      Lens Radius: Raio das esquinas da lente
+      Chromatic Aberration: Aberración cromática
+      Lens Blur: Desenfoque da lente
+      Specular Highlight: Reflexo especular
+      Maximum Lensed Surfaces: Máximo de superficies con lente
+      Transparent Window Background: Deixar que o sistema debuxe o fondo da xanela
+      Respect Reduced Transparency: Respectar o axuste de transparencia reducida do sistema
+      Fallback Opacity: Opacidade sen desenfoque de fondo
 Tutorial:
   Skip: Omitir
   Next: Seguinte
@@ -1464,6 +1545,14 @@ Tooltips:
     Scroll Speed: Cambia a distancia de desprazamento dos xestos da roda do rato e do panel táctil.
     Use Fixed Tab Width: Dálles a todas as lapelas da barra horizontal a mesma largura en lugar de adaptar o tamaño ao título.
     Use Grid Player Menu: Organiza o menú de configuración do reprodutor de vídeo como unha grade de bloques en lugar dunha lista de filas.
+  Glass Settings:
+    Enable Translucency: Deixa que as superficies da aplicación amosen o que hai detrás. As cores seguen vindo do tema activo, así que o efecto se superpón á túa paleta en vez de substituíla.
+    Texture: Escolle o carácter do efecto. Vidro esmerilado é un desenfoque uniforme, Acrílico engade gran e saturación, Mica traslada o efecto á propia páxina para que as superficies de arriba queden opacas, e Liquid Glass refracta o fondo a través dunha lente.
+    Tint Mode: Ao seguir o tema, cada superficie conserva a súa propia cor. Unha cor personalizada atrae todas as superficies cara á que escollas, e así conséguese un único acento en toda a interface.
+    Liquid Quality: Con canto detalle se xera a lente. Un valor alto vese máis suave nos bordos curvos e custa máis cada vez que unha superficie cambia de tamaño.
+    System Backdrop: Pídelle ao sistema operativo que debuxe o fondo da xanela. En Windows é o mesmo material Mica ou Acrílico que usan outras aplicacións, así que as ferramentas que o personalizan en todo o sistema tamén afectan a esta aplicación.
+    Transparent Window Background: Impide que a aplicación debuxe o seu propio fondo de páxina, para que se vexa o que o sistema debuxa detrás da xanela. Só é útil cun fondo de xanela activado.
+    Respect Reduced Transparency: Desactiva o efecto automaticamente mentres o sistema operativo estea configurado para reducir a transparencia.
 The playlist is at the beginning. Enable loop to continue playing: A lista de reprodución está no principio. Activa a repetición para continuar a reprodución
 External link opening has been disabled in Settings → Privacy: A apertura de ligazóns externas desactivouse en Configuración → Privacidade
 KeyboardShortcutPrompt:

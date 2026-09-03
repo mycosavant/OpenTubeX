@@ -931,6 +931,87 @@ Settings:
     Unlocking: Đang mở khóa…
   Search Settings: Tìm trong cài đặt
   No Settings Found: Không tìm thấy cài đặt
+  Glass Settings:
+    Translucency: Độ mờ trong
+    Description: Phủ một lớp kính mờ lên chủ đề bạn đang dùng. Màu sắc vẫn lấy từ chủ đề, nên bảng màu vẫn nhận ra được qua hiệu ứng.
+    Enable Translucency: Bật độ mờ trong
+    Liquid Warning: Liquid Glass khúc xạ nền qua một thấu kính được tạo riêng cho từng bề mặt mà nó phủ. Đây là lựa chọn nặng nhất ở đây và hợp nhất khi áp dụng cho ít bề mặt.
+    System Backdrop Unavailable: Nền cửa sổ do hệ thống vẽ cần Windows 11 hoặc macOS. Các hiệu ứng trong ứng dụng bên dưới hoạt động ở mọi nơi.
+    Reset: Đặt lại các thiết lập độ mờ trong
+    Texture:
+      Texture: Kết cấu
+      Blur: Kính mờ
+      Acrylic: Acrylic
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Bề mặt
+      Window Chrome: Điều hướng và thanh bên
+      Cards: Thẻ và bảng
+      Menus and Popups: Trình đơn, hộp thoại và thông báo
+      Inputs: Ô nhập văn bản
+      Player Panels: Bảng bên của trình phát
+    Tint Mode:
+      Tint Mode: Sắc màu
+      Follow Theme: Theo chủ đề
+      Custom Color: Màu tùy chỉnh
+    Border Tone:
+      Border Tone: Tông viền
+      Automatic: Tự động
+      Light: Sáng
+      Dark: Tối
+    Liquid Quality:
+      Liquid Quality: Chất lượng thấu kính
+      Low: Thấp
+      Medium: Trung bình
+      High: Cao
+    System Backdrop:
+      System Backdrop: Nền cửa sổ
+      None: Không có
+      Automatic: Mặc định của hệ thống
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrylic
+    Groups:
+      opacity: Độ đục
+      backdrop: Nền
+      tint: Sắc màu
+      texture: Hạt
+      edge: Viền và chiều sâu
+      liquid: Liquid Glass
+      system: Cửa sổ
+    Knobs:
+      Luminous Opacity: Độ đục phát sáng
+      Page Opacity: Độ đục của trang
+      Chrome Opacity: Độ đục của điều hướng
+      Card Opacity: Độ đục của thẻ
+      Menu Opacity: Độ đục của trình đơn
+      Input Opacity: Độ đục của ô nhập văn bản
+      Luminance: Độ chói
+      Blur Radius: Bán kính làm mờ
+      Saturation: Độ bão hòa
+      Brightness: Độ sáng
+      Contrast: Độ tương phản
+      Tint Color: Màu của sắc màu
+      Tint Strength: Cường độ sắc màu
+      Grain Opacity: Độ đục của hạt
+      Grain Scale: Kích thước hạt
+      Border Opacity: Độ đục của viền
+      Border Width: Bề rộng viền
+      Highlight Opacity: Độ đục của điểm sáng
+      Inner Shadow Opacity: Độ đục của bóng bên trong
+      Shadow Strength: Cường độ bóng đổ
+      Refraction Strength: Cường độ khúc xạ
+      Bezel Width: Bề rộng vát cạnh
+      Lens Radius: Bán kính góc thấu kính
+      Chromatic Aberration: Quang sai màu
+      Lens Blur: Làm mờ thấu kính
+      Specular Highlight: Điểm sáng phản chiếu
+      Maximum Lensed Surfaces: Số bề mặt tối đa dùng thấu kính
+      Transparent Window Background: Để hệ thống vẽ nền cửa sổ
+      Respect Reduced Transparency: Tôn trọng thiết lập giảm độ trong suốt của hệ thống
+      Fallback Opacity: Độ đục khi không làm mờ nền
 Tutorial:
   Skip: Bỏ qua
   Next: Tiếp
@@ -1452,6 +1533,14 @@ Tooltips:
     Scroll Speed: Thay đổi khoảng cách cuộn của cử chỉ con lăn chuột và con lăn bàn di chuột.
     Use Fixed Tab Width: Đặt cùng chiều rộng cho mọi thẻ trên thanh thẻ ngang thay vì điều chỉnh theo tiêu đề.
     Use Grid Player Menu: Sắp xếp menu cài đặt của trình phát video thành lưới ô thay vì danh sách hàng.
+  Glass Settings:
+    Enable Translucency: Cho phép nhìn xuyên qua các bề mặt của ứng dụng để thấy thứ phía sau. Màu sắc vẫn lấy từ chủ đề đang dùng, nên hiệu ứng phủ lên bảng màu của bạn thay vì thay thế nó.
+    Texture: Chọn tính chất của hiệu ứng. Kính mờ là một lớp mờ đều, Acrylic thêm hạt và độ bão hòa, Mica chuyển hiệu ứng lên chính trang nên các bề mặt phía trên vẫn đục, còn Liquid Glass khúc xạ nền qua một thấu kính.
+    Tint Mode: Khi theo chủ đề, mỗi bề mặt giữ màu riêng của nó. Màu tùy chỉnh kéo mọi bề mặt về phía màu bạn chọn, nhờ đó cả giao diện có chung một màu nhấn.
+    Liquid Quality: Thấu kính được tạo tinh xảo đến mức nào. Giá trị cao trông mượt hơn ở các viền cong và tốn kém hơn mỗi khi một bề mặt đổi kích thước.
+    System Backdrop: Yêu cầu hệ điều hành vẽ nền của cửa sổ. Trên Windows đây chính là vật liệu Mica hoặc Acrylic mà các ứng dụng khác dùng, nên những công cụ tùy chỉnh nó trên toàn hệ thống cũng ảnh hưởng tới ứng dụng này.
+    Transparent Window Background: Ngăn ứng dụng vẽ nền trang của riêng nó, để lộ ra thứ hệ thống vẽ phía sau cửa sổ. Chỉ hữu ích khi đã bật nền cửa sổ.
+    Respect Reduced Transparency: Tự động tắt hiệu ứng trong khi hệ điều hành được đặt giảm độ trong suốt.
 The playlist is at the beginning. Enable loop to continue playing: Danh sách phát đang ở đầu. Hãy bật lặp lại để tiếp tục phát
 External link opening has been disabled in Settings → Privacy: Tính năng mở liên kết bên ngoài đã bị tắt trong Cài đặt → Quyền riêng tư
 KeyboardShortcutPrompt:

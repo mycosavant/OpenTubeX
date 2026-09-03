@@ -956,6 +956,87 @@ Settings:
     Unlocking: Откључавање…
   Search Settings: Подешавања претраге
   No Settings Found: Нису пронађена подешавања
+  Glass Settings:
+    Translucency: Прозирност
+    Description: Додаје изглед брушеног стакла преко теме коју већ користите. Боје и даље долазе из теме, па палета кроз ефекат остаје препознатљива.
+    Enable Translucency: Омогући прозирност
+    Liquid Warning: Liquid Glass прелама позадину кроз генерисано сочиво за сваку површину коју прекрива. То је овде најзахтевнија могућност и најбоље ради с малим бројем површина.
+    System Backdrop Unavailable: Позадина прозора коју исцртава систем захтева Windows 11 или macOS. Ефекти унутар апликације испод раде свуда.
+    Reset: Врати подешавања прозирности
+    Texture:
+      Texture: Текстура
+      Blur: Брушено стакло
+      Acrylic: Акрил
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Површине
+      Window Chrome: Навигација и бочна трака
+      Cards: Картице и панели
+      Menus and Popups: Менији, дијалози и обавештења
+      Inputs: Текстуална поља
+      Player Panels: Бочни панели плејера
+    Tint Mode:
+      Tint Mode: Нијанса
+      Follow Theme: Прати тему
+      Custom Color: Прилагођена боја
+    Border Tone:
+      Border Tone: Тон ивица
+      Automatic: Аутоматски
+      Light: Светло
+      Dark: Тамно
+    Liquid Quality:
+      Liquid Quality: Квалитет сочива
+      Low: Низак
+      Medium: Средњи
+      High: Висок
+    System Backdrop:
+      System Backdrop: Позадина прозора
+      None: Ниједна
+      Automatic: Подразумевано системско
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Акрил
+    Groups:
+      opacity: Непрозирност
+      backdrop: Позадина
+      tint: Нијанса
+      texture: Зрнастост
+      edge: Ивице и дубина
+      liquid: Liquid Glass
+      system: Прозор
+    Knobs:
+      Luminous Opacity: Светлећа непрозирност
+      Page Opacity: Непрозирност странице
+      Chrome Opacity: Непрозирност навигације
+      Card Opacity: Непрозирност картица
+      Menu Opacity: Непрозирност менија
+      Input Opacity: Непрозирност текстуалних поља
+      Luminance: Светлина површине
+      Blur Radius: Полупречник замућења
+      Saturation: Засићеност
+      Brightness: Светлина
+      Contrast: Контраст
+      Tint Color: Боја нијансе
+      Tint Strength: Јачина нијансе
+      Grain Opacity: Непрозирност зрнастости
+      Grain Scale: Величина зрнастости
+      Border Opacity: Непрозирност ивица
+      Border Width: Дебљина ивица
+      Highlight Opacity: Непрозирност светле ивице
+      Inner Shadow Opacity: Непрозирност унутрашње сенке
+      Shadow Strength: Јачина бачене сенке
+      Refraction Strength: Јачина преламања светлости
+      Bezel Width: Ширина закошења
+      Lens Radius: Полупречник углова сочива
+      Chromatic Aberration: Хроматска аберација
+      Lens Blur: Замућење сочива
+      Specular Highlight: Огледалски одсјај
+      Maximum Lensed Surfaces: Највећи број површина са сочивом
+      Transparent Window Background: Нека систем исцртава позадину прозора
+      Respect Reduced Transparency: Поштуј системско подешавање смањене прозирности
+      Fallback Opacity: Непрозирност без замућења позадине
 Tutorial:
   Skip: Прескочи
   Next: Даље
@@ -1489,6 +1570,14 @@ Tooltips:
     Scroll Speed: Мења растојање померања покретима точкића миша и додирне табле.
     Use Fixed Tab Width: Даје свакој картици на водоравној траци картица исту ширину уместо да је прилагођава наслову.
     Use Grid Player Menu: Распоређује мени подешавања плејера као мрежу плочица уместо као листу редова.
+  Glass Settings:
+    Enable Translucency: Омогућава да површине апликације покажу шта је иза њих. Боје и даље долазе из активне теме, па се ефекат слаже преко ваше палете уместо да је замени.
+    Texture: Бира карактер ефекта. Брушено стакло је равномерно замућење, Акрил додаје зрнастост и засићеност, Mica премешта ефекат на саму страницу па површине изнад остају непрозирне, а Liquid Glass прелама позадину кроз сочиво.
+    Tint Mode: Уз праћење теме свака површина задржава сопствену боју. Прилагођена боја повлачи све површине ка изабраној, чиме се добија један нагласак кроз цео интерфејс.
+    Liquid Quality: Колико се фино генерише сочиво. Виша вредност изгледа глаткије на заобљеним ивицама и скупља је при свакој промени величине површине.
+    System Backdrop: Тражи од оперативног система да исцрта позадину прозора. На Windows-у је то исти материјал Mica или Акрил који користе друге апликације, па алати који га прилагођавају на нивоу система утичу и на ову апликацију.
+    Transparent Window Background: Спречава апликацију да исцртава сопствену позадину странице, па се види оно што систем црта иза прозора. Корисно само уз укључену позадину прозора.
+    Respect Reduced Transparency: Аутоматски искључује ефекат док је у оперативном систему подешено смањење прозирности.
 The playlist is at the beginning. Enable loop to continue playing: Листа за репродукцију је на почетку. Укључите понављање да бисте наставили репродукцију
 External link opening has been disabled in Settings → Privacy: Отварање спољних веза је искључено у Подешавања → Приватност
 Screenshot Clipboard Success: Снимак екрана је копиран у привремену меморију

@@ -931,6 +931,87 @@ Settings:
     Unlocking: Membuka kunci…
   Search Settings: Cari pengaturan
   No Settings Found: Pengaturan tidak ditemukan
+  Glass Settings:
+    Translucency: Transluensi
+    Description: Menambahkan lapisan kaca buram di atas tema yang sudah Anda pakai. Warna tetap berasal dari tema, sehingga paletnya masih dikenali melalui efek ini.
+    Enable Translucency: Aktifkan transluensi
+    Liquid Warning: Liquid Glass membiaskan latar melalui lensa yang dibuat untuk setiap permukaan yang ditutupinya. Ini pilihan paling berat di sini dan paling cocok untuk sedikit permukaan.
+    System Backdrop Unavailable: Latar jendela yang digambar sistem memerlukan Windows 11 atau macOS. Efek dalam aplikasi di bawah ini berfungsi di mana saja.
+    Reset: Setel ulang pengaturan transluensi
+    Texture:
+      Texture: Tekstur
+      Blur: Kaca buram
+      Acrylic: Akrilik
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Permukaan
+      Window Chrome: Navigasi dan bilah sisi
+      Cards: Kartu dan panel
+      Menus and Popups: Menu, dialog, dan notifikasi
+      Inputs: Bidang teks
+      Player Panels: Panel samping pemutar
+    Tint Mode:
+      Tint Mode: Rona
+      Follow Theme: Ikuti tema
+      Custom Color: Warna khusus
+    Border Tone:
+      Border Tone: Nada tepi
+      Automatic: Otomatis
+      Light: Terang
+      Dark: Gelap
+    Liquid Quality:
+      Liquid Quality: Kualitas lensa
+      Low: Rendah
+      Medium: Sedang
+      High: Tinggi
+    System Backdrop:
+      System Backdrop: Latar jendela
+      None: Tidak ada
+      Automatic: Bawaan sistem
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akrilik
+    Groups:
+      opacity: Keburaman
+      backdrop: Latar
+      tint: Rona
+      texture: Butiran
+      edge: Tepi dan kedalaman
+      liquid: Liquid Glass
+      system: Jendela
+    Knobs:
+      Luminous Opacity: Keburaman bercahaya
+      Page Opacity: Keburaman halaman
+      Chrome Opacity: Keburaman navigasi
+      Card Opacity: Keburaman kartu
+      Menu Opacity: Keburaman menu
+      Input Opacity: Keburaman bidang teks
+      Luminance: Luminansi
+      Blur Radius: Radius pengaburan
+      Saturation: Saturasi
+      Brightness: Kecerahan
+      Contrast: Kontras
+      Tint Color: Warna rona
+      Tint Strength: Kekuatan rona
+      Grain Opacity: Keburaman butiran
+      Grain Scale: Skala butiran
+      Border Opacity: Keburaman tepi
+      Border Width: Lebar tepi
+      Highlight Opacity: Keburaman sorotan
+      Inner Shadow Opacity: Keburaman bayangan dalam
+      Shadow Strength: Kekuatan bayangan jatuh
+      Refraction Strength: Kekuatan pembiasan
+      Bezel Width: Lebar bevel
+      Lens Radius: Radius sudut lensa
+      Chromatic Aberration: Aberasi kromatik
+      Lens Blur: Pengaburan lensa
+      Specular Highlight: Sorotan spekular
+      Maximum Lensed Surfaces: Jumlah maksimum permukaan berlensa
+      Transparent Window Background: Biarkan sistem menggambar latar jendela
+      Respect Reduced Transparency: Hormati pengaturan transparansi berkurang pada sistem
+      Fallback Opacity: Keburaman tanpa pengaburan latar
 Tutorial:
   Skip: Lewati
   Next: Berikutnya
@@ -1454,6 +1535,14 @@ Tooltips:
     Scroll Speed: Mengubah jarak gulir gestur roda tetikus dan panel sentuh.
     Use Fixed Tab Width: Memberi setiap tab pada bilah tab horizontal lebar yang sama, bukan menyesuaikan lebar dengan judulnya.
     Use Grid Player Menu: Menyusun menu pengaturan pemutar video sebagai kisi ubin, bukan daftar baris.
+  Glass Settings:
+    Enable Translucency: Membuat permukaan aplikasi menampilkan apa yang ada di belakangnya. Warna tetap berasal dari tema aktif, sehingga efek ini berlapis di atas palet Anda alih-alih menggantinya.
+    Texture: Menentukan karakter efeknya. Kaca buram adalah pengaburan merata, Akrilik menambah butiran dan saturasi, Mica memindahkan efek ke halaman itu sendiri sehingga permukaan di atasnya tetap pekat, dan Liquid Glass membiaskan latar melalui lensa.
+    Tint Mode: Saat mengikuti tema, setiap permukaan mempertahankan warnanya sendiri. Warna khusus menarik semua permukaan ke warna yang Anda pilih, sehingga satu warna aksen mengalir di seluruh antarmuka.
+    Liquid Quality: Seberapa halus lensa dibuat. Nilai lebih tinggi terlihat lebih mulus di tepi melengkung dan lebih mahal setiap kali sebuah permukaan berubah ukuran.
+    System Backdrop: Meminta sistem operasi menggambar latar jendela. Di Windows ini adalah material Mica atau Akrilik yang sama dengan yang dipakai aplikasi lain, jadi alat yang menyesuaikannya di seluruh sistem juga memengaruhi aplikasi ini.
+    Transparent Window Background: Mencegah aplikasi menggambar latar halamannya sendiri, sehingga yang digambar sistem di belakang jendela terlihat. Hanya berguna bila latar jendela diaktifkan.
+    Respect Reduced Transparency: Mematikan efek secara otomatis selama sistem operasi disetel untuk mengurangi transparansi.
 The playlist is at the beginning. Enable loop to continue playing: Daftar putar berada di awal. Aktifkan pengulangan untuk melanjutkan pemutaran
 External link opening has been disabled in Settings → Privacy: Pembukaan tautan eksternal telah dinonaktifkan di Pengaturan → Privasi
 KeyboardShortcutPrompt:

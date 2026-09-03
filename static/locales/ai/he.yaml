@@ -938,6 +938,87 @@ Settings:
     Unlocking: הנעילה מתבטלת…
   Search Settings: חיפוש בהגדרות
   No Settings Found: לא נמצאו הגדרות
+  Glass Settings:
+    Translucency: שקיפות חלקית
+    Description: מוסיף גימור של זכוכית חלבית מעל ערכת הנושא שכבר בשימוש. הצבעים עדיין מגיעים מערכת הנושא, ולכן לוח הצבעים נשאר מזוהה גם דרך האפקט.
+    Enable Translucency: הפעלת שקיפות חלקית
+    Liquid Warning: ‏Liquid Glass שובר את הרקע דרך עדשה שנוצרת עבור כל משטח שהוא מכסה. זו האפשרות התובענית ביותר כאן והיא מתאימה בעיקר למספר קטן של משטחים.
+    System Backdrop Unavailable: רקע חלון שהמערכת מציירת דורש Windows 11 או macOS. אפקטי היישום שלמטה פועלים בכל מערכת.
+    Reset: איפוס הגדרות השקיפות החלקית
+    Texture:
+      Texture: מרקם
+      Blur: זכוכית חלבית
+      Acrylic: אקריל
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: משטחים
+      Window Chrome: ניווט וסרגל צד
+      Cards: כרטיסים ולוחות
+      Menus and Popups: תפריטים, דו-שיח והתראות
+      Inputs: שדות טקסט
+      Player Panels: לוחות הצד של הנגן
+    Tint Mode:
+      Tint Mode: גוון
+      Follow Theme: לפי ערכת הנושא
+      Custom Color: צבע מותאם אישית
+    Border Tone:
+      Border Tone: גוון הקצוות
+      Automatic: אוטומטי
+      Light: בהיר
+      Dark: כהה
+    Liquid Quality:
+      Liquid Quality: איכות העדשה
+      Low: נמוכה
+      Medium: בינונית
+      High: גבוהה
+    System Backdrop:
+      System Backdrop: רקע החלון
+      None: ללא
+      Automatic: ברירת המחדל של המערכת
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: אקריל
+    Groups:
+      opacity: אטימות
+      backdrop: רקע
+      tint: גוון
+      texture: גרעיניות
+      edge: קצוות ועומק
+      liquid: Liquid Glass
+      system: חלון
+    Knobs:
+      Luminous Opacity: אטימות זוהרת
+      Page Opacity: אטימות הדף
+      Chrome Opacity: אטימות הניווט
+      Card Opacity: אטימות הכרטיסים
+      Menu Opacity: אטימות התפריטים
+      Input Opacity: אטימות שדות הטקסט
+      Luminance: בהירות המשטח
+      Blur Radius: רדיוס הטשטוש
+      Saturation: רוויה
+      Brightness: בהירות
+      Contrast: ניגודיות
+      Tint Color: צבע הגוון
+      Tint Strength: עוצמת הגוון
+      Grain Opacity: אטימות הגרעיניות
+      Grain Scale: קנה מידה של הגרעיניות
+      Border Opacity: אטימות הקצוות
+      Border Width: עובי הקצוות
+      Highlight Opacity: אטימות ההבהקה
+      Inner Shadow Opacity: אטימות הצל הפנימי
+      Shadow Strength: עוצמת הצל המוטל
+      Refraction Strength: עוצמת השבירה
+      Bezel Width: רוחב השיפוע
+      Lens Radius: רדיוס פינות העדשה
+      Chromatic Aberration: סטייה כרומטית
+      Lens Blur: טשטוש העדשה
+      Specular Highlight: הבהקה מבריקה
+      Maximum Lensed Surfaces: מספר מרבי של משטחים עם עדשה
+      Transparent Window Background: לתת למערכת לצייר את רקע החלון
+      Respect Reduced Transparency: לכבד את הגדרת צמצום השקיפות של המערכת
+      Fallback Opacity: אטימות ללא טשטוש רקע
 Tutorial:
   Skip: דילוג
   Next: הבא
@@ -1462,6 +1543,14 @@ Tooltips:
     Scroll Speed: שינוי מרחק הגלילה של מחוות גלגלת העכבר ומשטח המגע.
     Use Fixed Tab Width: מקצה רוחב זהה לכל לשונית בסרגל הלשוניות האופקי, במקום להתאים את הרוחב לכותרת.
     Use Grid Player Menu: מסדר את תפריט ההגדרות של נגן הווידאו כרשת אריחים במקום כרשימת שורות.
+  Glass Settings:
+    Enable Translucency: מאפשר למשטחי היישום להראות את מה שמאחוריהם. הצבעים עדיין מגיעים מערכת הנושא הפעילה, ולכן האפקט מונח מעל לוח הצבעים שלך במקום להחליף אותו.
+    Texture: קובע את אופי האפקט. זכוכית חלבית היא טשטוש אחיד, אקריל מוסיף גרעיניות ורוויה, ‏Mica מעביר את האפקט לדף עצמו כך שהמשטחים שמעליו נשארים אטומים, ו-Liquid Glass שובר את הרקע דרך עדשה.
+    Tint Mode: כשהאפקט עוקב אחר ערכת הנושא, כל משטח שומר על הצבע שלו. צבע מותאם אישית מושך את כל המשטחים לצבע שבחרת, וכך מתקבל גוון הדגשה אחד לאורך כל הממשק.
+    Liquid Quality: עד כמה העדשה נוצרת בעדינות. ערך גבוה נראה חלק יותר בקצוות מעוגלים ועולה יותר בכל שינוי גודל של משטח.
+    System Backdrop: מבקש ממערכת ההפעלה לצייר את רקע החלון. ב-Windows מדובר באותו חומר Mica או אקריל שיישומים אחרים משתמשים בו, ולכן כלים שמתאימים אותו ברמת המערכת משפיעים גם על יישום זה.
+    Transparent Window Background: מונע מהיישום לצייר רקע דף משלו, כך שמה שהמערכת מציירת מאחורי החלון נראה. שימושי רק כאשר רקע החלון מופעל.
+    Respect Reduced Transparency: מכבה את האפקט אוטומטית כל עוד מערכת ההפעלה מוגדרת לצמצום שקיפות.
 The playlist is at the beginning. Enable loop to continue playing: רשימת ההשמעה בתחילתה. הפעילו לולאה כדי להמשיך לנגן
 External link opening has been disabled in Settings → Privacy: פתיחת קישורים חיצוניים הושבתה בהגדרות → פרטיות
 Screenshot Clipboard Success: צילום המסך נשמר בלוח

@@ -914,6 +914,87 @@ Settings:
     Unlocking: Odemykání…
   Search Settings: Hledat v nastavení
   No Settings Found: Nebyla nalezena žádná nastavení
+  Glass Settings:
+    Translucency: Průhlednost
+    Description: Přidá matné sklo přes motiv, který už používáte. Barvy stále pocházejí z motivu, takže paleta zůstává skrze efekt rozpoznatelná.
+    Enable Translucency: Zapnout průhlednost
+    Liquid Warning: Liquid Glass láme pozadí přes vygenerovanou čočku u každé plochy, kterou pokrývá. Je to zdejší nejnáročnější volba a nejlépe funguje u malého počtu ploch.
+    System Backdrop Unavailable: Pozadí okna vykreslené systémem vyžaduje Windows 11 nebo macOS. Efekty uvnitř aplikace níže fungují všude.
+    Reset: Obnovit výchozí nastavení průhlednosti
+    Texture:
+      Texture: Textura
+      Blur: Matné sklo
+      Acrylic: Akryl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Plochy
+      Window Chrome: Navigace a postranní panel
+      Cards: Karty a panely
+      Menus and Popups: Nabídky, dialogy a oznámení
+      Inputs: Textová pole
+      Player Panels: Postranní panely přehrávače
+    Tint Mode:
+      Tint Mode: Nádech
+      Follow Theme: Podle motivu
+      Custom Color: Vlastní barva
+    Border Tone:
+      Border Tone: Tón hran
+      Automatic: Automaticky
+      Light: Světlý
+      Dark: Tmavý
+    Liquid Quality:
+      Liquid Quality: Kvalita čočky
+      Low: Nízká
+      Medium: Střední
+      High: Vysoká
+    System Backdrop:
+      System Backdrop: Pozadí okna
+      None: Žádné
+      Automatic: Výchozí systémové
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akryl
+    Groups:
+      opacity: Krytí
+      backdrop: Pozadí
+      tint: Nádech
+      texture: Zrno
+      edge: Hrany a hloubka
+      liquid: Liquid Glass
+      system: Okno
+    Knobs:
+      Luminous Opacity: Světelné krytí
+      Page Opacity: Krytí stránky
+      Chrome Opacity: Krytí navigace
+      Card Opacity: Krytí karet
+      Menu Opacity: Krytí nabídek
+      Input Opacity: Krytí textových polí
+      Luminance: Jas plochy
+      Blur Radius: Poloměr rozostření
+      Saturation: Sytost
+      Brightness: Jas
+      Contrast: Kontrast
+      Tint Color: Barva nádechu
+      Tint Strength: Síla nádechu
+      Grain Opacity: Krytí zrna
+      Grain Scale: Velikost zrna
+      Border Opacity: Krytí hran
+      Border Width: Šířka hran
+      Highlight Opacity: Krytí světelné hrany
+      Inner Shadow Opacity: Krytí vnitřního stínu
+      Shadow Strength: Síla vrženého stínu
+      Refraction Strength: Síla lomu světla
+      Bezel Width: Šířka zkosení
+      Lens Radius: Poloměr rohů čočky
+      Chromatic Aberration: Chromatická vada
+      Lens Blur: Rozostření čočky
+      Specular Highlight: Zrcadlový odlesk
+      Maximum Lensed Surfaces: Nejvyšší počet ploch s čočkou
+      Transparent Window Background: Nechat systém vykreslit pozadí okna
+      Respect Reduced Transparency: Respektovat systémové nastavení omezené průhlednosti
+      Fallback Opacity: Krytí bez rozostření pozadí
 Tutorial:
   Skip: Přeskočit
   Next: Další
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: Mění vzdálenost posunu kolečkem myši a gesty kolečka touchpadu.
     Use Fixed Tab Width: Nastaví všem kartám na vodorovném panelu stejnou šířku místo šířky podle názvu.
     Use Grid Player Menu: Uspořádá nabídku nastavení přehrávače videa do mřížky dlaždic místo seznamu řádků.
+  Glass Settings:
+    Enable Translucency: Nechá plochy aplikace ukázat, co je za nimi. Barvy stále pocházejí z aktivního motivu, takže se efekt vrství na vaši paletu, místo aby ji nahrazoval.
+    Texture: Určuje charakter efektu. Matné sklo je rovnoměrné rozostření, Akryl přidává zrno a sytost, Mica přesouvá efekt na samotnou stránku, takže plochy nad ní zůstanou neprůhledné, a Liquid Glass láme pozadí přes čočku.
+    Tint Mode: Při řízení podle motivu si každá plocha ponechá vlastní barvu. Vlastní barva táhne všechny plochy k té, kterou zvolíte, čímž vznikne jeden akcent napříč celým rozhraním.
+    Liquid Quality: Jak jemně se čočka generuje. Vyšší hodnota vypadá hladčeji na zaoblených hranách a stojí více při každé změně velikosti plochy.
+    System Backdrop: Požádá operační systém, aby vykreslil pozadí okna. Ve Windows jde o stejný materiál Mica nebo Akryl, jaký používají ostatní aplikace, takže nástroje, které jej upravují v celém systému, ovlivní i tuto aplikaci.
+    Transparent Window Background: Zabrání aplikaci vykreslovat vlastní pozadí stránky, takže je vidět to, co systém kreslí za oknem. Užitečné jen se zapnutým pozadím okna.
+    Respect Reduced Transparency: Automaticky vypne efekt, dokud je v operačním systému nastaveno omezení průhlednosti.
 The playlist is at the beginning. Enable loop to continue playing: Playlist je na začátku. Chcete-li pokračovat v přehrávání, zapněte opakování
 External link opening has been disabled in Settings → Privacy: Otevírání externích odkazů bylo zakázáno v Nastavení → Soukromí
 KeyboardShortcutPrompt:

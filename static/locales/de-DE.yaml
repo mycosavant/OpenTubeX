@@ -1259,6 +1259,87 @@ Settings:
     Hide Search Bar: Suchleiste ausblenden
     Hide Uploader on Watch page: Uploader auf der Videoseite ausblenden
     Disable Channel Links: Kanal-Links deaktivieren
+  Glass Settings:
+    Translucency: Transparenz
+    Description: Legt eine Milchglas-Optik über das bereits verwendete Design. Die Farben stammen weiterhin aus dem Design, sodass die Farbpalette durch den Effekt hindurch erkennbar bleibt.
+    Enable Translucency: Transparenz aktivieren
+    Liquid Warning: Liquid Glass bricht den Hintergrund durch eine erzeugte Linse für jede abgedeckte Fläche. Das ist die anspruchsvollste Option hier und funktioniert am besten mit wenigen Flächen.
+    System Backdrop Unavailable: Ein vom System gezeichneter Fensterhintergrund erfordert Windows 11 oder macOS. Die App-internen Effekte unten funktionieren überall.
+    Reset: Transparenzeinstellungen zurücksetzen
+    Texture:
+      Texture: Textur
+      Blur: Milchglas
+      Acrylic: Acryl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Flächen
+      Window Chrome: Navigation und Seitenleiste
+      Cards: Karten und Bereiche
+      Menus and Popups: Menüs, Dialoge und Benachrichtigungen
+      Inputs: Textfelder
+      Player Panels: Seitenbereiche des Players
+    Tint Mode:
+      Tint Mode: Farbton
+      Follow Theme: Dem Design folgen
+      Custom Color: Eigene Farbe
+    Border Tone:
+      Border Tone: Kantenton
+      Automatic: Automatisch
+      Light: Hell
+      Dark: Dunkel
+    Liquid Quality:
+      Liquid Quality: Linsenqualität
+      Low: Niedrig
+      Medium: Mittel
+      High: Hoch
+    System Backdrop:
+      System Backdrop: Fensterhintergrund
+      None: Keiner
+      Automatic: Systemstandard
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acryl
+    Groups:
+      opacity: Deckkraft
+      backdrop: Hintergrund
+      tint: Farbton
+      texture: Körnung
+      edge: Kanten und Tiefe
+      liquid: Liquid Glass
+      system: Fenster
+    Knobs:
+      Luminous Opacity: Leuchtende Deckkraft
+      Page Opacity: Deckkraft der Seite
+      Chrome Opacity: Deckkraft der Navigation
+      Card Opacity: Deckkraft der Karten
+      Menu Opacity: Deckkraft der Menüs
+      Input Opacity: Deckkraft der Textfelder
+      Luminance: Leuchtdichte
+      Blur Radius: Weichzeichnungsradius
+      Saturation: Sättigung
+      Brightness: Helligkeit
+      Contrast: Kontrast
+      Tint Color: Farbton
+      Tint Strength: Stärke des Farbtons
+      Grain Opacity: Deckkraft der Körnung
+      Grain Scale: Größe der Körnung
+      Border Opacity: Deckkraft der Kanten
+      Border Width: Kantenbreite
+      Highlight Opacity: Deckkraft der Lichtkante
+      Inner Shadow Opacity: Deckkraft des inneren Schattens
+      Shadow Strength: Stärke des Schlagschattens
+      Refraction Strength: Stärke der Lichtbrechung
+      Bezel Width: Breite der Fase
+      Lens Radius: Eckenradius der Linse
+      Chromatic Aberration: Chromatische Aberration
+      Lens Blur: Weichzeichnung der Linse
+      Specular Highlight: Glanzlicht
+      Maximum Lensed Surfaces: Maximale Anzahl gebrochener Flächen
+      Transparent Window Background: Fensterhintergrund vom System zeichnen lassen
+      Respect Reduced Transparency: Systemeinstellung für reduzierte Transparenz beachten
+      Fallback Opacity: Deckkraft ohne Hintergrundweichzeichnung
   Experimental Settings:
     Experimental Settings: Experimentell
     Warning: Diese Einstellungen sind experimentell und können zu Abstürzen führen, wenn sie aktiviert sind. Es wird dringend empfohlen, Backups zu erstellen. Verwendung auf eigene Gefahr!
@@ -2237,6 +2318,14 @@ Tooltips:
     Browser Profile: Optionaler Name oder Ordner des Browserprofils. Lasse das Feld leer, um das zuletzt verwendete Profil zu nutzen.
     Always Use Cookies: Verwendet die konfigurierten Cookies bei jeder Stream-Extraktion mit yt-dlp. Dies wechselt die Methode zur Stream-Extraktion nicht zu yt-dlp. Wenn yt-dlp ausgewählt ist, können kontogebundene Formate verfügbar werden, einschließlich der höheren Bitrate von YouTube Premium, wenn das Konto darauf Zugriff hat.
     FFmpeg Executable Path: FFmpeg wird zum Zusammenführen von getrennten Video- und Audiospuren sowie zur Audiokonvertierung benötigt. Standardmäßig nimmt OpenTubeX an, dass FFmpeg über die PATH-Umgebungsvariable gefunden werden kann. Falls nötig, kann hier ein benutzerdefinierter Pfad festgelegt werden.
+  Glass Settings:
+    Enable Translucency: Lässt die Flächen der App durchscheinen. Die Farben stammen weiterhin aus dem aktiven Design, der Effekt legt sich also über die Farbpalette, statt sie zu ersetzen.
+    Texture: Bestimmt den Charakter des Effekts. Milchglas ist eine gleichmäßige Weichzeichnung, Acryl ergänzt Körnung und Sättigung, Mica verlagert den Effekt auf die Seite selbst, sodass die Flächen darüber deckend bleiben, und Liquid Glass bricht den Hintergrund durch eine Linse.
+    Tint Mode: Beim Folgen des Designs behält jede Fläche ihre eigene Farbe. Eine eigene Farbe zieht alle Flächen zur gewählten Farbe hin, womit sich ein einheitlicher Akzent durch die gesamte Oberfläche ziehen lässt.
+    Liquid Quality: Wie fein die Linse erzeugt wird. Höher wirkt an runden Kanten gleichmäßiger und kostet bei jeder Größenänderung einer Fläche mehr Rechenzeit.
+    System Backdrop: Bittet das Betriebssystem, den Fensterhintergrund zu zeichnen. Unter Windows ist das dasselbe Mica- oder Acrylmaterial, das andere Apps verwenden, sodass systemweite Anpassungswerkzeuge auch diese App beeinflussen.
+    Transparent Window Background: Verhindert, dass die App ihren eigenen Seitenhintergrund zeichnet, sodass das durchscheint, was das System hinter dem Fenster zeichnet. Nur sinnvoll mit aktiviertem Fensterhintergrund.
+    Respect Reduced Transparency: Schaltet den Effekt automatisch ab, solange im Betriebssystem reduzierte Transparenz eingestellt ist.
   Experimental Settings:
     Replace HTTP Cache: Deaktiviert den festplattenbasierten HTTP-Cache von Electron und aktiviert einen benutzerdefinierten In-Memory-Image-Cache. Dies führt zu einer erhöhten RAM-Auslastung.
   Distraction Free Settings:

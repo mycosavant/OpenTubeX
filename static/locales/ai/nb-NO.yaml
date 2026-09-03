@@ -933,6 +933,87 @@ Settings:
     Unlocking: Låser opp…
   Search Settings: Søkeinnstillinger
   No Settings Found: Fant ingen innstillinger
+  Glass Settings:
+    Translucency: Gjennomskinnelighet
+    Description: Legger en frostet glassflate over temaet du allerede bruker. Fargene kommer fortsatt fra temaet, så paletten forblir gjenkjennelig gjennom effekten.
+    Enable Translucency: Slå på gjennomskinnelighet
+    Liquid Warning: Liquid Glass bryter bakgrunnen gjennom en generert linse for hver flate den dekker. Det er det mest krevende alternativet her og fungerer best på et lite antall flater.
+    System Backdrop Unavailable: En vindusbakgrunn tegnet av systemet krever Windows 11 eller macOS. Effektene i appen nedenfor fungerer overalt.
+    Reset: Tilbakestill innstillingene for gjennomskinnelighet
+    Texture:
+      Texture: Tekstur
+      Blur: Frostet glass
+      Acrylic: Akryl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Flater
+      Window Chrome: Navigasjon og sidepanel
+      Cards: Kort og paneler
+      Menus and Popups: Menyer, dialoger og varsler
+      Inputs: Tekstfelt
+      Player Panels: Sidepanelene i spilleren
+    Tint Mode:
+      Tint Mode: Fargetone
+      Follow Theme: Følg temaet
+      Custom Color: Egendefinert farge
+    Border Tone:
+      Border Tone: Kanttone
+      Automatic: Automatisk
+      Light: Lys
+      Dark: Mørk
+    Liquid Quality:
+      Liquid Quality: Linsekvalitet
+      Low: Lav
+      Medium: Middels
+      High: Høy
+    System Backdrop:
+      System Backdrop: Vindusbakgrunn
+      None: Ingen
+      Automatic: Systemstandard
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akryl
+    Groups:
+      opacity: Dekkevne
+      backdrop: Bakgrunn
+      tint: Fargetone
+      texture: Korn
+      edge: Kanter og dybde
+      liquid: Liquid Glass
+      system: Vindu
+    Knobs:
+      Luminous Opacity: Lysende dekkevne
+      Page Opacity: Sidens dekkevne
+      Chrome Opacity: Navigasjonens dekkevne
+      Card Opacity: Kortenes dekkevne
+      Menu Opacity: Menyenes dekkevne
+      Input Opacity: Tekstfeltenes dekkevne
+      Luminance: Luminans
+      Blur Radius: Uskarphetsradius
+      Saturation: Metning
+      Brightness: Lysstyrke
+      Contrast: Kontrast
+      Tint Color: Fargetonens farge
+      Tint Strength: Fargetonens styrke
+      Grain Opacity: Kornets dekkevne
+      Grain Scale: Kornets skala
+      Border Opacity: Kantenes dekkevne
+      Border Width: Kantbredde
+      Highlight Opacity: Høylysets dekkevne
+      Inner Shadow Opacity: Den indre skyggens dekkevne
+      Shadow Strength: Slagskyggens styrke
+      Refraction Strength: Lysbrytningens styrke
+      Bezel Width: Fasekantens bredde
+      Lens Radius: Linsens hjørneradius
+      Chromatic Aberration: Kromatisk aberrasjon
+      Lens Blur: Linseuskarphet
+      Specular Highlight: Speilglans
+      Maximum Lensed Surfaces: Største antall flater med linse
+      Transparent Window Background: La systemet tegne vinduets bakgrunn
+      Respect Reduced Transparency: Følg systemets innstilling for redusert gjennomsiktighet
+      Fallback Opacity: Dekkevne uten bakgrunnsuskarphet
 Tutorial:
   Skip: Hopp over
   Next: Neste
@@ -1459,6 +1540,14 @@ Tooltips:
     Scroll Speed: Endrer hvor langt musehjul- og styreflatebevegelser ruller.
     Use Fixed Tab Width: Gir alle faner i det vannrette fanefeltet samme bredde i stedet for å tilpasse bredden etter tittelen.
     Use Grid Player Menu: Ordner innstillingsmenyen til videospilleren som et rutenett med fliser i stedet for en liste med rader.
+  Glass Settings:
+    Enable Translucency: Lar flatene i appen vise hva som er bak dem. Fargene kommer fortsatt fra det aktive temaet, så effekten legger seg oppå paletten din i stedet for å erstatte den.
+    Texture: Velger effektens karakter. Frostet glass er en jevn uskarphet, Akryl legger til korn og metning, Mica flytter effekten til selve siden slik at flatene over forblir dekkende, og Liquid Glass bryter bakgrunnen gjennom en linse.
+    Tint Mode: Når effekten følger temaet, beholder hver flate sin egen farge. En egendefinert farge trekker alle flater mot den du velger, noe som gir én aksent gjennom hele grensesnittet.
+    Liquid Quality: Hvor fint linsen genereres. Høyere ser jevnere ut langs buede kanter og koster mer hver gang en flate endrer størrelse.
+    System Backdrop: Ber operativsystemet om å tegne vinduets bakgrunn. I Windows er det samme Mica- eller Akrylmaterialet som andre apper bruker, så verktøy som tilpasser det for hele systemet, påvirker også denne appen.
+    Transparent Window Background: Hindrer appen i å tegne sin egen sidebakgrunn, slik at det systemet tegner bak vinduet, blir synlig. Bare nyttig med en vindusbakgrunn slått på.
+    Respect Reduced Transparency: Slår av effekten automatisk så lenge operativsystemet er satt til redusert gjennomsiktighet.
 The playlist is at the beginning. Enable loop to continue playing: Spillelisten er ved begynnelsen. Slå på gjentakelse for å fortsette avspillingen
 External link opening has been disabled in Settings → Privacy: Åpning av eksterne lenker er slått av under Innstillinger → Personvern
 Screenshot Clipboard Success: Skjermbildet ble lagret på utklippstavlen

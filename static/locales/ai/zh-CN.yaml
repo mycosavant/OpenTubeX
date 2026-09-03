@@ -914,6 +914,87 @@ Settings:
     Unlocking: 正在解锁…
   Search Settings: 搜索设置
   No Settings Found: 未找到设置
+  Glass Settings:
+    Translucency: 半透明
+    Description: 在你已经使用的主题之上叠加一层磨砂玻璃质感。颜色仍然来自主题，因此透过效果依然能认出原有的配色。
+    Enable Translucency: 启用半透明
+    Liquid Warning: Liquid Glass 会为它覆盖的每一个表面生成一枚透镜，并透过它折射背景。这是此处开销最大的选项，在表面数量较少时效果最好。
+    System Backdrop Unavailable: 由系统绘制的窗口背景需要 Windows 11 或 macOS。下方的应用内效果在任何系统上都可用。
+    Reset: 重置半透明设置
+    Texture:
+      Texture: 质感
+      Blur: 磨砂玻璃
+      Acrylic: 亚克力
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: 作用表面
+      Window Chrome: 导航与侧边栏
+      Cards: 卡片与面板
+      Menus and Popups: 菜单、对话框与通知
+      Inputs: 文本框
+      Player Panels: 播放器侧边面板
+    Tint Mode:
+      Tint Mode: 色调
+      Follow Theme: 跟随主题
+      Custom Color: 自定义颜色
+    Border Tone:
+      Border Tone: 边缘色调
+      Automatic: 自动
+      Light: 浅色
+      Dark: 深色
+    Liquid Quality:
+      Liquid Quality: 透镜质量
+      Low: 低
+      Medium: 中
+      High: 高
+    System Backdrop:
+      System Backdrop: 窗口背景
+      None: 无
+      Automatic: 系统默认
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: 亚克力
+    Groups:
+      opacity: 不透明度
+      backdrop: 背景
+      tint: 色调
+      texture: 颗粒
+      edge: 边缘与层次
+      liquid: Liquid Glass
+      system: 窗口
+    Knobs:
+      Luminous Opacity: 发光不透明度
+      Page Opacity: 页面不透明度
+      Chrome Opacity: 导航不透明度
+      Card Opacity: 卡片不透明度
+      Menu Opacity: 菜单不透明度
+      Input Opacity: 文本框不透明度
+      Luminance: 亮度值
+      Blur Radius: 模糊半径
+      Saturation: 饱和度
+      Brightness: 明度
+      Contrast: 对比度
+      Tint Color: 色调颜色
+      Tint Strength: 色调强度
+      Grain Opacity: 颗粒不透明度
+      Grain Scale: 颗粒大小
+      Border Opacity: 边缘不透明度
+      Border Width: 边缘宽度
+      Highlight Opacity: 高光不透明度
+      Inner Shadow Opacity: 内阴影不透明度
+      Shadow Strength: 投影强度
+      Refraction Strength: 折射强度
+      Bezel Width: 斜面宽度
+      Lens Radius: 透镜圆角半径
+      Chromatic Aberration: 色差
+      Lens Blur: 透镜模糊
+      Specular Highlight: 镜面高光
+      Maximum Lensed Surfaces: 应用透镜的表面上限
+      Transparent Window Background: 让系统绘制窗口背景
+      Respect Reduced Transparency: 遵循系统的降低透明度设置
+      Fallback Opacity: 无背景模糊时的不透明度
 Tutorial:
   Skip: 跳过
   Next: 下一步
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: 更改鼠标滚轮和触控板滚轮手势的滚动距离。
     Use Fixed Tab Width: 让水平标签栏中的所有标签页宽度相同，而不是根据标题调整宽度。
     Use Grid Player Menu: 将视频播放器的设置菜单排列为磁贴网格，而不是行列表。
+  Glass Settings:
+    Enable Translucency: 让应用的表面透出其后方的内容。颜色仍然来自当前主题，因此效果是叠加在你的配色之上，而不是取代它。
+    Texture: 决定效果的性格。磨砂玻璃是均匀的模糊，亚克力增加颗粒与饱和度，Mica 把效果移到页面本身、让其上的表面保持不透明，而 Liquid Glass 则透过透镜折射背景。
+    Tint Mode: 跟随主题时，每个表面保留自己的颜色。自定义颜色会把所有表面拉向你选定的颜色，从而让整个界面贯穿同一种强调色。
+    Liquid Quality: 透镜生成的精细程度。数值越高，弧形边缘看起来越平滑，但每当表面尺寸变化时开销也越大。
+    System Backdrop: 请求操作系统绘制窗口背景。在 Windows 上这与其他应用使用的 Mica 或亚克力材质相同，因此在系统范围内自定义该材质的工具同样会影响本应用。
+    Transparent Window Background: 阻止应用绘制自己的页面背景，从而显示出系统在窗口后方绘制的内容。仅在启用了窗口背景时才有意义。
+    Respect Reduced Transparency: 当操作系统设置为降低透明度时，自动关闭该效果。
 The playlist is at the beginning. Enable loop to continue playing: 播放列表已到开头。启用循环可继续播放
 External link opening has been disabled in Settings → Privacy: 已在“设置”→“隐私”中禁用打开外部链接
 KeyboardShortcutPrompt:

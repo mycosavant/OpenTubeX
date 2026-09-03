@@ -914,6 +914,87 @@ Settings:
     Unlocking: Sblocco in corso…
   Search Settings: Cerca nelle impostazioni
   No Settings Found: Nessuna impostazione trovata
+  Glass Settings:
+    Translucency: Traslucenza
+    Description: Applica una finitura a vetro smerigliato sul tema che usi già. I colori continuano a provenire dal tema, così la palette resta riconoscibile attraverso l'effetto.
+    Enable Translucency: Attiva la traslucenza
+    Liquid Warning: Liquid Glass rifrange lo sfondo attraverso una lente generata per ogni superficie che copre. È l'opzione più impegnativa qui e rende al meglio su poche superfici.
+    System Backdrop Unavailable: Uno sfondo della finestra disegnato dal sistema richiede Windows 11 o macOS. Gli effetti interni qui sotto funzionano ovunque.
+    Reset: Ripristina le impostazioni di traslucenza
+    Texture:
+      Texture: Trama
+      Blur: Vetro smerigliato
+      Acrylic: Acrilico
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Superfici
+      Window Chrome: Navigazione e barra laterale
+      Cards: Schede e pannelli
+      Menus and Popups: Menu, finestre di dialogo e notifiche
+      Inputs: Campi di testo
+      Player Panels: Pannelli laterali del lettore
+    Tint Mode:
+      Tint Mode: Tinta
+      Follow Theme: Segui il tema
+      Custom Color: Colore personalizzato
+    Border Tone:
+      Border Tone: Tono dei bordi
+      Automatic: Automatico
+      Light: Chiaro
+      Dark: Scuro
+    Liquid Quality:
+      Liquid Quality: Qualità della lente
+      Low: Bassa
+      Medium: Media
+      High: Alta
+    System Backdrop:
+      System Backdrop: Sfondo della finestra
+      None: Nessuno
+      Automatic: Predefinito di sistema
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrilico
+    Groups:
+      opacity: Opacità
+      backdrop: Sfondo
+      tint: Tinta
+      texture: Grana
+      edge: Bordi e profondità
+      liquid: Liquid Glass
+      system: Finestra
+    Knobs:
+      Luminous Opacity: Opacità luminosa
+      Page Opacity: Opacità della pagina
+      Chrome Opacity: Opacità della navigazione
+      Card Opacity: Opacità delle schede
+      Menu Opacity: Opacità dei menu
+      Input Opacity: Opacità dei campi di testo
+      Luminance: Luminanza
+      Blur Radius: Raggio della sfocatura
+      Saturation: Saturazione
+      Brightness: Luminosità
+      Contrast: Contrasto
+      Tint Color: Colore della tinta
+      Tint Strength: Intensità della tinta
+      Grain Opacity: Opacità della grana
+      Grain Scale: Scala della grana
+      Border Opacity: Opacità dei bordi
+      Border Width: Spessore dei bordi
+      Highlight Opacity: Opacità del riflesso
+      Inner Shadow Opacity: Opacità dell'ombra interna
+      Shadow Strength: Intensità dell'ombra esterna
+      Refraction Strength: Intensità della rifrazione
+      Bezel Width: Larghezza della smussatura
+      Lens Radius: Raggio degli angoli della lente
+      Chromatic Aberration: Aberrazione cromatica
+      Lens Blur: Sfocatura della lente
+      Specular Highlight: Riflesso speculare
+      Maximum Lensed Surfaces: Numero massimo di superfici con lente
+      Transparent Window Background: Lascia che sia il sistema a disegnare lo sfondo della finestra
+      Respect Reduced Transparency: Rispetta l'impostazione di trasparenza ridotta del sistema
+      Fallback Opacity: Opacità senza sfocatura dello sfondo
 Tutorial:
   Skip: Salta
   Next: Avanti
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: Modifica la distanza di scorrimento dei gesti della rotellina del mouse e del touchpad.
     Use Fixed Tab Width: Assegna la stessa larghezza a tutte le schede nella barra orizzontale, invece di adattarle al titolo.
     Use Grid Player Menu: Dispone il menu delle impostazioni del lettore video come una griglia di riquadri invece di un elenco di righe.
+  Glass Settings:
+    Enable Translucency: Lascia che le superfici dell'app mostrino ciò che vi sta dietro. I colori continuano a provenire dal tema attivo, quindi l'effetto si sovrappone alla tua palette invece di sostituirla.
+    Texture: Sceglie il carattere dell'effetto. Vetro smerigliato è una sfocatura uniforme, Acrilico aggiunge grana e saturazione, Mica sposta l'effetto sulla pagina stessa così le superfici sopra restano opache, e Liquid Glass rifrange lo sfondo attraverso una lente.
+    Tint Mode: Seguendo il tema, ogni superficie mantiene il proprio colore. Un colore personalizzato attira tutte le superfici verso quello scelto, ed è così che si ottiene un unico accento in tutta l'interfaccia.
+    Liquid Quality: Con quanta finezza viene generata la lente. Un valore alto appare più uniforme sui bordi curvi e costa di più a ogni cambio di dimensione di una superficie.
+    System Backdrop: Chiede al sistema operativo di disegnare lo sfondo della finestra. Su Windows è lo stesso materiale Mica o Acrilico usato dalle altre app, quindi gli strumenti che lo personalizzano a livello di sistema influenzano anche questa app.
+    Transparent Window Background: Impedisce all'app di disegnare il proprio sfondo di pagina, così si vede ciò che il sistema disegna dietro la finestra. Utile solo con uno sfondo della finestra attivo.
+    Respect Reduced Transparency: Disattiva automaticamente l'effetto finché il sistema operativo è impostato per ridurre la trasparenza.
 The playlist is at the beginning. Enable loop to continue playing: La playlist è all'inizio. Abilita la ripetizione per continuare la riproduzione
 External link opening has been disabled in Settings → Privacy: L'apertura dei link esterni è stata disabilitata in Impostazioni → Privacy
 KeyboardShortcutPrompt:

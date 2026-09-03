@@ -892,6 +892,87 @@ Settings:
     Unlocking: Unlocking…
   Search Settings: Search settings
   No Settings Found: No settings found
+  Glass Settings:
+    Translucency: Translucency
+    Description: Adds a frosted-glass finish over the theme you already use. Colours still come from the theme, so the palette stays recognisable through the effect.
+    Enable Translucency: Enable translucency
+    Liquid Warning: Liquid Glass refracts the backdrop through a generated lens for every surface it covers. It is the most demanding option here and works best on a small number of surfaces.
+    System Backdrop Unavailable: A system-drawn window backdrop needs Windows 11 or macOS. The in-app effects below work everywhere.
+    Reset: Reset translucency settings
+    Texture:
+      Texture: Texture
+      Blur: Frosted blur
+      Acrylic: Acrylic
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Surfaces
+      Window Chrome: Navigation and sidebar
+      Cards: Cards and panels
+      Menus and Popups: Menus, dialogues and toasts
+      Inputs: Text fields
+      Player Panels: Player side panels
+    Tint Mode:
+      Tint Mode: Tint
+      Follow Theme: Follow the theme
+      Custom Color: Custom colour
+    Border Tone:
+      Border Tone: Edge tone
+      Automatic: Automatic
+      Light: Light
+      Dark: Dark
+    Liquid Quality:
+      Liquid Quality: Lens quality
+      Low: Low
+      Medium: Medium
+      High: High
+    System Backdrop:
+      System Backdrop: Window backdrop
+      None: None
+      Automatic: System default
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Acrylic
+    Groups:
+      opacity: Opacity
+      backdrop: Backdrop
+      tint: Tint
+      texture: Grain
+      edge: Edges and depth
+      liquid: Liquid Glass
+      system: Window
+    Knobs:
+      Luminous Opacity: Luminous opacity
+      Page Opacity: Page opacity
+      Chrome Opacity: Navigation opacity
+      Card Opacity: Card opacity
+      Menu Opacity: Menu opacity
+      Input Opacity: Text field opacity
+      Luminance: Luminance
+      Blur Radius: Blur radius
+      Saturation: Saturation
+      Brightness: Brightness
+      Contrast: Contrast
+      Tint Color: Tint colour
+      Tint Strength: Tint strength
+      Grain Opacity: Grain opacity
+      Grain Scale: Grain scale
+      Border Opacity: Edge opacity
+      Border Width: Edge width
+      Highlight Opacity: Highlight opacity
+      Inner Shadow Opacity: Inner shadow opacity
+      Shadow Strength: Drop shadow strength
+      Refraction Strength: Refraction strength
+      Bezel Width: Bezel width
+      Lens Radius: Lens corner radius
+      Chromatic Aberration: Chromatic aberration
+      Lens Blur: Lens blur
+      Specular Highlight: Specular highlight
+      Maximum Lensed Surfaces: Maximum lensed surfaces
+      Transparent Window Background: Let the system draw the window background
+      Respect Reduced Transparency: Respect the system's reduced transparency setting
+      Fallback Opacity: Opacity without backdrop blur
 Tutorial:
   Skip: Skip
   Next: Next
@@ -1402,6 +1483,14 @@ Tooltips:
     Scroll Speed: Changes how far mouse-wheel and touchpad wheel gestures scroll.
     Use Fixed Tab Width: Gives every tab in the horizontal tab bar the same width instead of sizing them to their title.
     Use Grid Player Menu: Arranges the video player's settings menu as a grid of tiles instead of a list of rows.
+  Glass Settings:
+    Enable Translucency: Lets the app's surfaces show what is behind them. The colours still come from the active theme, so the effect layers on top of your palette rather than replacing it.
+    Texture: Chooses the character of the effect. Frosted blur is a plain even blur, Acrylic adds grain and saturation, Mica moves the effect onto the page itself so the surfaces above stay solid, and Liquid Glass refracts the backdrop through a lens.
+    Tint Mode: Following the theme keeps each surface's own colour. A custom colour pulls every surface towards the one you pick, which is how you get a single accent through the whole interface.
+    Liquid Quality: How finely the lens is generated. Higher looks smoother along curved edges and costs more to build each time a surface changes size.
+    System Backdrop: Asks the operating system to draw the window's background. On Windows this is the same Mica or Acrylic material other apps use, so tools that customise it system-wide affect this app too.
+    Transparent Window Background: Stops the app from painting its own page background, so whatever the system draws behind the window shows through. Only useful with a window backdrop enabled.
+    Respect Reduced Transparency: Turns the effect off automatically while the operating system is set to reduce transparency.
 The playlist is at the beginning. Enable loop to continue playing: The playlist is at the beginning. Enable loop to continue playing
 External link opening has been disabled in Settings → Privacy: External link opening has been disabled in Settings → Privacy
 KeyboardShortcutPrompt:

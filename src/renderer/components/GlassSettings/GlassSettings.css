@@ -1,0 +1,49 @@
+.glassIntro,
+.glassNote {
+  margin-block: 0 12px;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.glassNote {
+  font-size: 14px;
+  color: var(--tertiary-text-color);
+}
+
+.glassGroupTitle {
+  margin-block: 24px 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-block-end: 1px solid var(--divider-color);
+  padding-block-end: 4px;
+}
+
+.glassRow {
+  gap: 12px 24px;
+  justify-content: flex-start;
+}
+
+/* The sliders carry long labels, so they need a floor wide enough to keep the
+   label and its value on one line before the row wraps. */
+.glassRow :deep(.pure-material-slider) {
+  flex: 1 1 260px;
+  max-inline-size: 320px;
+}
+
+.glassRow :deep(.select) {
+  flex: 1 1 200px;
+  min-inline-size: 0;
+  max-inline-size: 220px;
+}
+
+@container settings-content (width <= 620px) {
+  .glassRow :deep(.pure-material-slider),
+  .glassRow :deep(.select) {
+    flex: 0 0 auto;
+    inline-size: min(320px, 100%);
+    max-inline-size: 100%;
+  }
+}

@@ -961,6 +961,87 @@ Settings:
     Unlocking: در حال بازکردن قفل…
   Search Settings: جست‌وجوی تنظیمات
   No Settings Found: تنظیمی پیدا نشد
+  Glass Settings:
+    Translucency: نیمه‌شفافی
+    Description: پرداختی از جنس شیشه‌ی مات را روی پوسته‌ای که هم‌اکنون به کار می‌برید می‌افزاید. رنگ‌ها همچنان از پوسته می‌آیند، بنابراین پالت از میان این جلوه هم شناختنی می‌ماند.
+    Enable Translucency: فعال‌سازی نیمه‌شفافی
+    Liquid Warning: ‏Liquid Glass پس‌زمینه را از میان عدسی‌ای که برای هر سطح ساخته می‌شود می‌شکند. سنگین‌ترین گزینه‌ی اینجاست و روی شمار کمی از سطح‌ها بهترین نتیجه را می‌دهد.
+    System Backdrop Unavailable: پس‌زمینه‌ی پنجره که سیستم می‌کشد به Windows 11 یا macOS نیاز دارد. جلوه‌های درون برنامه در پایین همه‌جا کار می‌کنند.
+    Reset: بازنشانی تنظیمات نیمه‌شفافی
+    Texture:
+      Texture: بافت
+      Blur: شیشه‌ی مات
+      Acrylic: اکریلیک
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: سطح‌ها
+      Window Chrome: ناوبری و نوار کناری
+      Cards: کارت‌ها و پنل‌ها
+      Menus and Popups: منوها، کادرهای گفت‌وگو و اعلان‌ها
+      Inputs: کادرهای متن
+      Player Panels: پنل‌های کناری پخش‌کننده
+    Tint Mode:
+      Tint Mode: ته‌رنگ
+      Follow Theme: پیروی از پوسته
+      Custom Color: رنگ سفارشی
+    Border Tone:
+      Border Tone: تُن لبه‌ها
+      Automatic: خودکار
+      Light: روشن
+      Dark: تیره
+    Liquid Quality:
+      Liquid Quality: کیفیت عدسی
+      Low: کم
+      Medium: متوسط
+      High: زیاد
+    System Backdrop:
+      System Backdrop: پس‌زمینه‌ی پنجره
+      None: هیچ
+      Automatic: پیش‌فرض سیستم
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: اکریلیک
+    Groups:
+      opacity: کدری
+      backdrop: پس‌زمینه
+      tint: ته‌رنگ
+      texture: دانه‌دانگی
+      edge: لبه‌ها و ژرفا
+      liquid: Liquid Glass
+      system: پنجره
+    Knobs:
+      Luminous Opacity: کدری درخشان
+      Page Opacity: کدری صفحه
+      Chrome Opacity: کدری ناوبری
+      Card Opacity: کدری کارت‌ها
+      Menu Opacity: کدری منوها
+      Input Opacity: کدری کادرهای متن
+      Luminance: روشنایی سطح
+      Blur Radius: شعاع محو
+      Saturation: اشباع
+      Brightness: روشنایی
+      Contrast: کنتراست
+      Tint Color: رنگ ته‌رنگ
+      Tint Strength: شدت ته‌رنگ
+      Grain Opacity: کدری دانه‌دانگی
+      Grain Scale: اندازه‌ی دانه‌دانگی
+      Border Opacity: کدری لبه‌ها
+      Border Width: ضخامت لبه‌ها
+      Highlight Opacity: کدری برجستگی نور
+      Inner Shadow Opacity: کدری سایه‌ی درونی
+      Shadow Strength: شدت سایه‌ی افتاده
+      Refraction Strength: شدت شکست نور
+      Bezel Width: پهنای پخ
+      Lens Radius: شعاع گوشه‌های عدسی
+      Chromatic Aberration: انحراف رنگی
+      Lens Blur: محو عدسی
+      Specular Highlight: برجستگی آینه‌ای
+      Maximum Lensed Surfaces: بیشینه‌ی سطح‌های دارای عدسی
+      Transparent Window Background: سیستم پس‌زمینه‌ی پنجره را بکشد
+      Respect Reduced Transparency: رعایت تنظیم کاهش شفافیت سیستم
+      Fallback Opacity: کدری بدون محو پس‌زمینه
 Tutorial:
   Skip: ردکردن
   Next: بعدی
@@ -1500,6 +1581,14 @@ Tooltips:
     Scroll Speed: فاصلهٔ پیمایش با حرکت چرخ ماوس و صفحهٔ لمسی را تغییر می‌دهد.
     Use Fixed Tab Width: به‌جای تنظیم اندازه زبانه‌ها بر اساس عنوانشان، به همه زبانه‌های نوار افقی عرضی یکسان می‌دهد.
     Use Grid Player Menu: منوی تنظیمات پخش‌کننده ویدیو را به‌جای فهرستی از ردیف‌ها، به‌صورت شبکه‌ای از کاشی‌ها می‌چیند.
+  Glass Settings:
+    Enable Translucency: سبب می‌شود سطح‌های برنامه آنچه را پشتشان است نشان دهند. رنگ‌ها همچنان از پوسته‌ی فعال می‌آیند، بنابراین این جلوه روی پالت شما لایه می‌شود و جای آن را نمی‌گیرد.
+    Texture: سرشت جلوه را برمی‌گزیند. شیشه‌ی مات محوی یکنواخت است، اکریلیک دانه و اشباع می‌افزاید، ‏Mica جلوه را به خود صفحه می‌برد تا سطح‌های بالای آن کدر بمانند، و Liquid Glass پس‌زمینه را از میان عدسی می‌شکند.
+    Tint Mode: با پیروی از پوسته، هر سطح رنگ خودش را نگه می‌دارد. رنگ سفارشی همه‌ی سطح‌ها را به سوی رنگی که برمی‌گزینید می‌کشد و به این ترتیب یک رنگ تأکیدی در سراسر رابط جاری می‌شود.
+    Liquid Quality: عدسی با چه ظرافتی ساخته می‌شود. مقدار بالاتر روی لبه‌های منحنی یکدست‌تر دیده می‌شود و با هر تغییر اندازه‌ی سطح هزینه‌ی بیشتری دارد.
+    System Backdrop: از سیستم‌عامل می‌خواهد پس‌زمینه‌ی پنجره را بکشد. در Windows این همان ماده‌ی Mica یا اکریلیک است که برنامه‌های دیگر به کار می‌برند، بنابراین ابزارهایی که آن را در کل سیستم سفارشی می‌کنند بر این برنامه هم اثر می‌گذارند.
+    Transparent Window Background: جلوی کشیدن پس‌زمینه‌ی صفحه توسط خود برنامه را می‌گیرد تا آنچه سیستم پشت پنجره می‌کشد دیده شود. تنها با پس‌زمینه‌ی پنجره‌ی فعال به کار می‌آید.
+    Respect Reduced Transparency: تا زمانی که سیستم‌عامل روی کاهش شفافیت تنظیم شده باشد، جلوه را خودکار خاموش می‌کند.
 The playlist is at the beginning. Enable loop to continue playing: فهرست پخش در ابتداست. برای ادامه پخش، تکرار را فعال کنید
 External link opening has been disabled in Settings → Privacy: بازکردن پیوندهای خارجی در تنظیمات → حریم خصوصی غیرفعال شده است
 Screenshot Clipboard Success: نماگرفت در بریده‌دان ذخیره شد

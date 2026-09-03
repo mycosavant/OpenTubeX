@@ -38,6 +38,11 @@ import { DEFAULT_YT_DLP_PRELOAD_COUNT } from '../../helpers/player/ytDlpPlayback
 import { terminateCommentTranslationLanguageDetector } from '../../helpers/comment-translations'
 import { DEFAULT_HOME_SECTION_LAYOUT } from '../../helpers/homeSections.js'
 import { isSettingSyncableOnPlatform } from '../../helpers/platformSettings.js'
+import {
+  cloneDefaultGlassTheme,
+  normalizeGlassTheme,
+  resolveSystemBackdrop,
+} from '../../../glassTheme.js'
 import { CUSTOM_THEMES_SYNC_KEY } from '../../../customTheme.js'
 import { DEFAULT_QUICK_SETTINGS, normalizeQuickSettings } from '../../helpers/quickSettings.js'
 import { createSettingUpdateQueue } from '../../helpers/settingUpdateQueue.js'
@@ -237,6 +242,7 @@ const state = {
   systemLightTheme: 'light',
   systemDarkTheme: 'dark',
   iconPack: 'material',
+  glassTheme: cloneDefaultGlassTheme(),
   mainColor: 'Red',
   secColor: 'Blue',
   defaultAutoplayInterruptionIntervalHours: 3,
@@ -926,6 +932,26 @@ async function updateValidatedSetting(commit, settings, settingId, value) {
   }
 }
 
+/**
+ * Asks the main process for the window background material that goes with the
+ * current translucency settings. Windows draws Mica and Acrylic itself, so the
+ * renderer can only ask for them; on a platform without a system-drawn backdrop
+ * `resolveSystemBackdrop` returns nothing and this does nothing.
+ * @param {object} glassTheme a normalized glass theme
+ */
+async function applyWindowBackgroundMaterial(glassTheme) {
+  if (!process.env.IS_ELECTRON) return
+
+  const backdrop = glassTheme.enabled ? glassTheme.systemBackdrop : 'none'
+  if (backdrop !== 'none' && resolveSystemBackdrop(backdrop, process.platform) === null) return
+
+  try {
+    await window.ftElectron.setWindowBackgroundMaterial(backdrop)
+  } catch (error) {
+    console.error('Failed to apply the window background material:', error)
+  }
+}
+
 async function persistPlaylistBookmarks(commit, bookmarks) {
   try {
     await DBSettingHandlers.upsert('playlistBookmarks', bookmarks)
@@ -1020,6 +1046,18 @@ const customActions = {
     resolveBaseTheme(value, 'dark', rootGetters.getCustomThemes, false)
   ),
 
+  /**
+   * Every knob lives in one setting rather than thirty, so a partial or
+   * out-of-date stored value is repaired knob by knob instead of resetting the
+   * whole theme, and so the window material can be pushed to the main process
+   * from the same place the CSS is derived.
+   */
+  updateGlassTheme: async ({ commit, state }, value) => {
+    const glassTheme = normalizeGlassTheme(value)
+    await updateValidatedSetting(commit, state, 'glassTheme', glassTheme)
+    await applyWindowBackgroundMaterial(glassTheme)
+  },
+
   updateMainColor: ({ commit, state }, value) => updateValidatedSetting(
     commit,
     state,
@@ -1093,6 +1131,10 @@ const customActions = {
 
       for (const { _id, value } of userSettings) {
         let resolvedValue = value
+        // Repaired on the way in rather than at every read, so a theme stored
+        // by an older build (or edited by hand) still yields a usable value
+        // instead of failing somewhere deep in the CSS derivation.
+        if (_id === 'glassTheme') resolvedValue = normalizeGlassTheme(value)
         if (settingsWithSideEffects.includes(_id)) {
           if (_id === 'iconPack') {
             resolvedValue = await dispatch(defaultSideEffectsTriggerId(_id), value)

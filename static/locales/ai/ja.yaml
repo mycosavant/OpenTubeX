@@ -914,6 +914,87 @@ Settings:
     Unlocking: ロックを解除中…
   Search Settings: 設定を検索
   No Settings Found: 設定が見つかりません
+  Glass Settings:
+    Translucency: 半透明
+    Description: 現在使用中のテーマの上にすりガラスの質感を重ねます。色はこれまでどおりテーマから取られるため、効果を通してもパレットの印象は保たれます。
+    Enable Translucency: 半透明を有効にする
+    Liquid Warning: Liquid Glass は、覆う面ごとに生成したレンズを通して背景を屈折させます。ここで最も負荷の高い選択肢で、対象の面が少ないときに最も効果的です。
+    System Backdrop Unavailable: システムが描画するウィンドウ背景には Windows 11 または macOS が必要です。以下のアプリ内効果はどの環境でも動作します。
+    Reset: 半透明の設定をリセット
+    Texture:
+      Texture: テクスチャ
+      Blur: すりガラス
+      Acrylic: アクリル
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: 対象の面
+      Window Chrome: ナビゲーションとサイドバー
+      Cards: カードとパネル
+      Menus and Popups: メニュー・ダイアログ・通知
+      Inputs: テキスト入力欄
+      Player Panels: プレーヤーのサイドパネル
+    Tint Mode:
+      Tint Mode: 色合い
+      Follow Theme: テーマに従う
+      Custom Color: カスタムカラー
+    Border Tone:
+      Border Tone: 縁の色調
+      Automatic: 自動
+      Light: 明るい
+      Dark: 暗い
+    Liquid Quality:
+      Liquid Quality: レンズ品質
+      Low: 低
+      Medium: 中
+      High: 高
+    System Backdrop:
+      System Backdrop: ウィンドウ背景
+      None: なし
+      Automatic: システムの既定
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: アクリル
+    Groups:
+      opacity: 不透明度
+      backdrop: 背景
+      tint: 色合い
+      texture: 粒状感
+      edge: 縁と奥行き
+      liquid: Liquid Glass
+      system: ウィンドウ
+    Knobs:
+      Luminous Opacity: 発光する不透明度
+      Page Opacity: ページの不透明度
+      Chrome Opacity: ナビゲーションの不透明度
+      Card Opacity: カードの不透明度
+      Menu Opacity: メニューの不透明度
+      Input Opacity: テキスト入力欄の不透明度
+      Luminance: 輝度
+      Blur Radius: ぼかしの半径
+      Saturation: 彩度
+      Brightness: 明るさ
+      Contrast: コントラスト
+      Tint Color: 色合いの色
+      Tint Strength: 色合いの強さ
+      Grain Opacity: 粒状感の不透明度
+      Grain Scale: 粒状感の大きさ
+      Border Opacity: 縁の不透明度
+      Border Width: 縁の太さ
+      Highlight Opacity: ハイライトの不透明度
+      Inner Shadow Opacity: 内側の影の不透明度
+      Shadow Strength: ドロップシャドウの強さ
+      Refraction Strength: 屈折の強さ
+      Bezel Width: ベゼルの幅
+      Lens Radius: レンズの角の丸み
+      Chromatic Aberration: 色収差
+      Lens Blur: レンズのぼかし
+      Specular Highlight: 鏡面ハイライト
+      Maximum Lensed Surfaces: レンズを適用する面の上限
+      Transparent Window Background: ウィンドウ背景をシステムに描画させる
+      Respect Reduced Transparency: システムの透明度を下げる設定に従う
+      Fallback Opacity: 背景ぼかしなしの不透明度
 Tutorial:
   Skip: スキップ
   Next: 次へ
@@ -1432,6 +1513,14 @@ Tooltips:
     Scroll Speed: マウスホイールとタッチパッドのホイール操作によるスクロール距離を変更します。
     Use Fixed Tab Width: 横型タブバーの各タブを、タイトルに合わせた幅ではなく同じ幅にします。
     Use Grid Player Menu: 動画プレーヤーの設定メニューを行の一覧ではなく、タイル状のグリッドに配置します。
+  Glass Settings:
+    Enable Translucency: アプリの面の背後にあるものが透けて見えるようになります。色は引き続き有効なテーマから取られるため、効果はパレットを置き換えるのではなく、その上に重なります。
+    Texture: 効果の性格を選びます。すりガラスは均一なぼかし、アクリルは粒状感と彩度を加え、Mica は効果をページ自体に移して上の面を不透明のままにし、Liquid Glass はレンズを通して背景を屈折させます。
+    Tint Mode: テーマに従う場合、各面は自身の色を保ちます。カスタムカラーはすべての面を選んだ色に引き寄せるため、インターフェイス全体に一つのアクセントが通ります。
+    Liquid Quality: レンズをどれだけ細かく生成するかです。高いほど曲線の縁が滑らかに見えますが、面のサイズが変わるたびに処理の負荷が増えます。
+    System Backdrop: ウィンドウの背景を描画するようオペレーティングシステムに要求します。Windows では他のアプリが使うものと同じ Mica またはアクリル素材のため、これをシステム全体で変更するツールはこのアプリにも影響します。
+    Transparent Window Background: アプリが独自のページ背景を描画しないようにして、システムがウィンドウの背後に描くものが見えるようにします。ウィンドウ背景を有効にしている場合にのみ役立ちます。
+    Respect Reduced Transparency: オペレーティングシステムで透明度を下げる設定になっている間、効果を自動的に無効にします。
 The playlist is at the beginning. Enable loop to continue playing: プレイリストの先頭です。続けて再生するにはループを有効にしてください
 External link opening has been disabled in Settings → Privacy: 「設定」→「プライバシー」で外部リンクを開く機能が無効になっています
 KeyboardShortcutPrompt:

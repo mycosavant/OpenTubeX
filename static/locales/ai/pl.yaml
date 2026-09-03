@@ -395,6 +395,87 @@ Settings:
     Unlocking: Odblokowywanie…
   Search Settings: Przeszukaj ustawienia
   No Settings Found: Nie znaleziono ustawień
+  Glass Settings:
+    Translucency: Przezroczystość
+    Description: Nakłada wykończenie z matowego szkła na już używany motyw. Kolory nadal pochodzą z motywu, więc paleta pozostaje rozpoznawalna mimo efektu.
+    Enable Translucency: Włącz przezroczystość
+    Liquid Warning: Liquid Glass załamuje tło przez wygenerowaną soczewkę dla każdej pokrywanej powierzchni. To najbardziej wymagająca opcja tutaj i najlepiej sprawdza się przy niewielkiej liczbie powierzchni.
+    System Backdrop Unavailable: Tło okna rysowane przez system wymaga systemu Windows 11 lub macOS. Efekty wewnątrz aplikacji poniżej działają wszędzie.
+    Reset: Przywróć domyślne ustawienia przezroczystości
+    Texture:
+      Texture: Tekstura
+      Blur: Matowe szkło
+      Acrylic: Akryl
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Liquid Glass: Liquid Glass
+    Surfaces:
+      Surfaces: Powierzchnie
+      Window Chrome: Nawigacja i panel boczny
+      Cards: Karty i panele
+      Menus and Popups: Menu, okna dialogowe i powiadomienia
+      Inputs: Pola tekstowe
+      Player Panels: Panele boczne odtwarzacza
+    Tint Mode:
+      Tint Mode: Odcień
+      Follow Theme: Zgodnie z motywem
+      Custom Color: Własny kolor
+    Border Tone:
+      Border Tone: Ton krawędzi
+      Automatic: Automatycznie
+      Light: Jasny
+      Dark: Ciemny
+    Liquid Quality:
+      Liquid Quality: Jakość soczewki
+      Low: Niska
+      Medium: Średnia
+      High: Wysoka
+    System Backdrop:
+      System Backdrop: Tło okna
+      None: Brak
+      Automatic: Domyślne systemu
+      Mica: Mica
+      Mica Alt: Mica Alt
+      Acrylic: Akryl
+    Groups:
+      opacity: Krycie
+      backdrop: Tło
+      tint: Odcień
+      texture: Ziarno
+      edge: Krawędzie i głębia
+      liquid: Liquid Glass
+      system: Okno
+    Knobs:
+      Luminous Opacity: Krycie świetliste
+      Page Opacity: Krycie strony
+      Chrome Opacity: Krycie nawigacji
+      Card Opacity: Krycie kart
+      Menu Opacity: Krycie menu
+      Input Opacity: Krycie pól tekstowych
+      Luminance: Luminancja
+      Blur Radius: Promień rozmycia
+      Saturation: Nasycenie
+      Brightness: Jasność
+      Contrast: Kontrast
+      Tint Color: Kolor odcienia
+      Tint Strength: Siła odcienia
+      Grain Opacity: Krycie ziarna
+      Grain Scale: Skala ziarna
+      Border Opacity: Krycie krawędzi
+      Border Width: Szerokość krawędzi
+      Highlight Opacity: Krycie rozjaśnienia
+      Inner Shadow Opacity: Krycie cienia wewnętrznego
+      Shadow Strength: Siła cienia zewnętrznego
+      Refraction Strength: Siła załamania światła
+      Bezel Width: Szerokość fazy
+      Lens Radius: Promień narożników soczewki
+      Chromatic Aberration: Aberracja chromatyczna
+      Lens Blur: Rozmycie soczewki
+      Specular Highlight: Odblask kierunkowy
+      Maximum Lensed Surfaces: Maksymalna liczba powierzchni z soczewką
+      Transparent Window Background: Pozwól systemowi rysować tło okna
+      Respect Reduced Transparency: Uwzględniaj systemowe ustawienie ograniczonej przezroczystości
+      Fallback Opacity: Krycie bez rozmycia tła
 Tutorial:
   Skip: Pomiń
   Next: Dalej
@@ -685,6 +766,14 @@ Tooltips:
     Scroll Speed: Zmienia odległość przewijania gestami kółka myszy i panelu dotykowego.
     Use Fixed Tab Width: Nadaje wszystkim kartom na poziomym pasku jednakową szerokość zamiast dopasowywać ją do tytułu.
     Use Grid Player Menu: Układa menu ustawień odtwarzacza filmu w siatkę kafelków zamiast listy wierszy.
+  Glass Settings:
+    Enable Translucency: Sprawia, że przez powierzchnie aplikacji widać to, co jest za nimi. Kolory nadal pochodzą z aktywnego motywu, więc efekt nakłada się na paletę zamiast ją zastępować.
+    Texture: Wybiera charakter efektu. Matowe szkło to równomierne rozmycie, Akryl dodaje ziarno i nasycenie, Mica przenosi efekt na samą stronę, dzięki czemu powierzchnie nad nią pozostają nieprzezroczyste, a Liquid Glass załamuje tło przez soczewkę.
+    Tint Mode: Przy zgodności z motywem każda powierzchnia zachowuje własny kolor. Własny kolor przyciąga wszystkie powierzchnie w stronę wybranego, dzięki czemu przez cały interfejs przewija się jeden akcent.
+    Liquid Quality: Jak dokładnie generowana jest soczewka. Wyższa wartość wygląda gładziej na zaokrąglonych krawędziach i kosztuje więcej przy każdej zmianie rozmiaru powierzchni.
+    System Backdrop: Prosi system operacyjny o narysowanie tła okna. W systemie Windows jest to ten sam materiał Mica lub Akryl, którego używają inne aplikacje, więc narzędzia dostosowujące go w całym systemie wpływają także na tę aplikację.
+    Transparent Window Background: Powstrzymuje aplikację od rysowania własnego tła strony, dzięki czemu widać to, co system rysuje za oknem. Przydatne tylko przy włączonym tle okna.
+    Respect Reduced Transparency: Automatycznie wyłącza efekt, gdy w systemie operacyjnym włączone jest ograniczanie przezroczystości.
 The playlist is at the beginning. Enable loop to continue playing: Playlista jest na początku. Włącz zapętlanie, aby kontynuować odtwarzanie
 External link opening has been disabled in Settings → Privacy: Otwieranie zewnętrznych odnośników wyłączono w sekcji Ustawienia → Prywatność
 KeyboardShortcutPrompt:
